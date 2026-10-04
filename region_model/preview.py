@@ -280,8 +280,8 @@ def write_preview(buildings, background, metadata: dict, output_path: Path) -> N
             "type": "buttons", "direction": "left", "x": 1, "xanchor": "right", "y": 1.06, "yanchor": "bottom",
             "showactive": True, "bgcolor": "#f5f7fa", "bordercolor": "#dbe2e9",
             "buttons": [
-                {"label": "입체 보기", "method": "relayout", "args": [{"scene.camera": {"eye": {"x": 1.2, "y": -1.55, "z": 1.25}, "up": {"x": 0, "y": 0, "z": 1}, "projection": {"type": "orthographic"}}}]},
-                {"label": "위에서 보기", "method": "relayout", "args": [{"scene.camera": {"eye": {"x": 0, "y": 0, "z": 2.4}, "up": {"x": 0, "y": 1, "z": 0}, "projection": {"type": "orthographic"}}}]},
+                {"label": "입체 보기", "method": "relayout", "args": [{"scene.zaxis.visible": True, "scene.camera": {"eye": {"x": 1.2, "y": -1.55, "z": 1.25}, "up": {"x": 0, "y": 0, "z": 1}, "projection": {"type": "orthographic"}}}]},
+                {"label": "위에서 보기", "method": "relayout", "args": [{"scene.zaxis.visible": False, "scene.camera": {"eye": {"x": 0, "y": 0, "z": 2.4}, "up": {"x": 0, "y": 1, "z": 0}, "projection": {"type": "orthographic"}}}]},
             ],
         }],
     )
@@ -298,6 +298,8 @@ def write_preview(buildings, background, metadata: dict, output_path: Path) -> N
     source_info = metadata.get("building_source", {})
     source_name = str(source_info.get("source_name", "입력 GIS 자료"))
     source_date = str(source_info.get("snapshot_date", "기준일 미기재"))
+    record_dates = source_info.get("record_reference_dates", [])
+    record_date_note = " · 건물 속성 기준일 " + escape(", ".join(map(str, record_dates))) if record_dates else ""
     source_url = str(source_info.get("source_url", ""))
     source_link = (
         f'<a href="{escape(source_url, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(source_name)}</a>'
@@ -307,7 +309,7 @@ def write_preview(buildings, background, metadata: dict, output_path: Path) -> N
     demo_banner = (
         '<div class="demo"><strong>SYNTHETIC · 합성 데이터 예시</strong>'
         '<span>이 화면의 건물 위치·형태·높이는 작동 확인용입니다. 해당 지역의 실제 건물이나 통신 결과를 나타내지 않습니다.</span></div>'
-        if is_demo else f'<div class="real"><strong>{geometry_description}</strong><span>{source_link}<br>자료 기준일 {escape(source_date)} · 관심 영역 경계에서 외곽선 절단 · 높이 임의 추정 없음</span></div>'
+        if is_demo else f'<div class="real"><strong>{geometry_description}</strong><span>{source_link}<br>배포본 기준일 {escape(source_date)}{record_date_note}<br>관심 영역 경계에서 외곽선 절단 · 높이 임의 추정 없음</span></div>'
     )
     attribution = (
         '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · ODbL'
@@ -339,7 +341,7 @@ main{{max-width:1480px;margin:auto;padding:34px 38px 30px}}header{{display:flex;
 .subtitle{{color:var(--muted);margin:9px 0 0}}.scope{{text-align:right;white-space:nowrap;color:var(--muted);font-size:12px}}.scope strong{{display:block;color:var(--ink);font-size:18px}}
 .demo,.real{{border:1px solid #e9d2a5;background:#fff8ea;padding:13px 17px;border-radius:9px;margin-bottom:18px;display:flex;gap:20px;align-items:center}}.demo strong{{color:#905713;white-space:nowrap}}.demo span,.real span{{font-size:13px}}.real{{border-color:#cedfe6;background:#eef5f7}}.real strong{{white-space:nowrap;color:#286175}}
 .stats{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}}.stat{{padding:16px 20px;background:white;border:1px solid var(--line);border-radius:10px}}.stat label{{display:block;color:var(--muted);font-size:12px}}.stat b{{display:block;font-size:27px;font-weight:650;line-height:1.4;margin:3px 0}}.stat small{{font-size:11px;color:var(--muted)}}.stat.warn b{{color:#bc721c}}
-.map-card{{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}}.map-head{{padding:15px 20px;border-bottom:1px solid #eef1f5;display:flex;justify-content:space-between;gap:12px}}.map-head b{{font-size:14px}}.map-head span{{font-size:12px;color:var(--muted)}}.plot{{padding:22px 7px 0}}.map-foot{{display:flex;justify-content:space-between;gap:15px;padding:12px 20px;border-top:1px solid #eef1f5;color:var(--muted);font-size:11px}}a{{color:#315f82}}
+.map-card{{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}}.map-head{{padding:15px 20px;border-bottom:1px solid #eef1f5;display:flex;justify-content:space-between;gap:12px}}.map-head b{{font-size:14px}}.map-head span{{font-size:12px;color:var(--muted)}}.plot{{padding:22px 7px 0}}.plot .modebar{{top:62px!important}}.map-foot{{display:flex;justify-content:space-between;gap:15px;padding:12px 20px;border-top:1px solid #eef1f5;color:var(--muted);font-size:11px}}a{{color:#315f82}}
 .notes{{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:18px}}.note{{background:white;border:1px solid var(--line);border-radius:10px;padding:18px 20px}}h2{{font-size:14px;margin:0 0 9px}}.note p{{margin:0;color:#586b80;font-size:12px}}.note.warning{{border-left:4px solid #d89432}}.note.warning strong{{color:#976014}}.quality{{color:#778496;font-size:11px;margin-top:12px;overflow-wrap:anywhere}}
 details{{margin-top:14px;font-size:12px}}summary{{cursor:pointer;color:#315f82}}.table-wrap{{overflow:auto;max-height:240px;margin-top:9px}}table{{border-collapse:collapse;width:100%;text-align:left}}th,td{{padding:7px 10px;border-bottom:1px solid #e5eaf0;overflow-wrap:anywhere}}th{{background:#f3f6f9}}footer{{color:#788799;font-size:11px;margin-top:18px}}
 @media(max-width:850px){{main{{padding:20px 14px}}header,.demo,.real{{display:block}}.scope{{text-align:left;margin-top:14px}}.stats{{grid-template-columns:repeat(2,1fr)}}.notes{{grid-template-columns:1fr}}.map-head,.map-foot{{display:block}}.map-head span,.map-foot span{{display:block}}.demo span,.real span{{display:block;margin-top:5px}}h1{{font-size:25px}}}}

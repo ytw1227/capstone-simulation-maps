@@ -1,0 +1,16 @@
+{
+  "source_name": "국토교통부 GIS건물통합정보 (브이월드 AL_D010)",
+  "source_url": "https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18",
+  "snapshot_date": "2026-09-09",
+  "id_field": "A1",
+  "name_field": "A24",
+  "height_field": "A16",
+  "height_unit": "m",
+  "height_semantics": "above_ground",
+  "source_crs": "EPSG:5179",
+  "layer": "buildings",
+  "encoding": null,
+  "record_reference_dates": [
+    "2026-09-06"
+  ]
+}

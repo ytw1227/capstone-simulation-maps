@@ -6,10 +6,15 @@ import unittest
 import zipfile
 
 import geopandas as gpd
+from pyproj import CRS
 from shapely.geometry import Polygon, box
 
 from region_model.core import METRIC_CRS, prepare_buildings, region_geometry
-from scripts.import_official_gangnam import CENTER, SOURCE_NAME, SOURCE_URL, import_official, sha256
+from scripts.import_official_gangnam import CENTER, SOURCE_NAME, SOURCE_URL, _same_crs, import_official, sha256
+
+# Exact projection representation distributed in the 2026-09-09 official ZIP.
+# Only metadata is embedded; all geometries/attributes below remain test fixtures.
+OFFICIAL_5186_WKT = '''PROJCS["Korea_2000_Korea_Central_Belt_2010", GEOGCS["GCS_Korea_2000", DATUM["D_Korea_2000", SPHEROID["GRS_1980", 6378137.0, 298.257222101]], PRIMEM["Greenwich", 0.0], UNIT["degree", 0.017453292519943295], AXIS["Longitude", EAST], AXIS["Latitude", NORTH]], PROJECTION["Transverse_Mercator"], PARAMETER["central_meridian", 127.0], PARAMETER["latitude_of_origin", 38.0], PARAMETER["scale_factor", 1.0], PARAMETER["false_easting", 200000.0], PARAMETER["false_northing", 600000.0], UNIT["m", 1.0], AXIS["x", EAST], AXIS["y", NORTH], AUTHORITY["EPSG","5186"]]'''
 
 
 class OfficialImportTests(unittest.TestCase):
@@ -168,6 +173,19 @@ class OfficialImportTests(unittest.TestCase):
         frame.to_crs(5186).to_file(source, driver="ESRI Shapefile", index=False)
         with self.assertRaisesRegex(ValueError, "문자열"):
             import_official(source, "2026-09-09", self.root / "curated")
+
+    def test_official_xy_m_unit_wkt_matches_but_false_authority_label_does_not(self):
+        expected = CRS.from_epsg(5186)
+        actual_prj = CRS.from_wkt(OFFICIAL_5186_WKT)
+        self.assertTrue(_same_crs(actual_prj, expected))
+        conflicting_offset = CRS.from_wkt(OFFICIAL_5186_WKT.replace('200000.0', '200100.0'))
+        conflicting_datum = CRS.from_wkt(OFFICIAL_5186_WKT.replace('D_Korea_2000', 'Unknown_Datum'))
+        self.assertFalse(_same_crs(conflicting_offset, expected))
+        self.assertFalse(_same_crs(conflicting_datum, expected))
+        source = self.fixture()
+        source.with_suffix(".prj").write_text(OFFICIAL_5186_WKT, encoding="utf-8")
+        result = import_official(source, "2026-09-09", self.root / "curated")
+        self.assertEqual(result["row_count"], 4)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="960" viewBox="0 0 1160 960" role="img" aria-labelledby="overview-title overview-description" font-family="Arial, Helvetica, Malgun Gothic, sans-serif" fill="#243447">
+  <title id="overview-title">Gangnam Station: actual 400 m square building and road overview</title>
+  <desc id="overview-description">Actual MOLIT GIS Building Integration footprints and OpenStreetMap background. 126 buildings, 83 with source-reported positive heights and 43 without usable heights. North is up; x and y are local metres. Orange footprints retain buildings with unknown height. Building names and explicitly tagged tunnels are not drawn. Road marks are centerlines, not road surfaces.</desc>
+  <rect width="1160" height="960" fill="white" />
+  <text x="40" y="47" font-size="30" font-weight="700">Gangnam Station · 400 m × 400 m</text>
+  <text x="40" y="80" font-size="16" fill="#607184">Official building footprints and source heights · OpenStreetMap road centerlines</text>
+  <rect x="965" y="28" width="153" height="31" rx="7" fill="#e9f4ef" stroke="#b5d6c6" />
+  <text x="1041.5" y="49" font-size="13" text-anchor="middle" font-weight="700" fill="#2d6850">ACTUAL DATA</text>
+  <g id="actual-400m-map" data-local-bounds-m="-200,-200,200,200">
+    <rect x="82" y="160" width="640" height="640" fill="#f8fafb" stroke="#b8c6d3" />
+    <line x1="242.0" y1="160" x2="242.0" y2="800" stroke="#e8edf1" />
+    <line x1="82" y1="640.0" x2="722" y2="640.0" stroke="#e8edf1" />
+    <line x1="402.0" y1="160" x2="402.0" y2="800" stroke="#e8edf1" />
+    <line x1="82" y1="480.0" x2="722" y2="480.0" stroke="#e8edf1" />
+    <line x1="562.0" y1="160" x2="562.0" y2="800" stroke="#e8edf1" />
+    <line x1="82" y1="320.0" x2="722" y2="320.0" stroke="#e8edf1" />
+    <g id="surface-background" data-omitted-tunnels="10">
+      <path d="M 722.00000,800.00000 L 443.23168,800.00000 L 722.00000,691.82072 L 722.00000,800.00000 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/681692365" data-kind="landuse" />
+      <path d="M 417.38104,160.00000 L 648.34386,160.00000 L 447.91874,238.40276 L 417.38104,160.00000 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/681692366" data-kind="landuse" />
+      <path d="M 82.00000,747.89133 L 82.00000,725.83987 L 89.11075,745.90438 L 82.00000,747.89133 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882888" data-kind="landuse" />
+      <path d="M 111.48767,800.00000 L 82.00000,800.00000 L 82.00000,763.42713 L 96.06305,761.18790 L 111.48767,800.00000 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882891" data-kind="landuse" />
+      <path d="M 82.00000,644.20620 L 164.38948,615.42026 L 236.31526,800.00000 L 133.48123,800.00000 L 82.00000,651.18336 L 82.00000,644.20620 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882894" data-kind="landuse" />
+      <path d="M 239.61218,712.24240 L 234.14559,713.67051 L 201.25824,624.48162 L 188.57806,589.48298 L 209.50675,581.75996 L 214.62564,581.96324 L 231.01485,624.72014 L 270.04088,609.80999 L 299.75673,598.45647 L 314.93347,592.65703 L 384.56424,780.87004 L 385.40398,785.45412 L 384.68176,788.45048 L 383.37194,790.16579 L 356.92828,800.00000 L 275.17599,800.00000 L 245.03566,727.81993 L 239.61218,712.24240 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882895" data-kind="landuse" />
+      <path d="M 386.70735,582.17142 L 392.14803,585.89103 L 397.34124,591.01175 L 421.24227,647.65221 L 433.81925,661.06438 L 474.65493,761.93745 L 415.04391,783.65022 L 334.77414,565.01125 L 342.57194,564.05635 L 386.70735,582.17142 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882898" data-kind="landuse" />
+      <path d="M 97.91394,486.65370 L 119.25614,545.58952 L 82.00000,559.22444 L 82.00000,377.24305 L 119.17014,478.47094 L 97.91394,486.65370 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882901" data-kind="landuse" />
+      <path d="M 175.81998,376.18861 L 208.52494,470.54235 L 155.37709,489.67702 L 118.13610,400.21744 L 115.63067,400.63085 L 113.02077,399.32184 L 110.96907,396.70203 L 82.00000,319.31025 L 82.00000,296.79601 L 139.50961,276.10066 L 175.81998,376.18861 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882902" data-kind="landuse" />
+      <path d="M 209.70160,253.64359 L 210.43798,250.64730 L 211.87578,248.79064 L 263.01683,229.14861 L 265.88922,228.87904 L 268.46724,230.89791 L 322.89645,384.33085 L 297.54752,449.90146 L 294.38643,451.32344 L 289.63584,451.01553 L 286.04934,449.84366 L 283.47842,446.40471 L 209.70160,253.64359 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882903" data-kind="landuse" />
+      <path d="M 180.67504,263.06546 L 187.59656,264.76895 L 194.50736,268.60255 L 200.56478,273.39043 L 203.41296,277.93139 L 208.49405,288.43031 L 282.04566,475.38558 L 230.49141,495.45164 L 149.51558,274.74871 L 172.29415,264.69189 L 180.67504,263.06546 Z" fill-rule="evenodd" fill="#edf0f3" data-osm-id="way/1056882904" data-kind="landuse" />
+      <polyline points="232.78877,522.33886 135.33146,260.44059" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731711" data-kind="road" />
+      <polyline points="163.11013,549.30751 157.13275,534.22419 154.49326,527.55411 134.46607,474.26994 82.00000,334.89917" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731721" data-kind="road" />
+      <polyline points="426.72275,189.60427 504.36816,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731852" data-kind="road" />
+      <polyline points="426.21036,345.28169 477.42262,325.55044 688.97429,249.37296 722.00000,237.30494" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731857" data-kind="road" />
+      <polyline points="718.86197,336.45100 712.76910,318.89991 688.97429,249.37296 675.93658,203.66889 658.58428,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731858" data-kind="road" />
+      <polyline points="444.61240,234.96015 647.49488,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129731859" data-kind="road" />
+      <polyline points="317.68003,186.85552 334.10442,180.35227 387.14217,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/129733412" data-kind="road" />
+      <polyline points="413.53086,453.82127 407.96789,432.20762 394.89760,395.96462 386.62042,374.10657" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/218864485" data-kind="road" />
+      <polyline points="659.43928,386.01776 722.00000,362.75831" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/218864491" data-kind="road" />
+      <polyline points="471.55365,694.99906 498.54472,767.32936 510.83920,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/218873820" data-kind="road" />
+      <polyline points="270.47187,160.00000 272.78211,165.96714 286.42459,200.81079" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/218877837" data-kind="road" />
+      <polyline points="528.87411,410.48258 489.37328,415.89408 470.38626,417.25451 454.60344,417.05111 447.74673,416.50193 440.11876,414.63527 427.21614,409.79541 415.48152,403.31051 401.50429,392.78478 386.62042,374.10657" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/239954010" data-kind="road" />
+      <polyline points="447.42913,372.67207 412.98354,359.96675 402.12236,354.17853 396.48308,347.77747 393.49624,342.66781 380.74816,307.06546 371.40123,281.38547 365.11938,264.95161 341.80721,203.89386" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/239954011" data-kind="road" />
+      <polyline points="416.91512,160.00000 426.72275,189.60427 444.61240,234.96015 451.48245,252.56852 477.42262,325.55044 500.81052,385.77399" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/256787796" data-kind="road" />
+      <polyline points="82.00000,755.98513 95.49463,753.30340 106.26872,751.15655" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/263441173" data-kind="road" />
+      <polyline points="338.59168,607.47408 410.10219,787.58399 414.68337,799.12765" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/263441174" data-kind="road" />
+      <polyline points="82.00000,684.89514 106.26872,751.15655 124.15812,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/263441175" data-kind="road" />
+      <polyline points="371.40123,281.38547 415.29841,265.06150" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/301737870" data-kind="road" />
+      <polyline points="415.29841,265.06150 451.48245,252.56852" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/301737871" data-kind="road" />
+      <polyline points="384.04289,464.94541 303.42474,496.19122" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/304445274" data-kind="road" />
+      <polyline points="352.24286,381.65581 353.37454,412.58447 352.94563,427.58227 352.31682,437.32464 349.97592,447.21818 345.85221,457.26252 339.46553,467.31325 329.26596,476.20872 303.42474,496.19122" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305539406" data-kind="road" />
+      <polyline points="675.93658,203.66889 722.00000,186.10988" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305654271" data-kind="road" />
+      <polyline points="207.76979,244.06584 263.43270,222.38741 266.34823,221.97604 268.31138,222.51846 270.80374,224.69667 273.47267,231.13610 317.34611,337.72322 317.75157,341.47081 316.90154,344.57303 316.25740,348.91889 316.23554,353.26788 326.38263,382.94600 327.28752,388.63101 325.61252,395.47464 298.05872,466.37735 296.95633,469.03453 289.44978,476.77191 281.53714,480.88596 234.38838,499.57183" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305662439" data-kind="road" />
+      <polyline points="278.00873,448.47187 218.72392,290.36345 216.21039,283.96028 213.00119,278.08616 209.25681,271.76556 205.20191,265.31913 201.20269,259.05049 197.41520,255.67640 192.82229,252.15625 187.91889,240.07834" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305662503" data-kind="road" />
+      <polyline points="381.65083,349.81542 381.20450,348.57058 375.38780,332.44084" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305806950" data-kind="road" />
+      <polyline points="327.79554,366.33777 321.31874,349.29936" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305806951" data-kind="road" />
+      <polyline points="346.28594,362.47210 344.08214,356.33679" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305806953" data-kind="road" />
+      <polyline points="523.91794,462.50491 547.45199,454.10211" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305806954" data-kind="road" />
+      <polyline points="502.18904,401.38440 535.98331,388.86146" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305806955" data-kind="road" />
+      <polyline points="412.64052,608.69794 417.75994,622.88926" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305923837" data-kind="road" />
+      <polyline points="467.88474,588.95145 473.98053,605.88136" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305923838" data-kind="road" />
+      <polyline points="328.88595,464.57963 306.81197,452.59299 302.57526,462.60125" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305923841" data-kind="road" />
+      <polyline points="350.50700,524.51054 342.29589,545.80650 326.66951,542.58599" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/305923843" data-kind="road" />
+      <polyline points="570.77942,453.06508 564.27085,433.82545 560.64729,423.10321" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/309154983" data-kind="road" />
+      <polyline points="527.46309,759.91216 655.41925,709.16218 722.00000,684.08403" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/309155295" data-kind="road" />
+      <polyline points="722.00000,335.24766 718.86197,336.45100 528.87411,410.48258" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/375049565" data-kind="road" />
+      <polyline points="243.84435,767.82563 162.81598,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/379232137" data-kind="road" />
+      <polyline points="222.56197,713.68323 106.26872,751.15655" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/379232146" data-kind="road" />
+      <polyline points="689.32094,800.00000 655.41925,709.16218 575.58119,496.82861 582.01946,484.91413 570.77942,453.06508" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/417933645" data-kind="road" />
+      <polyline points="722.00000,543.25887 690.75204,465.31010 668.08197,408.41000 663.90712,397.61402 659.43928,386.01776" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/417933646" data-kind="road" />
+      <polyline points="420.43494,475.93868 416.26446,464.30832 413.53086,453.82127" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/472042763" data-kind="road" />
+      <polyline points="334.85460,506.76924 392.16821,486.07489" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/472042764" data-kind="road" />
+      <polyline points="384.04289,464.94541 388.10590,475.43915 392.16821,486.07489" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/472042765" data-kind="road" />
+      <polyline points="413.53086,453.82127 404.60373,457.18474 399.31826,459.18187 384.04289,464.94541" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/472042766" data-kind="road" />
+      <polyline points="303.42474,496.19122 232.78877,522.33886" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/480850873" data-kind="road" />
+      <polyline points="528.11246,800.00000 508.69084,749.36252" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/494828564" data-kind="road" />
+      <polyline points="392.16821,486.07489 404.90543,481.61221 410.89911,479.40561 420.43494,475.93868" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/494952007" data-kind="road" />
+      <polyline points="163.11013,549.30751 82.00000,579.21764" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504227065" data-kind="road" />
+      <polyline points="254.95211,800.00000 243.84435,767.82563 241.72414,761.93925 222.56197,713.68323 209.33176,678.34457 174.82431,590.74508 167.02053,570.41590" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504227066" data-kind="road" />
+      <polyline points="498.54472,767.32936 477.03337,775.58246 414.68337,799.12765 412.17018,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504227067" data-kind="road" />
+      <polyline points="414.68337,799.12765 415.00592,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504231012" data-kind="road" />
+      <polyline points="286.42459,200.81079 266.04641,208.87397 187.91889,240.07834 135.33146,260.44059 82.00000,281.10313" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504509918" data-kind="road" />
+      <polyline points="135.33146,260.44059 132.98778,254.02052 98.68117,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504511997" data-kind="road" />
+      <polyline points="232.78877,522.33886 163.11013,549.30751" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504512001" data-kind="road" />
+      <polyline points="171.29691,160.00000 183.13233,190.75851 186.55652,198.87041 187.51162,202.99355 186.02706,211.32924 184.87000,216.41808 183.43428,220.67119 182.75384,223.79202 183.75819,229.37102 187.91889,240.07834" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/504512006" data-kind="road" />
+      <polyline points="528.87411,410.48258 494.60960,423.69545 413.53086,453.82127" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/520307303" data-kind="road" />
+      <polyline points="386.62042,374.10657 364.42344,313.40950 339.24661,243.44893 317.68003,186.85552 314.14932,177.41177 307.65971,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/520307304" data-kind="road" />
+      <polyline points="392.16821,486.07489 407.05267,527.20864 418.95577,559.32743" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/521766174" data-kind="road" />
+      <polyline points="543.47744,800.00000 527.46309,759.91216 457.20402,578.15829 447.53671,551.42942" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/521766182" data-kind="road" />
+      <polyline points="286.42459,200.81079 295.55831,223.84481 328.41924,315.39431 343.42328,357.98436 352.24286,381.65581 376.92848,445.29437 384.04289,464.94541" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/523141074" data-kind="road" />
+      <polyline points="457.20402,578.15829 514.39575,451.96611 520.83147,437.74397" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/628232693" data-kind="road" />
+      <polyline points="507.90736,468.22940 511.76847,479.52090" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/628232694" data-kind="road" />
+      <polyline points="334.85460,506.76924 349.44475,510.73010 366.18473,514.68398 377.92736,519.58909 390.92271,528.51229 400.03483,536.20889 418.95577,559.32743" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/913949669" data-kind="road" />
+      <polyline points="447.53671,551.42942 452.94077,528.61045 454.23794,523.77081 462.39648,501.64020 470.45454,485.43806 483.59995,467.25550 502.18260,444.99961" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/914407834" data-kind="road" />
+      <polyline points="690.75204,465.31010 722.00000,453.85969" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/914413362" data-kind="road" />
+      <polyline points="502.18260,444.99961 520.83147,437.74397 560.64729,423.10321 659.43928,386.01776" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/975332778" data-kind="road" />
+      <polyline points="447.53671,551.42942 420.43494,475.93868" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/990628459" data-kind="road" />
+      <polyline points="420.43494,475.93868 459.85641,461.01222 502.18260,444.99961" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/990628460" data-kind="road" />
+      <polyline points="82.00000,717.04471 95.49463,753.30340 99.47551,763.22877 114.26952,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1046181891" data-kind="road" />
+      <polyline points="82.00000,628.79164 163.95086,598.60745" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1046181893" data-kind="road" />
+      <polyline points="163.95086,598.60745 174.82431,590.74508 184.34934,583.83449" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1046181894" data-kind="road" />
+      <polyline points="184.34934,583.83449 197.61951,580.29776 208.31469,579.74805 219.91797,578.61710 228.20147,576.70613 239.36351,573.31852 255.09344,567.20241 308.29164,546.52321" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1046181895" data-kind="road" />
+      <polyline points="308.29164,546.52321 313.53553,544.36614 319.78571,541.78809" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1046181896" data-kind="road" />
+      <polyline points="500.81052,385.77399 503.51633,393.34966" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544523" data-kind="road" />
+      <polyline points="375.38780,332.44084 373.56478,326.52046 374.06102,317.82475 375.28793,312.89602 376.95699,310.04642 380.74816,307.06546" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544524" data-kind="road" />
+      <polyline points="341.80721,203.89386 334.10442,180.35227 332.29362,174.82248" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544525" data-kind="road" />
+      <polyline points="332.29362,174.82248 326.72998,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544526" data-kind="road" />
+      <polyline points="426.21036,345.28169 420.41340,347.75555 417.60164,350.03138 415.26984,352.48712 412.98354,359.96675" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544535" data-kind="road" />
+      <polyline points="302.57526,462.60125 300.42661,468.00464 298.05872,466.37735" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544536" data-kind="road" />
+      <polyline points="321.31874,349.29936 317.34611,337.72322" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544537" data-kind="road" />
+      <polyline points="278.00873,448.47187 289.44978,476.77191" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544538" data-kind="road" />
+      <polyline points="319.78571,541.78809 320.69121,541.72163 321.90805,541.62124 326.66951,542.58599" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544539" data-kind="road" />
+      <polyline points="473.41904,765.83656 477.03337,775.58246 481.32125,786.39681" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1047544541" data-kind="road" />
+      <polyline points="255.09344,567.20241 255.87438,569.40751 270.04088,609.80999" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1056882897" data-kind="road" />
+      <polyline points="410.10219,787.58399 473.41904,765.83656 475.30667,764.53242 476.30587,762.70904 476.84421,759.71175 476.70082,757.27908 474.59634,751.05554 436.18694,659.92241 433.39232,655.94983 430.86098,653.06140 428.70938,650.60091 424.47314,646.42582 420.24590,640.45789 417.29252,634.30108 399.68340,589.31937 395.99139,583.79790 386.43636,576.98664 343.14937,558.91134 333.93075,555.52776 329.41542,553.42816 326.34402,551.06954 323.99614,548.27077 320.69121,541.72163" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1056882899" data-kind="road" />
+      <polyline points="304.03396,518.49007 313.53553,544.36614 338.59168,607.47408" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1056882900" data-kind="road" />
+      <polyline points="82.00000,602.97035 167.02053,570.41590 304.03396,518.49007 334.85460,506.76924" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1117538957" data-kind="road" />
+      <polyline points="703.44578,322.33261 712.76910,318.89991 720.85969,315.92259" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1206937175" data-kind="road" />
+      <polyline points="722.00000,315.47952 720.85969,315.92259" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1206937177" data-kind="road" />
+      <polyline points="703.44578,322.33261 538.98015,383.51554 536.40144,381.62097 503.51633,393.34966" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1206937178" data-kind="road" />
+      <polyline points="538.98015,383.51554 540.30550,387.16122 535.98331,388.86146" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1206937179" data-kind="road" />
+      <polyline points="418.95577,559.32743 445.75015,628.46162 471.55365,694.99906" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1229817205" data-kind="road" />
+      <polyline points="82.00000,271.47486 129.08977,255.74051" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325280" data-kind="road" />
+      <polyline points="136.75814,252.37088 179.74995,236.13188" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325281" data-kind="road" />
+      <polyline points="193.18259,231.15812 269.23044,200.06752" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325282" data-kind="road" />
+      <polyline points="129.08977,255.74051 132.98778,254.02052 136.75814,252.37088" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325283" data-kind="road" />
+      <polyline points="179.74995,236.13188 193.18259,231.15812" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325284" data-kind="road" />
+      <polyline points="82.00000,296.71928 207.76979,244.06584" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325285" data-kind="road" />
+      <polyline points="269.23044,200.06752 253.08807,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302325286" data-kind="road" />
+      <polyline points="82.00000,562.19856 157.13275,534.22419" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1302326403" data-kind="road" />
+      <polyline points="314.14932,177.41177 303.79200,160.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1376141183" data-kind="road" />
+      <polyline points="445.75015,628.46162 472.18366,668.07332 504.79568,727.91705 533.22854,797.64504 534.10420,800.00000" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1376141184" data-kind="road" />
+      <polyline points="494.60960,423.69545 493.45290,428.73106 492.01317,430.97827 488.03137,432.48493 452.39667,445.33580 450.30867,447.11823 448.11553,450.12497 447.43096,454.08010 449.02660,457.40762 450.81617,458.73020 453.75362,459.59700 459.85641,461.01222" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1472718291" data-kind="road" />
+      <polyline points="503.51633,393.34966 447.42913,372.67207" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1528035967" data-kind="road" />
+      <polyline points="476.17463,509.59092 504.33579,455.60800 514.39575,451.96611 564.27085,433.82545 663.90712,397.61402 722.00000,376.49947" fill="none" stroke="#a8b8c8" stroke-width="2.1" stroke-linecap="round" data-osm-id="way/1528035971" data-kind="road" />
+    </g>
+    <g id="official-building-footprints" data-building-count="126">
+      <path d="M 100.66138,771.85210 L 110.26573,800.00000 L 82.00000,800.00000 L 82.00000,777.92414 L 100.66138,771.85210 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1996202166194437550700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1996202166194437550700000000: 63.13 m (gis)</title>
+      </path>
+      <path d="M 101.69923,524.84885 L 106.63132,523.12522 L 95.36171,494.47619 L 92.94538,488.36646 L 106.01941,483.13688 L 110.25680,494.50549 L 125.09099,534.11972 L 115.70129,537.66865 L 113.10480,532.35608 L 105.34560,534.56375 L 108.03542,540.97721 L 82.00000,550.91170 L 82.00000,472.07800 L 90.36371,494.44972 L 101.69923,524.84885 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1997202166084439438300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1997202166084439438300000000: 17.3 m (gis)</title>
+      </path>
+      <path d="M 82.00000,392.65283 L 89.62127,413.27444 L 82.00000,416.03598 L 82.00000,392.65283 Z M 87.84935,389.37475 L 82.00000,391.39858 L 82.00000,385.17775 L 85.55461,383.86385 L 87.84935,389.37475 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2004202161454440115500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2004202161454440115500000000: 44.1 m (gis)</title>
+      </path>
+      <path d="M 88.80562,421.11679 L 91.00898,420.32876 L 91.40749,420.58198 L 95.26039,429.04883 L 97.05826,434.15566 L 98.65565,438.76400 L 99.68393,443.01906 L 99.48163,443.46743 L 82.00000,449.79431 L 82.00000,418.98168 L 87.40176,417.11245 L 88.80562,421.11679 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1995202167474439919700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1995202167474439919700000000: 30.66 m (gis)</title>
+      </path>
+      <path d="M 182.90982,724.00648 L 167.47529,729.79775 L 165.74360,725.17910 L 123.36968,741.65886 L 110.03626,705.26578 L 104.85480,706.96250 L 85.80305,657.06576 L 90.78805,655.32002 L 89.87945,652.62821 L 109.04683,645.35647 L 106.48374,639.17399 L 147.56129,623.76217 L 159.21165,654.81072 L 157.22764,655.55513 L 182.90982,724.00648 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2007202204174438378900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2007202204174438378900000000: 149.82 m (gis)</title>
+      </path>
+      <path d="M 114.83606,394.51582 L 112.61595,389.10607 L 123.32940,385.66332 L 125.17737,390.67284 L 114.83606,394.51582 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202193604440214200000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202193604440214200000000: unknown height</title>
+      </path>
+      <path d="M 149.77404,792.73491 L 142.40992,772.58821 L 149.40754,770.13020 L 156.70641,790.21578 L 149.77404,792.73491 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202214064437768100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202214064437768100000000: unknown height</title>
+      </path>
+      <path d="M 152.17828,412.45898 L 184.40094,401.08354 L 208.13296,464.18736 L 213.29002,462.26500 L 219.91764,480.44374 L 215.15935,482.26745 L 219.61695,494.63685 L 218.23913,495.37967 L 166.78100,514.19923 L 159.38620,495.01520 L 159.68607,494.86644 L 180.51929,487.13170 L 180.42145,486.88168 L 152.17828,412.45898 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202235344439781100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202235344439781100000000: unknown height</title>
+      </path>
+      <path d="M 233.47206,787.07005 L 238.22049,800.00000 L 199.00741,800.00000 L 233.47206,787.07005 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2007202245224437480800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2007202245224437480800000000: 150 m (gis)</title>
+      </path>
+      <path d="M 168.70311,491.01645 L 164.74478,478.89920 L 175.86046,475.30983 L 180.42145,486.88168 L 168.70311,491.01645 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202227374439634000000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202227374439634000000000: unknown height</title>
+      </path>
+      <path d="M 210.06318,585.33643 L 211.95269,584.91779 L 221.24638,610.37035 L 204.62510,616.76310 L 195.29768,591.03687 L 196.61615,590.32732 L 196.34684,589.23350 L 209.64919,584.38099 L 210.06318,585.33643 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1999202250054438902500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1999202250054438902500000000: 24.15 m (gis)</title>
+      </path>
+      <path d="M 235.33643,485.17326 L 215.27477,432.08676 L 257.87044,416.01763 L 275.40706,464.19338 L 272.22352,470.97399 L 270.09797,470.96273 L 269.19013,472.65649 L 235.33643,485.17326 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202273414439840200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202273414439840200000000: 67 m (gis)</title>
+      </path>
+      <path d="M 232.65961,405.33924 L 227.90451,406.86228 L 223.32400,394.14355 L 228.00606,392.51936 L 228.30251,393.32063 L 232.65961,405.33924 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202261834440157100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202261834440157100000000: unknown height</title>
+      </path>
+      <path d="M 324.60625,651.74413 L 333.07118,648.55816 L 381.79374,778.73416 L 326.18047,800.00000 L 305.76747,800.00000 L 297.26242,777.75868 L 282.37059,782.55000 L 250.42355,686.31422 L 244.53219,688.26948 L 225.45567,639.12433 L 231.77351,636.67072 L 228.89452,630.03873 L 305.51254,601.01388 L 324.60625,651.74413 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202310134438254900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202310134438254900000000: 199.28 m (gis)</title>
+      </path>
+      <path d="M 269.54019,496.25115 L 269.19496,495.30088 L 268.82600,494.29929 L 276.41405,491.19026 L 277.17596,493.49263 L 272.21935,495.31689 L 269.54019,496.25115 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202290344439570500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202290344439570500000000: unknown height</title>
+      </path>
+      <path d="M 289.72058,437.22967 L 277.49841,404.82660 L 309.20257,392.29844 L 314.27863,405.97304 L 302.14393,432.24935 L 289.72058,437.22967 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1984202304794440073700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1984202304794440073700000000: 33.1 m (gis)</title>
+      </path>
+      <path d="M 324.71827,613.37982 L 308.10821,569.33544 L 315.04527,566.83553 L 331.61588,610.77894 L 324.71827,613.37982 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202319914438970000000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202319914438970000000000: unknown height</title>
+      </path>
+      <path d="M 368.59847,614.78458 L 356.50605,609.52248 L 344.20844,576.86950 L 360.96121,570.41026 L 398.43348,587.35288 L 403.18037,601.57273 L 368.59847,614.78458 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1995202352484438954900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1995202352484438954900000000: 75.05 m (gis)</title>
+      </path>
+      <path d="M 411.70130,625.26024 L 415.83318,623.63313 L 416.74465,626.38574 L 413.93835,627.47126 L 413.46785,626.91858 L 367.79216,644.41886 L 360.42875,623.83712 L 404.65198,606.67782 L 407.43832,613.89149 L 411.70130,625.26024 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202361814438750400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202361814438750400000000: unknown height</title>
+      </path>
+      <path d="M 378.56461,672.41749 L 368.68623,645.32406 L 414.20735,628.62266 L 424.61086,655.61651 L 378.56461,672.41749 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202368044438594700000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202368044438594700000000: unknown height</title>
+      </path>
+      <path d="M 405.80917,723.09334 L 389.03129,677.81973 L 428.59116,663.88572 L 444.53330,706.60385 L 405.80917,723.09334 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1999202380864438330100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1999202380864438330100000000: 83.8 m (gis)</title>
+      </path>
+      <path d="M 447.30816,720.21348 L 449.41447,719.02508 L 462.98958,755.68493 L 461.03573,756.47428 L 463.54753,763.58414 L 444.66869,770.43197 L 423.33567,778.31600 L 416.23517,760.03400 L 419.46185,759.30097 L 414.52112,743.63104 L 420.13185,741.51115 L 418.26410,735.40434 L 420.71829,734.36653 L 419.01482,730.45976 L 445.13754,719.65179 L 447.03995,718.91174 L 447.30816,720.21348 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1997202394394437979800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1997202394394437979800000000: 98.13 m (gis)</title>
+      </path>
+      <path d="M 477.81969,792.44739 L 480.65858,800.00000 L 457.72528,800.00000 L 477.81969,792.44739 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202413124437555000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202413124437555000000000: 82.56 m (gis)</title>
+      </path>
+      <path d="M 475.64458,528.48470 L 470.05820,526.00643 L 474.65865,516.23445 L 480.16827,518.71231 L 475.64458,528.48470 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202416764439398500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202416764439398500000000: unknown height</title>
+      </path>
+      <path d="M 498.60531,623.37096 L 496.31532,616.96122 L 500.12200,615.43156 L 502.63855,621.64418 L 498.60531,623.37096 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202432274438792700000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202432274438792700000000: unknown height</title>
+      </path>
+      <path d="M 85.50159,247.71271 L 82.00000,249.02655 L 82.00000,236.63664 L 85.50159,247.71271 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202163134441122100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202163134441122100000000: unknown height</title>
+      </path>
+      <path d="M 99.17896,166.31631 L 99.30133,166.76639 L 99.84357,168.26950 L 99.96727,168.46848 L 100.50712,170.42101 L 100.53165,170.62107 L 100.85049,171.72315 L 100.87502,171.92320 L 101.02165,172.32383 L 101.04618,172.52389 L 101.09311,173.02315 L 104.28760,173.83977 L 107.36640,182.30413 L 106.27946,184.59672 L 107.99644,186.25479 L 109.43593,188.06175 L 109.70731,188.76372 L 110.12452,190.01507 L 110.19704,190.51607 L 110.28880,192.21512 L 110.30458,193.76502 L 110.27795,194.26390 L 110.17057,195.51406 L 110.14553,195.71226 L 109.40724,198.00829 L 109.20546,198.35749 L 107.99139,201.09884 L 107.89116,201.29983 L 106.30468,203.38985 L 105.30084,204.18423 L 104.80078,204.38151 L 103.59809,204.97491 L 102.77123,205.27122 L 102.39645,205.36840 L 101.16976,205.66099 L 100.74566,205.70993 L 99.62078,205.80313 L 99.27079,205.75170 L 98.44552,205.74733 L 98.27119,205.74640 L 97.22386,205.39059 L 96.13718,207.63359 L 87.67189,210.88833 L 85.47913,209.67716 L 84.14427,211.66935 L 82.86536,212.76136 L 82.00000,213.24518 L 82.00000,165.91020 L 82.31132,166.07662 L 82.76737,165.12899 L 83.21970,164.58120 L 84.05079,163.48681 L 85.07835,162.74213 L 85.60453,162.44583 L 86.80670,161.95158 L 87.33395,161.75445 L 88.76002,161.26299 L 90.56221,160.72234 L 92.13386,161.13051 L 92.65953,161.23246 L 93.95529,161.78952 L 94.50415,162.04193 L 95.62585,162.54849 L 96.12487,162.85022 L 97.02079,163.40516 L 97.39345,163.70782 L 98.36297,164.86292 L 98.61036,165.26249 L 99.17896,166.31631 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1988202171174441475800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1988202171174441475800000000: 16.2 m (gis)</title>
+      </path>
+      <path d="M 85.67673,247.86398 L 89.35027,257.27993 L 82.00000,259.90382 L 82.00000,249.25224 L 85.67673,247.86398 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202165784441041100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202165784441041100000000: unknown height</title>
+      </path>
+      <path d="M 82.00000,161.09937 L 82.00000,160.00000 L 85.04168,160.00000 L 82.00000,161.09937 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1997202171734441747700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1997202171734441747700000000: 14.55 m (gis)</title>
+      </path>
+      <path d="M 92.63580,255.09975 L 83.39380,230.45837 L 120.45601,216.41197 L 129.67269,241.00204 L 92.63580,255.09975 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1990202185354441178300000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1990202185354441178300000000: unknown height</title>
+      </path>
+      <path d="M 160.88306,340.43114 L 159.78084,340.77558 L 160.44730,342.37851 L 161.24672,342.43233 L 162.19409,342.93636 L 172.24098,371.12948 L 124.78626,389.02179 L 111.73098,353.26354 L 115.96388,351.58739 L 115.49973,349.53610 L 126.51836,345.54636 L 127.40370,348.09890 L 146.93851,340.30611 L 147.57101,338.65887 L 148.45034,337.81585 L 149.85111,337.57376 L 151.04851,337.97995 L 159.03376,335.67272 L 160.88306,340.43114 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1992202207814440389600000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1992202207814440389600000000: 34.7 m (gis)</title>
+      </path>
+      <path d="M 124.07552,169.89648 L 120.43019,160.00000 L 150.18094,160.00000 L 124.07552,169.89648 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1983202203004441722300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1983202203004441722300000000: 15.3 m (gis)</title>
+      </path>
+      <path d="M 141.41106,237.61430 L 129.40964,205.81216 L 153.32027,197.44277 L 149.43207,185.97684 L 171.03992,178.14384 L 179.07853,198.67798 L 178.44841,199.57511 L 178.49693,199.77529 L 179.70721,202.58066 L 173.54648,223.98964 L 171.16772,224.67758 L 171.25895,226.47739 L 141.41106,237.61430 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1980202216814441346800000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1980202216814441346800000000: unknown height</title>
+      </path>
+      <path d="M 179.25127,307.39038 L 172.99103,290.81299 L 200.48709,280.41375 L 206.71881,297.24049 L 179.25127,307.39038 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1984202237664440817200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1984202237664440817200000000: 28.3 m (gis)</title>
+      </path>
+      <path d="M 209.37025,325.09376 L 209.84579,324.99551 L 210.78151,327.70026 L 209.80486,328.19411 L 212.53950,335.50667 L 182.69188,346.59400 L 176.26207,329.11684 L 206.75929,317.98338 L 209.37025,325.09376 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1978202240724440577900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1978202240724440577900000000: 22.15 m (gis)</title>
+      </path>
+      <path d="M 187.61833,322.37952 L 182.39749,307.65655 L 210.69561,296.81052 L 216.58740,311.98648 L 187.61833,322.37952 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1985202243684440719100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1985202243684440719100000000: 20.16 m (gis)</title>
+      </path>
+      <path d="M 184.25322,348.94859 L 184.10288,348.64551 L 217.92798,336.09340 L 228.48408,365.07772 L 192.89845,378.15631 L 189.51669,369.21372 L 191.58867,368.46818 L 187.96996,358.66386 L 185.99392,359.41471 L 182.23375,349.44331 L 184.25322,348.94859 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202247774440423300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202247774440423300000000: 41.7 m (gis)</title>
+      </path>
+      <path d="M 199.69201,166.59916 L 199.29190,166.64822 L 199.09198,166.64716 L 197.77009,166.19073 L 197.59629,166.08904 L 197.17272,165.73653 L 196.62942,164.43494 L 194.94244,160.00000 L 217.12419,160.00000 L 199.69201,166.59916 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1996202249554441776200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1996202249554441776200000000: 80.16 m (gis)</title>
+      </path>
+      <path d="M 249.04070,187.00502 L 249.94086,186.76028 L 250.56515,186.96351 L 250.96341,187.26471 L 252.21665,191.32104 L 251.96424,191.86830 L 251.66145,192.26654 L 214.75274,205.71557 L 214.05408,205.36160 L 213.73206,204.85929 L 212.50281,201.10537 L 212.98021,200.65687 L 213.75641,200.26113 L 207.74093,185.18528 L 202.20590,187.50548 L 198.75919,177.54054 L 240.57835,161.62084 L 241.20344,161.67374 L 241.65127,161.97520 L 243.00209,166.33113 L 242.50123,166.67875 L 241.52351,167.07342 L 249.04070,187.00502 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1989202260304441507700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1989202260304441507700000000: 56.85 m (gis)</title>
+      </path>
+      <path d="M 208.17232,216.67662 L 206.15293,211.11760 L 216.01895,207.32328 L 217.79309,212.07971 L 212.88445,213.90422 L 213.27927,214.85476 L 208.17232,216.67662 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202251124441330800000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202251124441330800000000: unknown height</title>
+      </path>
+      <path d="M 244.84804,383.41199 L 220.33394,392.47873 L 214.86758,377.30342 L 226.70696,373.56754 L 227.18753,372.52088 L 227.63986,371.97308 L 227.79100,371.82354 L 228.16710,371.47526 L 228.49443,371.27707 L 228.96890,371.07966 L 229.34607,370.83215 L 230.59835,370.23900 L 230.77268,370.23993 L 231.59872,370.09716 L 231.97297,370.09914 L 233.09946,370.00434 L 233.42439,369.95648 L 233.92313,370.00870 L 234.09879,370.05922 L 234.59568,370.46170 L 239.65278,368.68915 L 244.84804,383.41199 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1993202262974440278400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1993202262974440278400000000: 18.32 m (gis)</title>
+      </path>
+      <path d="M 254.93226,268.05722 L 252.44448,261.24498 L 250.74252,261.88692 L 249.97609,260.13311 L 236.03358,264.45763 L 228.49742,243.57589 L 265.40824,229.42633 L 276.96660,260.02656 L 254.93226,268.05722 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1981202277364441096000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1981202277364441096000000000: 28.85 m (gis)</title>
+      </path>
+      <path d="M 248.84537,303.91080 L 239.20987,278.06939 L 282.88161,261.45736 L 292.91244,288.15176 L 248.84537,303.91080 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1974202285264440889100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1974202285264440889100000000: 22.5 m (gis)</title>
+      </path>
+      <path d="M 265.62032,349.43391 L 250.63052,311.11758 L 288.49293,296.67557 L 302.75691,335.53665 L 265.62032,349.43391 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1983202292144440637700000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1983202292144440637700000000: unknown height</title>
+      </path>
+      <path d="M 262.80094,184.17978 L 261.47623,179.42413 L 264.45527,178.33952 L 265.95537,182.89617 L 262.80094,184.17978 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202283424441524300000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202283424441524300000000: unknown height</title>
+      </path>
+      <path d="M 286.32144,395.02740 L 276.16824,367.88292 L 311.85792,353.27746 L 322.85642,381.17493 L 286.32144,395.02740 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1982202306414440318200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1982202306414440318200000000: 47.3 m (gis)</title>
+      </path>
+      <path d="M 316.37124,322.51284 L 314.24394,318.30314 L 317.20083,316.86974 L 318.85206,321.27685 L 316.37124,322.51284 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202316994440660500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202316994440660500000000: unknown height</title>
+      </path>
+      <path d="M 323.19687,166.50637 L 320.82456,160.00000 L 323.03848,160.00000 L 325.25015,165.66636 L 323.19687,166.50637 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202320404441642600000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202320404441642600000000: unknown height</title>
+      </path>
+      <path d="M 326.99050,172.27312 L 325.41311,168.11751 L 328.16690,166.98212 L 329.61795,171.43775 L 326.99050,172.27312 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202323324441598800000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202323324441598800000000: unknown height</title>
+      </path>
+      <path d="M 158.55041,290.13513 L 152.81105,274.26104 L 179.65618,264.15744 L 188.57811,268.90374 L 191.27762,278.01545 L 158.55041,290.13513 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1980202226224440925800000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1980202226224440925800000000: unknown height</title>
+      </path>
+      <path d="M 341.03552,172.14918 L 336.64912,160.00000 L 363.43336,160.00000 L 364.57428,163.32838 L 341.03552,172.14918 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1980202333314441773900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1980202333314441773900000000: 23.3 m (gis)</title>
+      </path>
+      <path d="M 152.55227,304.39883 L 89.22255,328.50391 L 82.00000,310.62742 L 82.00000,299.26628 L 82.90639,298.93107 L 84.59961,299.93966 L 88.48332,298.06174 L 87.87254,295.60982 L 143.48866,274.46117 L 152.03862,297.49789 L 150.45981,298.14048 L 152.55227,304.39883 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1994202191654440767100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1994202191654440767100000000: 13.7 m (gis)</title>
+      </path>
+      <path d="M 580.02119,660.24456 L 539.81895,675.27396 L 512.96792,603.44489 L 553.17176,588.41550 L 580.02119,660.24456 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202461744438716400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202461744438716400000000: 143.3 m (gis)</title>
+      </path>
+      <path d="M 515.90866,527.44881 L 513.89376,521.04053 L 525.69399,496.61136 L 533.07232,481.15701 L 535.20210,480.36859 L 542.43328,464.31209 L 557.28127,459.34301 L 569.77524,496.89760 L 572.80103,506.00943 L 545.60912,516.06002 L 515.90866,527.44881 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1996202460214439569700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1996202460214439569700000000: 97.62 m (gis)</title>
+      </path>
+      <path d="M 520.12038,680.16617 L 518.47126,675.35923 L 521.30102,674.37459 L 523.02451,679.03158 L 520.12038,680.16617 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202445784438431600000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202445784438431600000000: unknown height</title>
+      </path>
+      <path d="M 519.69163,798.57094 L 522.14502,797.68347 L 522.96186,800.00000 L 520.22351,800.00000 L 519.69163,798.57094 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202447644437639600000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202447644437639600000000: unknown height</title>
+      </path>
+      <path d="M 548.94350,716.35498 L 539.72920,691.31550 L 559.85793,684.32555 L 568.87549,708.76421 L 548.94350,716.35498 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202466854438289200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202466854438289200000000: 51.8 m (gis)</title>
+      </path>
+      <path d="M 550.81114,741.20681 L 542.53204,718.96964 L 558.17968,713.40661 L 566.56299,734.99338 L 550.81114,741.20681 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202467064438120500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202467064438120500000000: unknown height</title>
+      </path>
+      <path d="M 583.36855,535.25451 L 585.85528,542.26507 L 548.82104,555.86379 L 546.75762,549.25532 L 580.68992,536.08961 L 583.36855,535.25451 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202473954439256800000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202473954439256800000000: unknown height</title>
+      </path>
+      <path d="M 590.82129,764.56047 L 600.88699,761.11588 L 608.85281,780.89950 L 575.39630,793.61831 L 567.61780,771.68448 L 566.94719,766.03343 L 564.62730,765.27103 L 565.74830,761.37922 L 561.85886,759.50811 L 563.53216,755.21937 L 590.82129,764.56047 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1995202486224437827900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1995202486224437827900000000: 25.8 m (gis)</title>
+      </path>
+      <path d="M 570.96360,734.56725 L 569.30946,730.70872 L 578.12605,726.95683 L 579.75222,731.26464 L 570.96360,734.56725 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202479644438098300000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202479644438098300000000: unknown height</title>
+      </path>
+      <path d="M 578.56525,573.96503 L 576.54178,573.70480 L 574.62199,572.89493 L 572.97967,571.63550 L 571.76329,569.98007 L 570.97367,568.07740 L 570.70944,566.02557 L 570.99511,564.02942 L 571.80485,562.13362 L 573.03869,560.49117 L 574.69425,559.24921 L 576.62252,558.45972 L 578.64889,558.17136 L 580.69609,558.48129 L 582.59029,559.29102 L 584.20861,560.55033 L 585.47457,562.20602 L 586.23860,564.11016 L 586.50311,566.10921 L 586.21716,568.15813 L 585.43301,570.05247 L 584.14959,571.69466 L 582.51802,572.93675 L 580.61535,573.72638 L 578.56525,573.96503 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202481604439128500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202481604439128500000000: unknown height</title>
+      </path>
+      <path d="M 632.59148,786.27446 L 637.78151,800.00000 L 596.75145,800.00000 L 632.59148,786.27446 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1991202505054437575400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1991202505054437575400000000: 68.1 m (gis)</title>
+      </path>
+      <path d="M 603.96104,605.58698 L 593.26535,577.59195 L 598.87528,575.32172 L 609.59627,603.07057 L 603.96104,605.58698 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202495964438977100000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202495964438977100000000: unknown height</title>
+      </path>
+      <path d="M 616.35410,638.94260 L 604.00982,605.73758 L 609.79540,603.22037 L 622.23859,636.77458 L 616.35410,638.94260 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202503354438785400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202503354438785400000000: unknown height</title>
+      </path>
+      <path d="M 624.05457,755.93975 L 616.66346,736.05841 L 633.54098,729.59984 L 640.70658,749.78227 L 624.05457,755.93975 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1995202513534438025300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1995202513534438025300000000: 19.1 m (gis)</title>
+      </path>
+      <path d="M 644.02714,614.14806 L 639.75833,603.87967 L 636.30588,604.66109 L 632.48464,594.74534 L 667.04042,581.63251 L 674.72507,602.86531 L 644.02714,614.14806 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2002202529124438931200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2002202529124438931200000000: 24.65 m (gis)</title>
+      </path>
+      <path d="M 641.77376,746.38919 L 633.61651,724.70126 L 648.71557,719.13374 L 654.62819,721.01716 L 661.45360,739.29610 L 641.77376,746.38919 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202525204438092300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202525204438092300000000: 39.96 m (gis)</title>
+      </path>
+      <path d="M 640.60005,529.80936 L 648.74064,526.25542 L 648.64307,525.95581 L 647.46182,522.49964 L 681.86806,509.53797 L 683.32573,512.74450 L 695.19600,508.30824 L 698.81731,517.92384 L 643.05352,538.57109 L 642.78346,537.61962 L 640.60005,529.80936 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202537954439405200000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202537954439405200000000: unknown height</title>
+      </path>
+      <path d="M 662.01643,699.46274 L 660.79010,695.15705 L 659.13772,695.79766 L 658.22732,693.14422 L 656.29958,693.83455 L 647.23033,669.79387 L 667.53682,662.15551 L 679.14637,692.75600 L 662.01643,699.46274 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1980202534944438413700000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1980202534944438413700000000: unknown height</title>
+      </path>
+      <path d="M 658.56118,639.46682 L 649.39012,615.92621 L 674.63613,605.46387 L 684.28169,629.40524 L 658.56118,639.46682 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202536914438778300000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202536914438778300000000: unknown height</title>
+      </path>
+      <path d="M 679.71891,613.03837 L 661.93542,564.06162 L 713.39142,545.64191 L 722.00000,568.33241 L 722.00000,596.32016 L 679.71891,613.03837 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2006202555314439052000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2006202555314439052000000000: 64.4 m (gis)</title>
+      </path>
+      <path d="M 680.55489,672.02240 L 678.91046,671.16280 L 675.08057,672.24291 L 663.84158,642.64241 L 684.92908,634.60833 L 696.31362,664.50869 L 692.70845,665.73873 L 692.24844,667.73555 L 680.55489,672.02240 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1981202545434438582300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1981202545434438582300000000: 20.3 m (gis)</title>
+      </path>
+      <path d="M 692.04971,763.24446 L 672.45590,710.90738 L 710.11775,696.58106 L 722.00000,728.36723 L 722.00000,752.35111 L 692.04971,763.24446 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2009202558774438107500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2009202558774438107500000000: 49.9 m (gis)</title>
+      </path>
+      <path d="M 688.44584,499.37661 L 677.30575,469.82781 L 686.97160,466.08042 L 698.18316,496.32854 L 688.44584,499.37661 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="0000202549554439652600000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 0000202549554439652600000000: unknown height</title>
+      </path>
+      <path d="M 713.23185,791.70127 L 709.78381,782.28651 L 705.55091,783.96266 L 702.22525,774.99799 L 722.00000,767.23454 L 722.00000,788.45088 L 713.23185,791.70127 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2003202572414437813000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2003202572414437813000000000: 25.93 m (gis)</title>
+      </path>
+      <path d="M 709.18193,796.87788 L 722.00000,792.21860 L 722.00000,800.00000 L 710.25719,800.00000 L 709.18193,796.87788 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1978202576004437677100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1978202576004437677100000000: 15.5 m (gis)</title>
+      </path>
+      <path d="M 719.77881,504.99012 L 717.14386,497.57893 L 709.83057,477.19738 L 713.43415,475.96733 L 711.59227,470.11016 L 718.67680,467.54865 L 716.85785,461.89153 L 722.00000,459.98809 L 722.00000,504.18327 L 719.77881,504.99012 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1996202575824439665500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1996202575824439665500000000: 24.4 m (gis)</title>
+      </path>
+      <path d="M 718.65479,406.17143 L 720.08060,405.72955 L 719.53943,404.32721 L 722.00000,403.39218 L 722.00000,414.89195 L 718.65479,406.17143 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="0000202593784440098300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 0000202593784440098300000000: 6.9 m (gis)</title>
+      </path>
+      <path d="M 566.09118,541.41028 L 562.78976,532.39615 L 543.78326,539.79349 L 538.38994,524.71934 L 571.81847,512.45142 L 580.68992,536.08961 L 566.09118,541.41028 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1978202470264439367800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1978202470264439367800000000: 17.4 m (gis)</title>
+      </path>
+      <path d="M 597.98632,719.01542 L 583.72922,679.15475 L 628.47519,662.64757 L 643.28537,701.96257 L 597.98632,719.01542 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2003202503744438350200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2003202503744438350200000000: 11.75 m (gis)</title>
+      </path>
+      <path d="M 652.36191,799.82535 L 671.34389,792.52864 L 673.01524,793.13727 L 675.38133,800.00000 L 652.28253,800.00000 L 652.36191,799.82535 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1984202536874437627500000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1984202536874437627500000000: unknown height</title>
+      </path>
+      <path d="M 722.00000,692.21670 L 722.00000,701.60975 L 718.91387,693.37286 L 722.00000,692.21670 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202585174438320100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202585174438320100000000: 49.9 m (gis)</title>
+      </path>
+      <path d="M 722.00000,506.88772 L 722.00000,515.65070 L 719.23263,507.85656 L 722.00000,506.88772 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2004202583754439462700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2004202583754439462700000000: 17.55 m (gis)</title>
+      </path>
+      <path d="M 649.58252,751.43508 L 664.20646,791.18573 L 639.75582,800.00000 L 638.63782,800.00000 L 624.33822,760.66749 L 649.58252,751.43508 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1994202523334437818700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1994202523334437818700000000: 11.4 m (gis)</title>
+      </path>
+      <path d="M 642.55253,477.63917 L 630.65720,482.27522 L 630.90379,482.82672 L 609.54334,491.05927 L 597.27448,457.80828 L 623.36606,448.04935 L 623.81126,449.15050 L 630.87391,446.18903 L 642.55253,477.63917 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1984202507074439742000000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1984202507074439742000000000: unknown height</title>
+      </path>
+      <path d="M 650.02887,481.42777 L 635.43837,443.21432 L 637.74193,442.22849 L 634.10166,431.36206 L 658.39503,421.69437 L 675.25619,469.96570 L 661.08445,474.98954 L 661.82370,477.04229 L 650.02887,481.42777 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2002202528344439847700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2002202528344439847700000000: 83.57 m (gis)</title>
+      </path>
+      <path d="M 496.97130,587.62524 L 493.03034,576.75881 L 492.89111,574.65966 L 492.87637,572.61074 L 493.28866,570.26340 L 493.90086,567.91712 L 495.39267,564.67663 L 496.12804,562.63009 L 498.22199,558.94336 L 499.68532,556.55201 L 503.08192,552.12205 L 505.39556,549.23459 L 508.83646,546.10359 L 511.24953,543.76844 L 516.41455,540.64657 L 519.92161,538.91540 L 525.85833,536.24865 L 531.44189,534.42771 L 535.01776,533.89805 L 545.73693,562.59534 L 525.72871,570.08494 L 527.82353,575.59478 L 496.97130,587.62524 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1998202443644439161300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1998202443644439161300000000: 82.45 m (gis)</title>
+      </path>
+      <path d="M 366.53524,203.47421 L 369.38979,202.33935 L 372.17508,209.45066 L 356.27607,215.36422 L 344.66838,184.41505 L 359.19275,178.94365 L 359.04745,177.99283 L 370.61811,173.65576 L 374.43192,184.67186 L 361.80970,189.75348 L 366.53524,203.47421 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1983202343514441449100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1983202343514441449100000000: 19.6 m (gis)</title>
+      </path>
+      <path d="M 379.53849,215.83769 L 381.46624,215.44805 L 384.96094,225.41325 L 362.72563,233.64117 L 356.98893,217.56717 L 377.19495,210.17779 L 379.53849,215.83769 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1984202350484441274300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1984202350484441274300000000: 17.9 m (gis)</title>
+      </path>
+      <path d="M 376.59736,275.89891 L 361.96495,235.93709 L 416.12488,215.83314 L 430.90869,255.59584 L 376.59736,275.89891 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1977202366614441124900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1977202366614441124900000000: 56.93 m (gis)</title>
+      </path>
+      <path d="M 387.99726,194.78956 L 378.67066,167.70064 L 399.14426,160.00000 L 407.98728,160.00000 L 410.64346,161.22286 L 415.62671,173.39513 L 418.90386,182.15802 L 387.99726,194.78956 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2006202367644441563700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2006202367644441563700000000: 21.99 m (gis)</title>
+      </path>
+      <path d="M 396.49984,320.98915 L 381.75926,282.42623 L 420.57488,267.68698 L 435.33601,306.90097 L 396.49984,320.98915 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1989202374404440821200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1989202374404440821200000000: 82.2 m (gis)</title>
+      </path>
+      <path d="M 398.95940,220.18857 L 393.17788,202.91478 L 416.88914,194.74265 L 422.67222,211.41988 L 398.95940,220.18857 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1989202373664441365800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1989202373664441365800000000: 19.8 m (gis)</title>
+      </path>
+      <path d="M 455.97185,317.40639 L 447.18190,320.65780 L 445.80540,321.15112 L 446.83764,324.35540 L 445.18632,324.79609 L 445.67923,325.94867 L 443.87863,326.18864 L 444.58964,328.74185 L 442.33565,329.72954 L 443.09862,331.83200 L 441.14742,332.42304 L 442.13644,334.42594 L 420.94765,343.16161 L 420.30864,341.20856 L 417.95468,342.04537 L 417.21517,340.04220 L 415.58785,340.78370 L 414.72624,338.27927 L 412.74521,339.36917 L 411.93610,336.61551 L 409.28253,337.55150 L 408.83680,336.54951 L 406.91066,336.93916 L 403.45892,328.22332 L 404.76051,327.68162 L 404.26971,326.12920 L 442.48715,310.78701 L 442.80626,311.83951 L 447.26388,310.31329 L 452.54703,308.44118 L 455.97185,317.40639 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1991202387384440622500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1991202387384440622500000000: 40.58 m (gis)</title>
+      </path>
+      <path d="M 433.14723,182.63491 L 425.16598,160.00000 L 440.67055,160.00000 L 447.21872,177.51298 L 433.14723,182.63491 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1986202390644441622900000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1986202390644441622900000000: unknown height</title>
+      </path>
+      <path d="M 448.45137,222.90258 L 448.22613,222.85021 L 448.05260,222.69894 L 447.55887,221.39761 L 439.23576,198.41169 L 439.28719,198.06329 L 439.43992,197.61307 L 439.51589,197.46312 L 439.64116,197.36462 L 447.75380,194.55905 L 456.11461,191.70362 L 464.70488,216.49029 L 464.70330,216.78937 L 464.52738,217.08912 L 464.37598,217.28825 L 448.70087,222.90390 L 448.45137,222.90258 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1991202401264441367400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1991202401264441367400000000: unknown height</title>
+      </path>
+      <path d="M 462.00238,170.19403 L 457.87795,160.00000 L 488.64203,160.00000 L 462.00238,170.19403 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1990202414214441708300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1990202414214441708300000000: 20.8 m (gis)</title>
+      </path>
+      <path d="M 474.63895,214.34372 L 473.40360,211.43906 L 469.19947,212.51558 L 460.90141,189.32986 L 465.87963,188.25744 L 463.95754,183.04920 L 479.15473,177.98121 L 490.86184,208.88131 L 474.63895,214.34372 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2004202415904441433100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2004202415904441433100000000: 20.64 m (gis)</title>
+      </path>
+      <path d="M 486.69546,315.77138 L 485.78452,312.91802 L 482.78150,314.00090 L 471.74005,284.55178 L 473.84610,283.41297 L 472.64349,279.15858 L 496.18251,270.28820 L 509.78347,306.89701 L 486.69546,315.77138 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2004202425424440830100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2004202425424440830100000000: 24.93 m (gis)</title>
+      </path>
+      <path d="M 493.02417,201.64587 L 484.52539,178.30874 L 502.17622,172.30530 L 510.77787,194.94244 L 493.02417,201.64587 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1990202429704441497000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1990202429704441497000000000: 17.2 m (gis)</title>
+      </path>
+      <path d="M 513.11175,357.64612 L 523.17294,354.75011 L 523.91615,356.05436 L 525.61786,355.46200 L 534.22162,377.70089 L 511.68538,386.27749 L 507.64747,384.35601 L 489.04085,335.27573 L 489.04163,335.12699 L 493.62701,328.20347 L 499.96383,325.48765 L 513.11175,357.64612 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1975202438144440414400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1975202438144440414400000000: unknown height</title>
+      </path>
+      <path d="M 519.33623,192.83817 L 518.56318,192.33506 L 518.26596,191.98321 L 515.36076,193.01703 L 507.36469,169.28432 L 526.16810,162.48568 L 533.66595,186.06861 L 531.93840,186.70882 L 531.60685,188.00738 L 530.67951,188.55106 L 519.33623,192.83817 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1990202444154441552500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1990202444154441552500000000: 17.32 m (gis)</title>
+      </path>
+      <path d="M 535.53334,319.37919 L 537.68393,318.88997 L 550.34625,353.34580 L 528.90665,362.02737 L 516.12248,327.32298 L 521.90542,325.30477 L 520.42800,321.29844 L 534.35129,316.07336 L 535.41070,318.67800 L 535.53334,319.37919 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202452294440546100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202452294440546100000000: 63.5 m (gis)</title>
+      </path>
+      <path d="M 550.72576,178.41146 L 549.52968,177.75577 L 545.27119,179.43178 L 545.56736,180.28423 L 545.64069,180.63329 L 545.61377,180.88425 L 545.53754,181.08377 L 545.41067,181.48295 L 545.16011,181.68155 L 539.60188,183.55060 L 530.42553,161.00959 L 532.72902,160.00000 L 550.81224,160.00000 L 557.16095,175.84651 L 550.72576,178.41146 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1989202458484441614700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1989202458484441614700000000: 18.65 m (gis)</title>
+      </path>
+      <path d="M 551.15792,252.33658 L 551.35810,252.28806 L 556.29099,250.41409 L 564.95405,275.65058 L 550.45659,280.87262 L 541.99135,256.33612 L 543.96840,255.69723 L 542.88524,252.44311 L 549.37055,250.07835 L 549.64617,249.97905 L 551.15792,252.33658 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1979202464654441009800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1979202464654441009800000000: 19.5 m (gis)</title>
+      </path>
+      <path d="M 598.66757,228.29646 L 571.84725,238.85122 L 563.36691,216.86409 L 579.67079,210.30332 L 581.81875,210.61379 L 586.30009,209.13888 L 585.75679,207.83729 L 590.38741,206.26241 L 598.66757,228.29646 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1987202481984441276000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1987202481984441276000000000: 18.05 m (gis)</title>
+      </path>
+      <path d="M 587.02534,265.47371 L 577.77807,242.13102 L 593.42836,236.06581 L 602.77666,259.35945 L 587.02534,265.47371 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1981202487844441100400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1981202487844441100400000000: unknown height</title>
+      </path>
+      <path d="M 594.92230,340.83624 L 580.40722,301.97383 L 609.25709,290.83165 L 623.84415,329.69443 L 594.92230,340.83624 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1984202495474440694000000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1984202495474440694000000000: 40.2 m (gis)</title>
+      </path>
+      <path d="M 590.06816,172.62207 L 585.51202,160.00000 L 615.99245,160.00000 L 616.78905,162.11796 L 590.06816,172.62207 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1986202493174441691400000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1986202493174441691400000000: unknown height</title>
+      </path>
+      <path d="M 658.71439,206.17486 L 656.64028,206.11430 L 656.05976,207.31078 L 630.26567,217.06967 L 619.64226,189.62202 L 648.46414,178.63163 L 649.09003,178.53418 L 649.43895,178.48645 L 650.33939,178.49122 L 651.26328,178.59687 L 652.38579,178.95149 L 653.23239,179.45659 L 653.55655,179.85815 L 653.65412,180.15776 L 661.54477,200.24167 L 661.64234,200.84357 L 661.76127,201.94299 L 661.70506,202.89273 L 661.35005,204.09041 L 660.84469,204.98660 L 660.26760,205.53373 L 659.39011,206.02810 L 658.71439,206.17486 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1990202519554441437500000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1990202519554441437500000000: 16.25 m (gis)</title>
+      </path>
+      <path d="M 666.19073,318.37422 L 665.63500,319.42049 L 661.14765,317.49823 L 635.82673,327.60830 L 634.08383,331.14815 L 633.08767,330.49351 L 629.48929,320.77727 L 628.33909,321.12145 L 624.72122,310.55582 L 625.54701,310.16034 L 620.52451,296.33889 L 623.72879,295.30665 L 624.27156,296.70900 L 643.50304,289.41362 L 641.15975,283.40345 L 651.75137,279.71054 L 666.19073,318.37422 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1985202521154440756700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1985202521154440756700000000: 33.4 m (gis)</title>
+      </path>
+      <path d="M 672.45574,319.85646 L 654.62586,269.97900 L 684.87463,258.64430 L 703.05292,308.87387 L 672.45574,319.85646 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2004202543324440862100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2004202543324440862100000000: 83.55 m (gis)</title>
+      </path>
+      <path d="M 685.23465,190.97065 L 674.14987,160.00000 L 697.72346,160.00000 L 706.06708,183.38466 L 685.23465,190.97065 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2003202549814441603900000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2003202549814441603900000000: 19 m (gis)</title>
+      </path>
+      <path d="M 720.90073,223.40032 L 714.28802,226.26342 L 711.82157,219.95350 L 693.64193,226.75225 L 686.96501,208.82436 L 712.10603,199.16117 L 720.90073,223.40032 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1983202558854441335600000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1983202558854441335600000000: unknown height</title>
+      </path>
+      <path d="M 706.77519,172.59244 L 702.04873,160.00000 L 722.00000,160.00000 L 722.00000,166.59567 L 706.77519,172.59244 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202566434441681800000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202566434441681800000000: 19.6 m (gis)</title>
+      </path>
+      <path d="M 721.19622,299.27278 L 719.07712,293.51490 L 718.22627,293.80948 L 708.86138,269.11948 L 709.76181,268.82356 L 707.81944,262.91627 L 708.89632,262.52212 L 708.40287,261.16961 L 714.68880,258.70304 L 714.44406,257.80288 L 722.00000,255.00026 L 722.00000,299.10284 L 721.19622,299.27278 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1994202574754440950300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1994202574754440950300000000: 66.25 m (gis)</title>
+      </path>
+      <path d="M 478.11474,368.90610 L 458.84401,360.05690 L 454.82478,359.13675 L 451.80835,357.92122 L 448.94621,355.65730 L 447.03568,353.09773 L 446.47448,350.34538 L 447.06189,348.14931 L 448.17177,346.05518 L 450.35669,344.21784 L 451.83473,343.27722 L 451.31862,341.67348 L 468.99821,335.07042 L 476.00139,338.50624 L 483.54310,358.33880 L 483.11769,358.63564 L 484.44134,363.59120 L 484.08367,364.98879 L 482.97087,367.33242 L 481.56561,368.42376 L 480.13953,368.91682 L 478.11474,368.90610 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202410984440465100000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202410984440465100000000: 57.59 m (gis)</title>
+      </path>
+      <path d="M 623.08295,163.88345 L 622.58167,162.50051 L 619.06408,163.80299 L 617.69281,160.00000 L 633.69849,160.00000 L 623.08295,163.88345 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b27020" stroke-width="1.0" data-building-id="1985202511624441709700000000" data-height-source="missing" data-interior-rings="0">
+        <title>Building 1985202511624441709700000000: unknown height</title>
+      </path>
+      <path d="M 456.86921,238.87403 L 505.24724,220.58997 L 506.90045,224.92671 L 510.26432,223.65701 L 512.54162,229.74360 L 509.27064,230.98981 L 519.47506,257.82426 L 467.01719,277.57096 L 454.43397,244.48783 L 456.86921,238.87403 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1983202422994441108700000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1983202422994441108700000000: 25.7 m (gis)</title>
+      </path>
+      <path d="M 722.00000,192.61491 L 722.00000,224.32493 L 711.48140,196.60681 L 722.00000,192.61491 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2005202575574441374400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2005202575574441374400000000: 24.92 m (gis)</title>
+      </path>
+      <path d="M 558.29037,363.63525 L 546.11753,330.97974 L 578.64508,318.80942 L 590.74170,351.36057 L 558.29037,363.63525 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1992202474504440534300000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1992202474504440534300000000: 62.15 m (gis)</title>
+      </path>
+      <path d="M 609.70721,201.31542 L 619.40051,197.52019 L 626.10062,215.59855 L 600.48273,225.30880 L 589.33815,196.90994 L 605.71457,191.14766 L 609.70721,201.31542 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="1978202498234441367200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 1978202498234441367200000000: 19.96 m (gis)</title>
+      </path>
+      <path d="M 550.65140,204.22864 L 550.59129,204.10196 L 551.49035,203.76445 L 561.59655,230.72155 L 560.69750,231.05906 L 560.36166,230.14562 L 554.04907,232.51449 L 554.74487,234.31430 L 549.05409,236.44816 L 548.35191,234.64351 L 530.84681,241.21711 L 531.18598,242.10497 L 530.30771,242.44419 L 529.94780,241.54662 L 527.56785,242.45847 L 528.35006,244.55304 L 521.76024,247.02280 L 517.83004,236.54029 L 518.87813,236.14759 L 512.30942,218.62492 L 550.65140,204.22864 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2009202454234441261400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2009202454234441261400000000: 20 m (gis)</title>
+      </path>
+      <path d="M 571.47340,285.58221 L 560.14002,255.08234 L 577.84360,248.47940 L 589.20257,278.97941 L 571.47340,285.58221 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2002202478154440998200000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2002202478154440998200000000: 25 m (gis)</title>
+      </path>
+      <path d="M 570.20852,175.91562 L 569.24746,173.16275 L 562.91143,175.42754 L 556.71059,160.00000 L 582.92018,160.00000 L 585.57535,166.90120 L 578.51242,169.61156 L 579.37430,172.06642 L 570.20852,175.91562 Z" fill-rule="evenodd" fill="#8398b4" stroke="#526b83" stroke-width="0.65" data-building-id="2008202474924441664400000000" data-height-source="gis" data-interior-rings="0">
+        <title>Building 2008202474924441664400000000: 18.1 m (gis)</title>
+      </path>
+    </g>
+    <circle id="selected-center" cx="402.0" cy="480.0" r="5" fill="#ca5f55" stroke="white" stroke-width="2" />
+    <rect x="82" y="160" width="640" height="640" fill="none" stroke="#9dabb9" stroke-width="1" />
+  </g>
+  <text x="82.0" y="824" font-size="13" text-anchor="middle" fill="#607184">-200</text>
+  <text x="70" y="804.0" font-size="13" text-anchor="end" fill="#607184">-200</text>
+  <text x="242.0" y="824" font-size="13" text-anchor="middle" fill="#607184">-100</text>
+  <text x="70" y="644.0" font-size="13" text-anchor="end" fill="#607184">-100</text>
+  <text x="402.0" y="824" font-size="13" text-anchor="middle" fill="#607184">0</text>
+  <text x="70" y="484.0" font-size="13" text-anchor="end" fill="#607184">0</text>
+  <text x="562.0" y="824" font-size="13" text-anchor="middle" fill="#607184">+100</text>
+  <text x="70" y="324.0" font-size="13" text-anchor="end" fill="#607184">+100</text>
+  <text x="722.0" y="824" font-size="13" text-anchor="middle" fill="#607184">+200</text>
+  <text x="70" y="164.0" font-size="13" text-anchor="end" fill="#607184">+200</text>
+  <text x="402.0" y="850" font-size="14" text-anchor="middle" fill="#607184">East x (m)</text>
+  <text x="27" y="480.0" font-size="14" text-anchor="middle" transform="rotate(-90 27 480.0)" fill="#607184">North y (m)</text>
+  <line x1="700" y1="141" x2="700" y2="119" stroke="#344e66" stroke-width="2" />
+  <path d="M 695,125 L 700,115 L 705,125 Z" fill="#344e66" />
+  <text x="700" y="108" font-size="13" text-anchor="middle" font-weight="700">N</text>
+  <path id="scale-bar-100m" d="M 82,877 V 885 H 242.0 V 877" fill="none" stroke="#344e66" stroke-width="2" data-length-m="100" />
+  <text x="162.0" y="873" font-size="12" text-anchor="middle" fill="#607184">100 m</text>
+  <text x="385" y="884" font-size="13" fill="#607184">Flat ground · z = 0 m</text>
+  <rect x="765" y="160" width="353" height="383" rx="11" fill="#fbfcfd" stroke="#dfe6ed" />
+  <text x="785" y="192" font-size="19" font-weight="700">Footprint and height QA</text>
+  <text x="785" y="251" font-size="43" font-weight="700">126</text>
+  <text x="785" y="280" font-size="15" fill="#607184">official building footprints</text>
+  <rect x="787" y="309" width="14" height="14" rx="2" fill="#8398b4" />
+  <text x="812" y="322" font-size="14">GIS height available</text>
+  <text x="1095" y="322" font-size="17" text-anchor="end" font-weight="700">83</text>
+  <rect x="787" y="348" width="14" height="14" rx="2" fill="#38877f" />
+  <text x="812" y="361" font-size="14">Verified ledger height</text>
+  <text x="1095" y="361" font-size="17" text-anchor="end" font-weight="700">0</text>
+  <rect x="787" y="387" width="14" height="14" rx="2" fill="#ed982e" />
+  <text x="812" y="400" font-size="14">Missing / invalid height</text>
+  <text x="1095" y="400" font-size="17" text-anchor="end" font-weight="700">43</text>
+  <text x="785" y="443" font-size="13" fill="#68798b">Unknown heights keep their footprints.</text>
+  <text x="785" y="464" font-size="13" fill="#68798b">No floor-count or address-based estimate.</text>
+  <line x1="787" y1="495" x2="817" y2="495" stroke="#a8b8c8" stroke-width="2.1" />
+  <text x="827" y="500" font-size="13">OSM road centerline</text>
+  <circle cx="793" cy="522" r="4" fill="#ca5f55" />
+  <text x="812" y="527" font-size="13">Selected map center</text>
+  <text x="785" y="584" font-size="19" font-weight="700">Sources and extent</text>
+  <a href="https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&amp;dsId=18">
+    <text x="785" y="615" font-size="14" fill="#315f82">Buildings: MOLIT / VWorld AL_D010</text>
+  </a>
+  <text x="785" y="639" font-size="13" fill="#607184">건물 배포본 기준일: 2026-09-09</text>
+  <text x="785" y="660" font-size="12" fill="#607184">원본 속성 기준일(A22): 2026-09-06</text>
+  <a href="https://www.openstreetmap.org/copyright">
+    <text x="785" y="677" font-size="14" fill="#315f82">Background: OpenStreetMap</text>
+  </a>
+  <text x="785" y="701" font-size="13" fill="#607184">OSM database timestamp (UTC):</text>
+  <text x="785" y="723" font-size="13" fill="#607184">2026-10-04T09:14:20Z</text>
+  <text x="785" y="757" font-size="13">105 surface road centerlines shown</text>
+  <text x="785" y="780" font-size="13">10 tagged tunnels omitted from view</text>
+  <text x="785" y="817" font-size="13" fill="#607184">Center (longitude, latitude)</text>
+  <text x="785" y="841" font-size="17">127.0276, 37.4979</text>
+  <text x="785" y="874" font-size="13" fill="#607184">Area: 160,000 m² · local units: metres</text>
+  <text x="40" y="917" font-size="12" fill="#607184">Buildings: MOLIT GIS Building Integration, provided by VWorld. Footprints projected and clipped to the 400 m AOI.</text>
+  <a href="https://www.openstreetmap.org/copyright">
+    <text x="40" y="941" font-size="12" fill="#315f82">© OpenStreetMap contributors</text>
+  </a>
+  <a href="https://opendatacommons.org/licenses/odbl/1-0/">
+    <text x="224" y="941" font-size="12" fill="#315f82">ODbL 1.0</text>
+  </a>
+  <text x="386" y="941" font-size="12" fill="#607184">Local coordinates = EPSG:5179 coordinates minus the selected center.</text>
+  <metadata>{"background_file_sha256": "5782bcda3f6c9517732b83a185fb1bac798fe4a212268e9978d6bf743c937f0d", "building_record_reference_dates": ["2026-09-06"], "building_snapshot_date": "2026-09-09", "buildings_file_sha256": "3fc74680b5aae99b894e5fbcf3cdd55754f7844c897f022fe58f3440ebf7dc03", "center_lonlat": [127.0276, 37.4979], "counts": {"background_total": 126, "background_tunnels_omitted_from_surface": 10, "buildings": 126, "height_sources": {"gis": 83, "ledger": 0, "missing": 43}, "known_height": 83, "missing_height": 43, "surface_road_centerlines": 105}, "dataset_id": "gangnam_actual_400", "is_synthetic": false, "local_bounds_m": [-200, -200, 200, 200], "local_crs": null, "names_displayed": false, "origin_epsg5179_m": [958243.2359761745, 1944398.131422904], "osm_database_timestamps_utc": ["2026-10-04T09:14:20Z"], "pipeline": "verified provenance -&gt; core.read_buildings -&gt; core.prepare_buildings -&gt; core.localize", "quality_record_count": 126, "road_widths_inferred": false, "size_m": 400, "source_crs": "EPSG:5179", "underground_rule": "same is_tunnel_background predicate as interactive preview"}</metadata>
+</svg>

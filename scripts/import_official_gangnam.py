@@ -70,7 +70,35 @@ def _same_crs(first, second):
     if first.equals(second, ignore_axis_order=True):
         return True
     first_epsg = first.to_epsg(min_confidence=100)
-    return first_epsg is not None and first_epsg == second.to_epsg(min_confidence=100)
+    if first_epsg is not None and first_epsg == second.to_epsg(min_confidence=100):
+        return True
+    # Actual 2026 AL_D010 .prj uses x=east/y=north and the unit alias "m".
+    # PROJ does not consider that WKT equal to EPSG's north/east, "metre"
+    # representation, even with ignore_axis_order. Verify the mathematical
+    # definition instead of trusting the .prj's AUTHORITY label or lowering
+    # authority confidence. Shapefile/GDAL coordinates use traditional x/y.
+    if not (first.is_projected and second.is_projected
+            and first.geodetic_crs.equals(second.geodetic_crs, ignore_axis_order=True)):
+        return False
+    for candidate in (first, second):
+        axes = candidate.axis_info
+        if (len(axes) != 2 or {axis.direction for axis in axes} != {"east", "north"}
+                or any(axis.unit_conversion_factor != 1 for axis in axes)):
+            return False
+    operations = [candidate.coordinate_operation for candidate in (first, second)]
+    if any(operation is None or operation.method_auth_name != "EPSG"
+           or operation.method_code != "9807" for operation in operations):
+        return False
+    definitions = []
+    for operation in operations:
+        parameters = {(parameter.auth_name, parameter.code, parameter.unit_category):
+                      parameter.value * parameter.unit_conversion_factor for parameter in operation.params}
+        if len(parameters) != 5 or len(operation.params) != 5:
+            return False
+        definitions.append(parameters)
+    return (definitions[0].keys() == definitions[1].keys()
+            and all(math.isclose(value, definitions[1][key], rel_tol=0, abs_tol=1e-12)
+                    for key, value in definitions[0].items()))
 
 
 def _sources(path, layer=None):
@@ -223,6 +251,8 @@ def import_official(source, snapshot_date, output, *, layer=None, encoding=None)
         if row_flags:
             issues.append({"curated_row": number, "building_id": key or None, "flags": row_flags})
     curated["import_quality_flags"] = flags
+    record_reference_dates = sorted({pd.Timestamp(value).date().isoformat()
+                                    for value in curated.get("A22", pd.Series(dtype=object)).dropna()})
     source_hash = sha256(source)
     output.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="official-import-", dir=output.parent) as temporary:
@@ -230,6 +260,7 @@ def import_official(source, snapshot_date, output, *, layer=None, encoding=None)
         curated.to_file(stage / "buildings.gpkg", layer="buildings", driver="GPKG", index=False)
         curated_hash = sha256(stage / "buildings.gpkg")
         curated_schema = {"source_name": SOURCE_NAME, "source_url": SOURCE_URL, "snapshot_date": snapshot_date,
+                          "record_reference_dates": record_reference_dates,
                           "id_field": "A1", "name_field": "A24" if "A24" in curated.columns else None,
                           "height_field": "A16", "height_unit": "m", "height_semantics": "above_ground",
                           "source_crs": METRIC_CRS, "layer": "buildings", "encoding": None}
@@ -239,6 +270,7 @@ def import_official(source, snapshot_date, output, *, layer=None, encoding=None)
         provenance = {"source_name": SOURCE_NAME, "source_url": SOURCE_URL, "catalog_url": CATALOG_URL,
                       "source_file": source.name, "original_file_sha256": source_hash,
                       "snapshot_date": snapshot_date, "imported_at_utc": datetime.now(timezone.utc).isoformat(),
+                      "record_reference_dates": record_reference_dates,
                       "file": "buildings.gpkg", "sha256": curated_hash, "layer": "buildings",
                       "curated_crs": METRIC_CRS, "center_lonlat": CENTER, "size_m": SIZE,
                       "aoi_bounds_projected_m": list(aoi.bounds), "local_origin_projected_m": list(origin),
