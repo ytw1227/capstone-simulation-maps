@@ -1,4 +1,4 @@
-"""Background validation uses synthetic data and never contacts an OSM server."""
+"""Offline background validation uses synthetic cases and the public OSM snapshot."""
 
 import tempfile
 import unittest
@@ -12,6 +12,7 @@ from shapely.affinity import translate
 from shapely.geometry import LineString, Point, Polygon, box
 
 from region_model.background import OSM_TAGS, fetch_background, load_background
+from region_model.core import localize, region_geometry
 
 
 CRS = "EPSG:5179"
@@ -49,7 +50,8 @@ class BackgroundTests(unittest.TestCase):
     def test_fetch_filters_buildings_points_and_road_areas_then_clips_and_repairs(self):
         source = gpd.GeoDataFrame(
             [
-                {"geometry": LineString([(-20, 50), (120, 50)]), "highway": "residential"},
+                {"geometry": LineString([(-20, 50), (120, 50)]), "highway": "residential",
+                 "name": "검증 도로", "name:en": "Fixture road", "tunnel": "yes", "layer": "-1", "bridge": "no"},
                 {"geometry": box(-20, -20, 20, 20), "leisure": "park"},
                 {"geometry": box(60, 60, 130, 130), "landuse": "residential"},
                 {"geometry": LineString([(40, -20), (40, 120)]), "waterway": "stream"},
@@ -82,6 +84,11 @@ class BackgroundTests(unittest.TestCase):
         self.assertTrue(result.geometry.apply(self.aoi.covers).all())
         self.assertTrue((result.loc[result.kind == "road"].geom_type == "LineString").all())
         self.assertEqual(result.loc[result.kind == "road"].length.iloc[0], 100)
+        road = result.loc[result.kind == "road"].iloc[0]
+        self.assertEqual(road["name"], "검증 도로")
+        self.assertEqual(road["name_en"], "Fixture road")
+        self.assertEqual(road["highway"], "residential")
+        self.assertEqual((road["tunnel"], road["layer"], road["osm_layer"], road["bridge"]), ("yes", "-1", "-1", "no"))
         self.assertNotIn("way/6", result.osm_id.values)
         self.assertEqual(vars(fake.settings), original_settings)
 
@@ -171,6 +178,23 @@ class BackgroundTests(unittest.TestCase):
         self.assertEqual(metadata["status"], "no_results")
         with self.assertRaisesRegex(ValueError, "metre units"):
             fetch_background(box(126, 37, 127, 38), "EPSG:4326", self.directory)
+
+    def test_public_snapshot_keeps_road_names_and_underground_water_tags_when_localized(self):
+        path = Path(__file__).resolve().parents[1] / "data/gangnam_400/background.gpkg"
+        origin, aoi = region_geometry(127.0276, 37.4979, 400)
+        result, metadata = load_background(path, CRS, aoi)
+        self.assertEqual(metadata["status"], "ok")
+        self.assertEqual(metadata["path"], "background.gpkg")
+        self.assertEqual(len(result), 126)
+        self.assertEqual(metadata["counts_by_kind"], {"road": 114, "landuse": 11, "water": 1})
+        self.assertEqual(int((result.kind.eq("road") & result["name"].notna()).sum()), 48)
+        self.assertIn("강남대로", result["name"].values)
+        water = result.loc[result.osm_id.eq("way/361039491")].iloc[0]
+        self.assertEqual((water["name"], water["waterway"], water["tunnel"], water["osm_layer"]),
+                         ("반포천", "stream", "yes", "-1"))
+        localized = localize(result, origin)
+        pd.testing.assert_frame_equal(result.drop(columns="geometry"), localized.drop(columns="geometry"))
+        self.assertTrue(localized.geometry.apply(box(-200, -200, 200, 200).covers).all())
 
 
 if __name__ == "__main__":

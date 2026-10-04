@@ -8,10 +8,20 @@ import unittest
 import geopandas as gpd
 from shapely.geometry import MultiPolygon, Polygon
 
-from region_model.preview import export_obj, polygon_mesh
+from region_model.preview import _background_traces, export_obj, polygon_mesh
 
 
 class MeshTests(unittest.TestCase):
+    def test_actual_banpo_stream_is_not_rendered_as_surface_water(self):
+        path = Path(__file__).resolve().parents[1] / "data/gangnam_400/background.gpkg"
+        background = gpd.read_file(path, layer="background")
+        water = background.loc[background.kind.eq("water")].copy()
+        before = water.copy()
+        self.assertEqual(len(water), 1)
+        self.assertEqual(water.iloc[0]["tunnel"], "yes")
+        self.assertEqual(_background_traces(water), [])
+        self.assertTrue(water.equals(before), "Display filtering must preserve the original source data.")
+
     def assert_valid_extrusion(self, polygon, height):
         vertices, faces = polygon_mesh(polygon, height)
         roof_area = 0.0

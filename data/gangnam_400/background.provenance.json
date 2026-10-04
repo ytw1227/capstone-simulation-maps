@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "source": "OpenStreetMap via OSMnx",
+  "source_url": "https://www.openstreetmap.org/",
+  "source_endpoint": "https://overpass-api.de/api",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "target_crs": "EPSG:5179",
+  "retrieved_at_utc": "2026-10-04T09:14:18.007441+00:00",
+  "completed_at_utc": "2026-10-04T09:15:34.126703+00:00",
+  "osm_database_timestamps_utc": [
+    "2026-10-04T09:14:20Z"
+  ],
+  "center_lonlat": [
+    127.0276,
+    37.4979
+  ],
+  "size_m": 400,
+  "aoi_bounds_metric": [
+    958043.2359761745,
+    1944198.131422904,
+    958443.2359761745,
+    1944598.131422904
+  ],
+  "aoi_area_m2": 160000.0,
+  "origin_metric": [
+    958243.2359761745,
+    1944398.131422904
+  ],
+  "synthetic": false,
+  "buildings_used": false,
+  "counts_by_kind": {
+    "road": 114,
+    "park": 0,
+    "landuse": 11,
+    "water": 1
+  },
+  "feature_count": 126,
+  "geometry_types": {
+    "LineString": 115,
+    "Polygon": 11
+  },
+  "tags": {
+    "highway": true,
+    "leisure": [
+      "park",
+      "garden"
+    ],
+    "landuse": true,
+    "natural": [
+      "water"
+    ],
+    "waterway": true
+  },
+  "osmnx_version": "2.1.1",
+  "input_features": 156,
+  "repaired_features": 0,
+  "discarded_features": 30,
+  "schema_version": 1,
+  "file": "background.gpkg",
+  "layer": "background",
+  "sha256": "5782bcda3f6c9517732b83a185fb1bac798fe4a212268e9978d6bf743c937f0d",
+  "license_uri": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "license_notice_file": "LICENSE-OSM.md",
+  "source_cache_sha256": "02d278dce2fab7da02138c5084b53e4441ed24d709752957f7cee9c76ca1a61d",
+  "acquired_geopackage_sha256": "c26b4d61c0203b2b279fd9dd460c371b309ba234c6f06ffbc223e7c8f2065d7a",
+  "preserved_osm_tags": {
+    "name": "name",
+    "name_en": "name:en",
+    "highway": "highway",
+    "waterway": "waterway",
+    "tunnel": "tunnel",
+    "covered": "covered",
+    "osm_layer": "layer"
+  },
+  "features_with_name": 49,
+  "roads_with_name": 48,
+  "features_with_name_en": 48,
+  "name_join": "Exact OSM element type/id match to the original Overpass response; no geocoding, translation or inference.",
+  "processing": [
+    "Fetched using OSMnx features_from_polygon with the recorded union tags.",
+    "Excluded features tagged building or building:part; retained lines for roads, polygons for parks and land use, and lines/polygons for water.",
+    "Reprojected to EPSG:5179 and intersected with the exact 400 metre square AOI.",
+    "Retained original geometry, classification and identifiers from the acquired file; added only recorded OSM names and selected tags."
+  ],
+  "interpretation_notes": [
+    "Road geometries are centerlines, not inferred road-surface polygons.",
+    "The water class may include covered or tunnel waterways; preserved tags indicate these cases.",
+    "Zero park features means none retained by this OSM query, not an independently verified absence."
+  ],
+  "validation": "126 features; CRS, geometry and classification match acquisition exactly; all geometries remain inside AOI."
+}

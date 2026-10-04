@@ -26,7 +26,7 @@ SOURCE_COLORS = {"gis": "#8398b4", "ledger": "#38877f", "missing": "#ed982e"}
 BACKGROUND_STYLES = {
     "landuse": ("토지이용", "#e8e5d9", 0.01),
     "park": ("공원·녹지", "#bcd2b5", 0.02),
-    "water": ("수면", "#9bc5db", 0.03),
+    "water": ("지표 수계", "#9bc5db", 0.03),
     "road": ("도로", "#b4bcc3", 0.04),
 }
 
@@ -160,6 +160,15 @@ def _clean_text(value):
     return "" if value is None or str(value) in ("nan", "<NA>", "None") else str(value)
 
 
+def is_tunnel_background(row):
+    """Hide explicitly tagged tunnels from the flat surface, preserving data.
+
+    OSM layer is relative stacking order, so a negative layer alone must not
+    be interpreted as a surveyed underground elevation.
+    """
+    return _clean_text(row.get("tunnel")).strip().lower() not in ("", "no", "false", "0")
+
+
 def _background_traces(background):
     traces = []
     if background is None or background.empty:
@@ -168,7 +177,9 @@ def _background_traces(background):
         mesh = _Mesh()
         lines = ([], [], [])
         subset = background.loc[background["kind"] == kind]
-        for row in subset.itertuples():
+        for _, row in subset.iterrows():
+            if is_tunnel_background(row):
+                continue
             for polygon in _polygon_parts(row.geometry):
                 mesh.add_flat(polygon, z, label)
             for line in _line_parts(row.geometry):
@@ -284,15 +295,26 @@ def write_preview(buildings, background, metadata: dict, output_path: Path) -> N
     known = counts["gis"] + counts["ledger"]
     missing = counts["missing"]
     coverage = f"{known / total * 100:.1f}%" if total else "—"
+    source_info = metadata.get("building_source", {})
+    source_name = str(source_info.get("source_name", "입력 GIS 자료"))
+    source_date = str(source_info.get("snapshot_date", "기준일 미기재"))
+    source_url = str(source_info.get("source_url", ""))
+    source_link = (
+        f'<a href="{escape(source_url, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(source_name)}</a>'
+        if source_url.startswith(("https://", "http://")) else escape(source_name)
+    )
+    geometry_description = "실제 외곽선 + 출처가 기록된 높이" if known else "실제 건물 외곽선 · 높이 미확인"
     demo_banner = (
         '<div class="demo"><strong>SYNTHETIC · 합성 데이터 예시</strong>'
         '<span>이 화면의 건물 위치·형태·높이는 작동 확인용입니다. 해당 지역의 실제 건물이나 통신 결과를 나타내지 않습니다.</span></div>'
-        if is_demo else '<div class="real"><strong>실제 외곽선 기반 블록 모델</strong><span>데이터 출처와 높이 연결 결과는 함께 저장된 품질 기록에서 확인하세요.</span></div>'
+        if is_demo else f'<div class="real"><strong>{geometry_description}</strong><span>{source_link}<br>자료 기준일 {escape(source_date)} · 관심 영역 경계에서 외곽선 절단 · 높이 임의 추정 없음</span></div>'
     )
     attribution = (
         '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · ODbL'
         if str(metadata.get("background_source", "")).lower() == "osm" else ("합성 배경 데이터" if is_demo else "배경 데이터 없음 또는 사용자 제공")
     )
+    if not is_demo:
+        attribution = f"건물: {source_link} · 배경: {attribution}"
     missing_notice = (
         f'<strong>높이를 확인하지 못한 건물 {missing:,}개가 있습니다.</strong> 주황색 외곽선으로 남겼으며 임의 높이는 부여하지 않았습니다. '
         '이 건물의 차폐 효과가 해결되기 전까지 OBJ만으로 완전한 전파 장애물 장면을 구성할 수 없습니다.'
@@ -305,6 +327,8 @@ def write_preview(buildings, background, metadata: dict, output_path: Path) -> N
         + '</details>' if missing else ""
     )
     flags_html = " · ".join(f"{escape(flag)} {count:,}" for flag, count in quality_flags.most_common(8)) or "기록된 품질 플래그 없음"
+    tunnel_count = sum(is_tunnel_background(row) for _, row in background.iterrows()) if background is not None else 0
+    background_note = f" 터널 태그가 있는 배경 {tunnel_count}개는 지표면에 그리지 않으며 저장 데이터에는 보존합니다." if tunnel_count else ""
     html = f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(region)} · 지역 블록 모델</title><style>
@@ -320,11 +344,11 @@ main{{max-width:1480px;margin:auto;padding:34px 38px 30px}}header{{display:flex;
 details{{margin-top:14px;font-size:12px}}summary{{cursor:pointer;color:#315f82}}.table-wrap{{overflow:auto;max-height:240px;margin-top:9px}}table{{border-collapse:collapse;width:100%;text-align:left}}th,td{{padding:7px 10px;border-bottom:1px solid #e5eaf0;overflow-wrap:anywhere}}th{{background:#f3f6f9}}footer{{color:#788799;font-size:11px;margin-top:18px}}
 @media(max-width:850px){{main{{padding:20px 14px}}header,.demo,.real{{display:block}}.scope{{text-align:left;margin-top:14px}}.stats{{grid-template-columns:repeat(2,1fr)}}.notes{{grid-template-columns:1fr}}.map-head,.map-foot{{display:block}}.map-head span,.map-foot span{{display:block}}.demo span,.real span{{display:block;margin-top:5px}}h1{{font-size:25px}}}}
 </style></head><body><main>
-<header><div><div class="eyebrow">REGION MODEL / CONCEPT PREVIEW</div><h1>{escape(region)} · 지역 블록 모델</h1><p class="subtitle">건물 외곽선 × 확인된 높이 · 평면 지면 · 통신 지역 모델링 준비</p></div><div class="scope"><strong>{size:,.0f} m × {size:,.0f} m</strong>{escape(center_text)}<br>중심 원점 (0, 0) · 동쪽 +x / 북쪽 +y</div></header>
+<header><div><div class="eyebrow">REGION MODEL / {'SYNTHETIC TEST' if is_demo else 'GIS DATA PREVIEW'}</div><h1>{escape(region)} · 지역 블록 모델</h1><p class="subtitle">건물 외곽선 × 출처가 기록된 높이 · 평면 지면 · 통신 지역 모델링 준비</p></div><div class="scope"><strong>{size:,.0f} m × {size:,.0f} m</strong>{escape(center_text)}<br>중심 원점 (0, 0) · 동쪽 +x / 북쪽 +y</div></header>
 {demo_banner}
 <section class="stats" aria-label="건물 품질 요약"><div class="stat"><label>전체 건물</label><b>{total:,}</b><small>영역과 겹치는 입력 건물</small></div><div class="stat"><label>부피 생성 건물</label><b>{known:,}</b><small>GIS {counts['gis']:,} · 대장 연결 {counts['ledger']:,}</small></div><div class="stat warn"><label>높이 미확인</label><b>{missing:,}</b><small>주황색 외곽선 · 임의 높이 없음</small></div><div class="stat"><label>높이 확보율</label><b>{coverage}</b><small>건물 개수 기준</small></div></section>
-<section class="map-card"><div class="map-head"><b>입체 블록 미리보기</b><span>회전: 드래그 · 확대: 휠 · 건물: 마우스를 올려 속성 확인</span></div><div class="plot">{plot_html}</div><div class="map-foot"><span>좌표·높이 단위 m · 세 축 동일 축척 · 지면 z = 0 · 지붕·창문 세부 모델 없음</span><span>{attribution}</span></div></section>
-<section class="notes"><article class="note warning"><h2>높이 누락을 확인하세요</h2><p>{missing_notice}</p>{missing_table}</article><article class="note"><h2>이 화면의 범위</h2><p>외곽선을 높이만큼 수직으로 세운 형상 미리보기입니다. 통신 계산·안테나·재료·반사·회절은 포함하지 않습니다. 오목한 외곽선과 내부 빈 공간은 유지합니다. 배경 레이어와 미확인 외곽선의 작은 화면상 오프셋은 표시용이며 지형 고도가 아닙니다.</p><div class="quality">품질 플래그: {flags_html}</div></article></section>
+<section class="map-card"><div class="map-head"><b>{'입체 블록 미리보기' if known else '높이 미확인 외곽선 미리보기'}</b><span>회전: 드래그 · 확대: 휠 · 건물: 마우스를 올려 속성 확인</span></div><div class="plot">{plot_html}</div><div class="map-foot"><span>좌표·높이 단위 m · 세 축 동일 축척 · 지면 z = 0 · 도로는 중심선 표시</span><span>{attribution}</span></div></section>
+<section class="notes"><article class="note warning"><h2>높이 누락을 확인하세요</h2><p>{missing_notice}</p>{missing_table}</article><article class="note"><h2>이 화면의 범위</h2><p>외곽선을 높이만큼 수직으로 세운 형상 미리보기입니다. 통신 계산·안테나·재료·반사·회절은 포함하지 않습니다. 오목한 외곽선과 내부 빈 공간은 유지합니다. 배경 레이어와 미확인 외곽선의 작은 화면상 오프셋은 표시용이며 지형 고도가 아닙니다.{background_note}</p><div class="quality">품질 플래그: {flags_html}</div></article></section>
 <footer>독립 실행 HTML · 파일을 다시 열어도 인터넷 연결 없이 지도를 탐색할 수 있습니다. {'합성 예시 데이터를 실제 관측 결과로 사용하지 마세요.' if is_demo else '최종 통신 장면 구성 전 높이 누락·경계 처리·데이터 기준 시점을 확인하세요.'}</footer>
 </main></body></html>'''
     output_path = Path(output_path)

@@ -101,7 +101,7 @@ def read_buildings(path, schema, aoi):
     if frame.crs is None:
         frame = frame.set_crs(source_crs)
     return frame.to_crs(METRIC_CRS), {
-        "source_crs": str(source_crs), "file": str(Path(path).resolve()),
+        "source_crs": str(source_crs), "file": Path(path).name,
         "bbox_filter_rows": len(frame), "null_geometry_scope": "원본 공간 필터 밖/좌표 없는 원본 행의 지역 소속은 판단하지 않음",
     }
 
@@ -221,7 +221,7 @@ def localize(frame, origin):
 
 
 def export_model(output, buildings, background, quality, metadata, origin, aoi):
-    from .preview import export_obj, write_preview
+    from .preview import export_obj, write_preview, is_tunnel_background
     output = Path(output)
     if output.exists() and any(output.iterdir()):
         raise ValueError(f"출력 폴더가 비어 있지 않습니다: {output}. 새 출력 경로를 지정하세요.")
@@ -244,7 +244,9 @@ def export_model(output, buildings, background, quality, metadata, origin, aoi):
                 "simulation_ready": False, "purpose": "모델링 검토용 시제품; 전파 계산/재료/지형 없음",
                 "mesh_complete": not bool(unknown.any()) and len(buildings) > 0 and not counts["rejected_geometry_rows_in_loaded_subset"],
                 "unknown_height_policy": "원본 외곽선과 null 높이 보존. OBJ에는 미포함, 화면에는 주황 외곽선. 자유공간으로 해석 금지.",
-                "boundary_policy": "AOI와 교차하는 건물을 경계에서 자름. 향후 전파 계산에는 별도의 주변 건물 버퍼 검토 필요."}
+                "background_surface_display": {"tunnel_features_hidden": sum(is_tunnel_background(row) for _, row in background.iterrows()),
+                                               "policy": "원본 배경 보존. tunnel 태그가 있는 요소는 지표면 표시에서 제외. 도로 폭과 layer 고도는 추정하지 않음."},
+                "boundary_policy": "AOI와 교차하는 건물을 경계에서 자름. 실험 범위 밖 건물과 외부 신호 영향은 제외하는 설정."}
     local_buildings, local_background = localize(buildings, origin), localize(background, origin)
     local_buildings.attrs["is_demo"] = metadata["is_demo"]
     if len(buildings):

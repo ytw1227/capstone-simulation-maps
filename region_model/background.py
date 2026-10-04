@@ -34,6 +34,10 @@ _ALLOWED_GEOMETRIES = {
     "landuse": {"Polygon"},
     "water": {"Polygon", "LineString"},
 }
+_PRESERVED_TAG_COLUMNS = (
+    "name", "name_en", "name:en", "highway", "tunnel", "layer", "osm_layer",
+    "bridge", "waterway", "natural", "covered", "leisure", "landuse",
+)
 
 
 def _empty(crs: str) -> gpd.GeoDataFrame:
@@ -100,6 +104,7 @@ def _prepare(
     if frame.crs is None:
         raise ValueError("Background file has no CRS; supply a correctly georeferenced file.")
     projected = frame.to_crs(target_crs)
+    tag_columns = [column for column in _PRESERVED_TAG_COLUMNS if column in projected.columns]
     counts = {"input_features": len(frame), "repaired_features": 0, "discarded_features": 0}
     records = []
     for index, row in projected.iterrows():
@@ -123,8 +128,14 @@ def _prepare(
         kept = list(_parts(clipped, _ALLOWED_GEOMETRIES[kind]))
         if not kept:
             counts["discarded_features"] += 1
+        # Preserve source semantics when clipping/splitting: a tunnel must not
+        # become an apparent surface feature just because attributes were lost.
+        tags = {column: row[column] for column in tag_columns}
+        for original, portable in (("name:en", "name_en"), ("layer", "osm_layer")):
+            if portable not in tags and original in tags:
+                tags[portable] = tags[original]
         for part in kept:
-            records.append({"geometry": part, "kind": kind, "osm_id": osm_id})
+            records.append({"geometry": part, "kind": kind, "osm_id": osm_id, **tags})
     if not records:
         return _empty(target_crs), counts
     return gpd.GeoDataFrame(records, geometry="geometry", crs=target_crs), counts
@@ -225,13 +236,14 @@ def load_background(
 
     The file must declare its CRS and contain a ``kind`` column consisting
     of road/park/landuse/water. ``osm_id`` is optional and stays null if absent.
+    Available source names and road/water/tunnel/layer tags survive clipping.
     No CRS, feature class, source attribution, or OSM identifier is guessed.
     """
     _validate_aoi(aoi_metric, target_crs)
     file_path = Path(path)
     metadata: dict[str, Any] = {
         "source": "local background file",
-        "path": str(file_path.resolve()),
+        "path": file_path.name,
         "target_crs": str(target_crs),
         "buildings_used": False,
     }
