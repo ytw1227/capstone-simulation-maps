@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "강남역 400m + 1km (합성 모델링 예제)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_preview.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "redirectOutput": true,
+      "justMyCode": true
+    }
+  ]
+}

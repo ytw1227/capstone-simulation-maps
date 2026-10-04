@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="780" viewBox="0 0 1160 780" role="img" aria-labelledby="figure-title figure-description" font-family="Arial, Helvetica, sans-serif" fill="#243447">
+  <title id="figure-title">Synthetic scene comparison: 400 metre and 1 kilometre square maps</title>
+  <desc id="figure-description">The same deterministic synthetic scene is clipped to two extents at a shared origin. The 400 metre square has 20 buildings; the 1 kilometre square has 97. Blue-grey means a synthetic GIS-height fixture, teal means a synthetic verified-ledger fixture, and orange means unknown height. A dashed square on the larger map marks the smaller extent. These are test data, not actual Gangnam buildings. North is up. Coordinates are local metres.</desc>
+  <rect width="1160" height="780" fill="white" />
+  <text x="40" y="48" font-size="30" font-weight="700">One scene, two extents</text>
+  <text x="40" y="79" font-size="16" fill="#607184">Actual demo footprints · common origin · local metric coordinates</text>
+  <rect x="877" y="30" width="250" height="31" rx="7" fill="#fff4df" stroke="#efc786" />
+  <text x="1002" y="51" font-size="13" text-anchor="middle" font-weight="700" fill="#935b12">SYNTHETIC TEST DATA</text>
+  <g id="scene-400m" data-size-m="400" data-building-count="20">
+    <rect x="32" y="110" width="525" height="585" rx="12" fill="white" stroke="#dfe6ed" />
+    <text x="88" y="146" font-size="24" font-weight="700">400 m × 400 m</text>
+    <text x="88" y="173" font-size="14" fill="#607184">20 buildings · 16 GIS · 1 ledger · 3 unknown</text>
+    <rect x="88" y="200" width="430" height="430" fill="#f8fafb" stroke="#b9c6d2" />
+    <line x1="303.0" y1="630.0" x2="303.0" y2="200.0" stroke="#e0e7ed" />
+    <line x1="88.0" y1="415.0" x2="518.0" y2="415.0" stroke="#e0e7ed" />
+    <polyline points="88.00000,517.12500 518.00000,517.12500" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <polyline points="335.25000,630.00000 335.25000,200.00000" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <polyline points="88.00000,334.37500 518.00000,334.37500" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <path d="M 507.25000,296.75000 L 507.25000,200.00000 L 518.00000,200.00000 L 518.00000,296.75000 L 507.25000,296.75000 Z" fill-rule="evenodd" fill="#e4efdf" />
+    <g id="buildings-400m">
+      <path d="M 120.25000,541.85000 L 148.20000,541.85000 L 148.20000,568.72500 L 182.60000,568.72500 L 182.60000,587.00000 L 120.25000,587.00000 L 120.25000,541.85000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-00" data-height-source="gis" data-height-m="12" data-interior-rings="0">
+        <title>DEMO-00 · synthetic · 12 m (gis fixture)</title>
+      </path>
+      <path d="M 197.65000,527.87500 L 258.92500,527.87500 L 258.92500,587.00000 L 197.65000,587.00000 L 197.65000,527.87500 Z M 242.80000,571.95000 L 242.80000,546.15000 L 212.70000,546.15000 L 212.70000,571.95000 L 242.80000,571.95000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-01" data-height-source="gis" data-height-m="25" data-interior-rings="1">
+        <title>DEMO-01 · synthetic · 25 m (gis fixture)</title>
+      </path>
+      <path d="M 292.25000,541.85000 L 292.25000,587.00000 L 275.05000,587.00000 L 275.05000,541.85000 L 292.25000,541.85000 Z M 316.97500,541.85000 L 316.97500,587.00000 L 297.62500,587.00000 L 297.62500,541.85000 L 316.97500,541.85000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-02" data-height-source="gis" data-height-m="38" data-interior-rings="0">
+        <title>DEMO-02 · synthetic · 38 m (gis fixture)</title>
+      </path>
+      <path d="M 352.45000,587.00000 L 352.45000,541.85000 L 402.97500,541.85000 L 402.97500,587.00000 L 352.45000,587.00000 Z" fill-rule="evenodd" fill="#38877f" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-03" data-height-source="ledger" data-height-m="47.5" data-interior-rings="0">
+        <title>DEMO-03 · synthetic · 47.5 m (ledger fixture)</title>
+      </path>
+      <path d="M 429.85000,587.00000 L 429.85000,541.85000 L 467.47500,541.85000 L 467.47500,587.00000 L 429.85000,587.00000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-04" data-height-source="gis" data-height-m="64" data-interior-rings="0">
+        <title>DEMO-04 · synthetic · 64 m (gis fixture)</title>
+      </path>
+      <path d="M 120.25000,495.62500 L 120.25000,450.47500 L 157.87500,450.47500 L 157.87500,495.62500 L 120.25000,495.62500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-05" data-height-source="gis" data-height-m="19" data-interior-rings="0">
+        <title>DEMO-05 · synthetic · 19 m (gis fixture)</title>
+      </path>
+      <path d="M 197.65000,495.62500 L 197.65000,450.47500 L 248.17500,450.47500 L 248.17500,495.62500 L 197.65000,495.62500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-06" data-height-source="gis" data-height-m="32" data-interior-rings="0">
+        <title>DEMO-06 · synthetic · 32 m (gis fixture)</title>
+      </path>
+      <path d="M 275.05000,495.62500 L 275.05000,450.47500 L 312.67500,450.47500 L 312.67500,495.62500 L 275.05000,495.62500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-07" data-height-source="gis" data-height-m="45" data-interior-rings="0">
+        <title>DEMO-07 · synthetic · 45 m (gis fixture)</title>
+      </path>
+      <path d="M 352.45000,495.62500 L 352.45000,450.47500 L 402.97500,450.47500 L 402.97500,495.62500 L 352.45000,495.62500 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-08" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-08 · synthetic · unknown height</title>
+      </path>
+      <path d="M 429.85000,495.62500 L 429.85000,450.47500 L 467.47500,450.47500 L 467.47500,495.62500 L 429.85000,495.62500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-09" data-height-source="gis" data-height-m="71" data-interior-rings="0">
+        <title>DEMO-09 · synthetic · 71 m (gis fixture)</title>
+      </path>
+      <path d="M 120.25000,404.25000 L 120.25000,359.10000 L 157.87500,359.10000 L 157.87500,404.25000 L 120.25000,404.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-10" data-height-source="gis" data-height-m="26" data-interior-rings="0">
+        <title>DEMO-10 · synthetic · 26 m (gis fixture)</title>
+      </path>
+      <path d="M 197.65000,404.25000 L 197.65000,359.10000 L 248.17500,359.10000 L 248.17500,404.25000 L 197.65000,404.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-11" data-height-source="gis" data-height-m="39" data-interior-rings="0">
+        <title>DEMO-11 · synthetic · 39 m (gis fixture)</title>
+      </path>
+      <path d="M 275.05000,404.25000 L 275.05000,359.10000 L 312.67500,359.10000 L 312.67500,404.25000 L 275.05000,404.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-12" data-height-source="gis" data-height-m="52" data-interior-rings="0">
+        <title>DEMO-12 · synthetic · 52 m (gis fixture)</title>
+      </path>
+      <path d="M 352.45000,404.25000 L 352.45000,359.10000 L 402.97500,359.10000 L 402.97500,404.25000 L 352.45000,404.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-13" data-height-source="gis" data-height-m="65" data-interior-rings="0">
+        <title>DEMO-13 · synthetic · 65 m (gis fixture)</title>
+      </path>
+      <path d="M 429.85000,404.25000 L 429.85000,359.10000 L 467.47500,359.10000 L 467.47500,404.25000 L 429.85000,404.25000 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-14" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-14 · synthetic · unknown height</title>
+      </path>
+      <path d="M 120.25000,312.87500 L 120.25000,267.72500 L 157.87500,267.72500 L 157.87500,312.87500 L 120.25000,312.87500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-15" data-height-source="gis" data-height-m="33" data-interior-rings="0">
+        <title>DEMO-15 · synthetic · 33 m (gis fixture)</title>
+      </path>
+      <path d="M 197.65000,312.87500 L 197.65000,267.72500 L 248.17500,267.72500 L 248.17500,312.87500 L 197.65000,312.87500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-16" data-height-source="gis" data-height-m="46" data-interior-rings="0">
+        <title>DEMO-16 · synthetic · 46 m (gis fixture)</title>
+      </path>
+      <path d="M 275.05000,312.87500 L 275.05000,267.72500 L 312.67500,267.72500 L 312.67500,312.87500 L 275.05000,312.87500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-17" data-height-source="gis" data-height-m="59" data-interior-rings="0">
+        <title>DEMO-17 · synthetic · 59 m (gis fixture)</title>
+      </path>
+      <path d="M 352.45000,312.87500 L 352.45000,267.72500 L 402.97500,267.72500 L 402.97500,312.87500 L 352.45000,312.87500 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-18" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-18 · synthetic · unknown height</title>
+      </path>
+      <path d="M 429.85000,312.87500 L 429.85000,267.72500 L 467.47500,267.72500 L 467.47500,312.87500 L 429.85000,312.87500 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-19" data-height-source="gis" data-height-m="85" data-interior-rings="0">
+        <title>DEMO-19 · synthetic · 85 m (gis fixture)</title>
+      </path>
+    </g>
+    <text x="88.0" y="652" font-size="12" text-anchor="middle" fill="#607184">-200</text>
+    <text x="77" y="634.0" font-size="12" text-anchor="end" fill="#607184">-200</text>
+    <text x="303.0" y="652" font-size="12" text-anchor="middle" fill="#607184">0</text>
+    <text x="77" y="419.0" font-size="12" text-anchor="end" fill="#607184">0</text>
+    <text x="518.0" y="652" font-size="12" text-anchor="middle" fill="#607184">+200</text>
+    <text x="77" y="204.0" font-size="12" text-anchor="end" fill="#607184">+200</text>
+    <text x="303.0" y="677" font-size="13" text-anchor="middle" fill="#607184">East x (m)</text>
+    <text x="45" y="415.0" font-size="13" text-anchor="middle" fill="#607184" transform="rotate(-90 45 415.0)">North y (m)</text>
+  </g>
+  <g id="scene-1000m" data-size-m="1000" data-building-count="97">
+    <rect x="602" y="110" width="525" height="585" rx="12" fill="white" stroke="#dfe6ed" />
+    <text x="658" y="146" font-size="24" font-weight="700">1 km × 1 km</text>
+    <text x="658" y="173" font-size="14" fill="#607184">97 buildings · 93 GIS · 1 ledger · 3 unknown</text>
+    <rect x="658" y="200" width="430" height="430" fill="#f8fafb" stroke="#b9c6d2" />
+    <line x1="873.0" y1="630.0" x2="873.0" y2="200.0" stroke="#e0e7ed" />
+    <line x1="658.0" y1="415.0" x2="1088.0" y2="415.0" stroke="#e0e7ed" />
+    <polyline points="658.00000,455.85000 1088.00000,455.85000" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <polyline points="885.90000,630.00000 885.90000,200.00000" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <polyline points="658.00000,382.75000 1088.00000,382.75000" fill="none" stroke="#ccd5de" stroke-width="2.5" />
+    <path d="M 954.70000,367.70000 L 954.70000,316.10000 L 1006.30000,316.10000 L 1006.30000,367.70000 L 954.70000,367.70000 Z" fill-rule="evenodd" fill="#e4efdf" />
+    <g id="buildings-1000m">
+      <path d="M 799.90000,465.74000 L 811.08000,465.74000 L 811.08000,476.49000 L 824.84000,476.49000 L 824.84000,483.80000 L 799.90000,483.80000 L 799.90000,465.74000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-00" data-height-source="gis" data-height-m="12" data-interior-rings="0">
+        <title>DEMO-00 · synthetic · 12 m (gis fixture)</title>
+      </path>
+      <path d="M 830.86000,460.15000 L 855.37000,460.15000 L 855.37000,483.80000 L 830.86000,483.80000 L 830.86000,460.15000 Z M 848.92000,477.78000 L 848.92000,467.46000 L 836.88000,467.46000 L 836.88000,477.78000 L 848.92000,477.78000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-01" data-height-source="gis" data-height-m="25" data-interior-rings="1">
+        <title>DEMO-01 · synthetic · 25 m (gis fixture)</title>
+      </path>
+      <path d="M 868.70000,465.74000 L 868.70000,483.80000 L 861.82000,483.80000 L 861.82000,465.74000 L 868.70000,465.74000 Z M 878.59000,465.74000 L 878.59000,483.80000 L 870.85000,483.80000 L 870.85000,465.74000 L 878.59000,465.74000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-02" data-height-source="gis" data-height-m="38" data-interior-rings="0">
+        <title>DEMO-02 · synthetic · 38 m (gis fixture)</title>
+      </path>
+      <path d="M 892.78000,483.80000 L 892.78000,465.74000 L 912.99000,465.74000 L 912.99000,483.80000 L 892.78000,483.80000 Z" fill-rule="evenodd" fill="#38877f" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-03" data-height-source="ledger" data-height-m="47.5" data-interior-rings="0">
+        <title>DEMO-03 · synthetic · 47.5 m (ledger fixture)</title>
+      </path>
+      <path d="M 923.74000,483.80000 L 923.74000,465.74000 L 938.79000,465.74000 L 938.79000,483.80000 L 923.74000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-04" data-height-source="gis" data-height-m="64" data-interior-rings="0">
+        <title>DEMO-04 · synthetic · 64 m (gis fixture)</title>
+      </path>
+      <path d="M 799.90000,447.25000 L 799.90000,429.19000 L 814.95000,429.19000 L 814.95000,447.25000 L 799.90000,447.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-05" data-height-source="gis" data-height-m="19" data-interior-rings="0">
+        <title>DEMO-05 · synthetic · 19 m (gis fixture)</title>
+      </path>
+      <path d="M 830.86000,447.25000 L 830.86000,429.19000 L 851.07000,429.19000 L 851.07000,447.25000 L 830.86000,447.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-06" data-height-source="gis" data-height-m="32" data-interior-rings="0">
+        <title>DEMO-06 · synthetic · 32 m (gis fixture)</title>
+      </path>
+      <path d="M 861.82000,447.25000 L 861.82000,429.19000 L 876.87000,429.19000 L 876.87000,447.25000 L 861.82000,447.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-07" data-height-source="gis" data-height-m="45" data-interior-rings="0">
+        <title>DEMO-07 · synthetic · 45 m (gis fixture)</title>
+      </path>
+      <path d="M 892.78000,447.25000 L 892.78000,429.19000 L 912.99000,429.19000 L 912.99000,447.25000 L 892.78000,447.25000 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-08" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-08 · synthetic · unknown height</title>
+      </path>
+      <path d="M 923.74000,447.25000 L 923.74000,429.19000 L 938.79000,429.19000 L 938.79000,447.25000 L 923.74000,447.25000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-09" data-height-source="gis" data-height-m="71" data-interior-rings="0">
+        <title>DEMO-09 · synthetic · 71 m (gis fixture)</title>
+      </path>
+      <path d="M 799.90000,410.70000 L 799.90000,392.64000 L 814.95000,392.64000 L 814.95000,410.70000 L 799.90000,410.70000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-10" data-height-source="gis" data-height-m="26" data-interior-rings="0">
+        <title>DEMO-10 · synthetic · 26 m (gis fixture)</title>
+      </path>
+      <path d="M 830.86000,410.70000 L 830.86000,392.64000 L 851.07000,392.64000 L 851.07000,410.70000 L 830.86000,410.70000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-11" data-height-source="gis" data-height-m="39" data-interior-rings="0">
+        <title>DEMO-11 · synthetic · 39 m (gis fixture)</title>
+      </path>
+      <path d="M 861.82000,410.70000 L 861.82000,392.64000 L 876.87000,392.64000 L 876.87000,410.70000 L 861.82000,410.70000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-12" data-height-source="gis" data-height-m="52" data-interior-rings="0">
+        <title>DEMO-12 · synthetic · 52 m (gis fixture)</title>
+      </path>
+      <path d="M 892.78000,410.70000 L 892.78000,392.64000 L 912.99000,392.64000 L 912.99000,410.70000 L 892.78000,410.70000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-13" data-height-source="gis" data-height-m="65" data-interior-rings="0">
+        <title>DEMO-13 · synthetic · 65 m (gis fixture)</title>
+      </path>
+      <path d="M 923.74000,410.70000 L 923.74000,392.64000 L 938.79000,392.64000 L 938.79000,410.70000 L 923.74000,410.70000 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-14" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-14 · synthetic · unknown height</title>
+      </path>
+      <path d="M 799.90000,374.15000 L 799.90000,356.09000 L 814.95000,356.09000 L 814.95000,374.15000 L 799.90000,374.15000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-15" data-height-source="gis" data-height-m="33" data-interior-rings="0">
+        <title>DEMO-15 · synthetic · 33 m (gis fixture)</title>
+      </path>
+      <path d="M 830.86000,374.15000 L 830.86000,356.09000 L 851.07000,356.09000 L 851.07000,374.15000 L 830.86000,374.15000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-16" data-height-source="gis" data-height-m="46" data-interior-rings="0">
+        <title>DEMO-16 · synthetic · 46 m (gis fixture)</title>
+      </path>
+      <path d="M 861.82000,374.15000 L 861.82000,356.09000 L 876.87000,356.09000 L 876.87000,374.15000 L 861.82000,374.15000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-17" data-height-source="gis" data-height-m="59" data-interior-rings="0">
+        <title>DEMO-17 · synthetic · 59 m (gis fixture)</title>
+      </path>
+      <path d="M 892.78000,374.15000 L 892.78000,356.09000 L 912.99000,356.09000 L 912.99000,374.15000 L 892.78000,374.15000 Z" fill-rule="evenodd" fill="#ed982e" stroke="#b36b12" stroke-width="1.2" data-building-id="DEMO-18" data-height-source="missing" data-height-m="unknown" data-interior-rings="0">
+        <title>DEMO-18 · synthetic · unknown height</title>
+      </path>
+      <path d="M 923.74000,374.15000 L 923.74000,356.09000 L 938.79000,356.09000 L 938.79000,374.15000 L 923.74000,374.15000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-19" data-height-source="gis" data-height-m="85" data-interior-rings="0">
+        <title>DEMO-19 · synthetic · 85 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,612.80000 L 673.05000,599.90000 L 685.09000,599.90000 L 685.09000,612.80000 L 673.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-20" data-height-source="gis" data-height-m="14" data-interior-rings="0">
+        <title>DEMO-20 · synthetic · 14 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,612.80000 L 716.05000,597.32000 L 734.11000,597.32000 L 734.11000,612.80000 L 716.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-21" data-height-source="gis" data-height-m="37" data-interior-rings="0">
+        <title>DEMO-21 · synthetic · 37 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,612.80000 L 759.05000,594.74000 L 771.09000,594.74000 L 771.09000,612.80000 L 759.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-22" data-height-source="gis" data-height-m="60" data-interior-rings="0">
+        <title>DEMO-22 · synthetic · 60 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,612.80000 L 802.05000,592.16000 L 820.11000,592.16000 L 820.11000,612.80000 L 802.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-23" data-height-source="gis" data-height-m="83" data-interior-rings="0">
+        <title>DEMO-23 · synthetic · 83 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,612.80000 L 845.05000,599.90000 L 857.09000,599.90000 L 857.09000,612.80000 L 845.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-24" data-height-source="gis" data-height-m="106" data-interior-rings="0">
+        <title>DEMO-24 · synthetic · 106 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,612.80000 L 900.95000,597.32000 L 919.01000,597.32000 L 919.01000,612.80000 L 900.95000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-25" data-height-source="gis" data-height-m="17" data-interior-rings="0">
+        <title>DEMO-25 · synthetic · 17 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,612.80000 L 943.95000,594.74000 L 955.99000,594.74000 L 955.99000,612.80000 L 943.95000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-26" data-height-source="gis" data-height-m="40" data-interior-rings="0">
+        <title>DEMO-26 · synthetic · 40 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,612.80000 L 986.95000,592.16000 L 1005.01000,592.16000 L 1005.01000,612.80000 L 986.95000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-27" data-height-source="gis" data-height-m="63" data-interior-rings="0">
+        <title>DEMO-27 · synthetic · 63 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,612.80000 L 1029.95000,599.90000 L 1041.99000,599.90000 L 1041.99000,612.80000 L 1029.95000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-28" data-height-source="gis" data-height-m="86" data-interior-rings="0">
+        <title>DEMO-28 · synthetic · 86 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,612.80000 L 1060.05000,597.32000 L 1078.11000,597.32000 L 1078.11000,612.80000 L 1060.05000,612.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-29" data-height-source="gis" data-height-m="109" data-interior-rings="0">
+        <title>DEMO-29 · synthetic · 109 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,569.80000 L 673.05000,551.74000 L 688.10000,551.74000 L 688.10000,569.80000 L 673.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-30" data-height-source="gis" data-height-m="33" data-interior-rings="0">
+        <title>DEMO-30 · synthetic · 33 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,569.80000 L 716.05000,549.16000 L 737.12000,549.16000 L 737.12000,569.80000 L 716.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-31" data-height-source="gis" data-height-m="56" data-interior-rings="0">
+        <title>DEMO-31 · synthetic · 56 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,569.80000 L 759.05000,556.90000 L 774.10000,556.90000 L 774.10000,569.80000 L 759.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-32" data-height-source="gis" data-height-m="79" data-interior-rings="0">
+        <title>DEMO-32 · synthetic · 79 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,569.80000 L 802.05000,554.32000 L 823.12000,554.32000 L 823.12000,569.80000 L 802.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-33" data-height-source="gis" data-height-m="102" data-interior-rings="0">
+        <title>DEMO-33 · synthetic · 102 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,569.80000 L 845.05000,551.74000 L 860.10000,551.74000 L 860.10000,569.80000 L 845.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-34" data-height-source="gis" data-height-m="125" data-interior-rings="0">
+        <title>DEMO-34 · synthetic · 125 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,569.80000 L 900.95000,549.16000 L 922.02000,549.16000 L 922.02000,569.80000 L 900.95000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-35" data-height-source="gis" data-height-m="36" data-interior-rings="0">
+        <title>DEMO-35 · synthetic · 36 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,569.80000 L 943.95000,556.90000 L 959.00000,556.90000 L 959.00000,569.80000 L 943.95000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-36" data-height-source="gis" data-height-m="59" data-interior-rings="0">
+        <title>DEMO-36 · synthetic · 59 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,569.80000 L 986.95000,554.32000 L 1008.02000,554.32000 L 1008.02000,569.80000 L 986.95000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-37" data-height-source="gis" data-height-m="82" data-interior-rings="0">
+        <title>DEMO-37 · synthetic · 82 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,569.80000 L 1029.95000,551.74000 L 1045.00000,551.74000 L 1045.00000,569.80000 L 1029.95000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-38" data-height-source="gis" data-height-m="105" data-interior-rings="0">
+        <title>DEMO-38 · synthetic · 105 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,569.80000 L 1060.05000,549.16000 L 1081.12000,549.16000 L 1081.12000,569.80000 L 1060.05000,569.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-39" data-height-source="gis" data-height-m="16" data-interior-rings="0">
+        <title>DEMO-39 · synthetic · 16 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,526.80000 L 673.05000,513.90000 L 691.11000,513.90000 L 691.11000,526.80000 L 673.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-40" data-height-source="gis" data-height-m="52" data-interior-rings="0">
+        <title>DEMO-40 · synthetic · 52 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,526.80000 L 716.05000,511.32000 L 728.09000,511.32000 L 728.09000,526.80000 L 716.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-41" data-height-source="gis" data-height-m="75" data-interior-rings="0">
+        <title>DEMO-41 · synthetic · 75 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,526.80000 L 759.05000,508.74000 L 777.11000,508.74000 L 777.11000,526.80000 L 759.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-42" data-height-source="gis" data-height-m="98" data-interior-rings="0">
+        <title>DEMO-42 · synthetic · 98 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,526.80000 L 802.05000,506.16000 L 814.09000,506.16000 L 814.09000,526.80000 L 802.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-43" data-height-source="gis" data-height-m="121" data-interior-rings="0">
+        <title>DEMO-43 · synthetic · 121 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,526.80000 L 845.05000,513.90000 L 863.11000,513.90000 L 863.11000,526.80000 L 845.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-44" data-height-source="gis" data-height-m="32" data-interior-rings="0">
+        <title>DEMO-44 · synthetic · 32 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,526.80000 L 900.95000,511.32000 L 912.99000,511.32000 L 912.99000,526.80000 L 900.95000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-45" data-height-source="gis" data-height-m="55" data-interior-rings="0">
+        <title>DEMO-45 · synthetic · 55 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,526.80000 L 943.95000,508.74000 L 962.01000,508.74000 L 962.01000,526.80000 L 943.95000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-46" data-height-source="gis" data-height-m="78" data-interior-rings="0">
+        <title>DEMO-46 · synthetic · 78 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,526.80000 L 986.95000,506.16000 L 998.99000,506.16000 L 998.99000,526.80000 L 986.95000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-47" data-height-source="gis" data-height-m="101" data-interior-rings="0">
+        <title>DEMO-47 · synthetic · 101 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,526.80000 L 1029.95000,513.90000 L 1048.01000,513.90000 L 1048.01000,526.80000 L 1029.95000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-48" data-height-source="gis" data-height-m="124" data-interior-rings="0">
+        <title>DEMO-48 · synthetic · 124 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,526.80000 L 1060.05000,511.32000 L 1072.09000,511.32000 L 1072.09000,526.80000 L 1060.05000,526.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-49" data-height-source="gis" data-height-m="35" data-interior-rings="0">
+        <title>DEMO-49 · synthetic · 35 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,483.80000 L 673.05000,465.74000 L 694.12000,465.74000 L 694.12000,483.80000 L 673.05000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-50" data-height-source="gis" data-height-m="71" data-interior-rings="0">
+        <title>DEMO-50 · synthetic · 71 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,483.80000 L 716.05000,463.16000 L 731.10000,463.16000 L 731.10000,483.80000 L 716.05000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-51" data-height-source="gis" data-height-m="94" data-interior-rings="0">
+        <title>DEMO-51 · synthetic · 94 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,483.80000 L 759.05000,470.90000 L 780.12000,470.90000 L 780.12000,483.80000 L 759.05000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-52" data-height-source="gis" data-height-m="117" data-interior-rings="0">
+        <title>DEMO-52 · synthetic · 117 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,483.80000 L 986.95000,468.32000 L 1002.00000,468.32000 L 1002.00000,483.80000 L 986.95000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-53" data-height-source="gis" data-height-m="120" data-interior-rings="0">
+        <title>DEMO-53 · synthetic · 120 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,483.80000 L 1029.95000,465.74000 L 1051.02000,465.74000 L 1051.02000,483.80000 L 1029.95000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-54" data-height-source="gis" data-height-m="31" data-interior-rings="0">
+        <title>DEMO-54 · synthetic · 31 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,483.80000 L 1060.05000,463.16000 L 1075.10000,463.16000 L 1075.10000,483.80000 L 1060.05000,483.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-55" data-height-source="gis" data-height-m="54" data-interior-rings="0">
+        <title>DEMO-55 · synthetic · 54 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,440.80000 L 673.05000,427.90000 L 685.09000,427.90000 L 685.09000,440.80000 L 673.05000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-56" data-height-source="gis" data-height-m="90" data-interior-rings="0">
+        <title>DEMO-56 · synthetic · 90 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,440.80000 L 716.05000,425.32000 L 734.11000,425.32000 L 734.11000,440.80000 L 716.05000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-57" data-height-source="gis" data-height-m="113" data-interior-rings="0">
+        <title>DEMO-57 · synthetic · 113 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,440.80000 L 759.05000,422.74000 L 771.09000,422.74000 L 771.09000,440.80000 L 759.05000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-58" data-height-source="gis" data-height-m="24" data-interior-rings="0">
+        <title>DEMO-58 · synthetic · 24 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,440.80000 L 986.95000,420.16000 L 1005.01000,420.16000 L 1005.01000,440.80000 L 986.95000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-59" data-height-source="gis" data-height-m="27" data-interior-rings="0">
+        <title>DEMO-59 · synthetic · 27 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,440.80000 L 1029.95000,427.90000 L 1041.99000,427.90000 L 1041.99000,440.80000 L 1029.95000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-60" data-height-source="gis" data-height-m="50" data-interior-rings="0">
+        <title>DEMO-60 · synthetic · 50 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,440.80000 L 1060.05000,425.32000 L 1078.11000,425.32000 L 1078.11000,440.80000 L 1060.05000,440.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-61" data-height-source="gis" data-height-m="73" data-interior-rings="0">
+        <title>DEMO-61 · synthetic · 73 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,354.80000 L 673.05000,336.74000 L 688.10000,336.74000 L 688.10000,354.80000 L 673.05000,354.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-62" data-height-source="gis" data-height-m="109" data-interior-rings="0">
+        <title>DEMO-62 · synthetic · 109 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,354.80000 L 716.05000,334.16000 L 737.12000,334.16000 L 737.12000,354.80000 L 716.05000,354.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-63" data-height-source="gis" data-height-m="20" data-interior-rings="0">
+        <title>DEMO-63 · synthetic · 20 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,354.80000 L 759.05000,341.90000 L 774.10000,341.90000 L 774.10000,354.80000 L 759.05000,354.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-64" data-height-source="gis" data-height-m="43" data-interior-rings="0">
+        <title>DEMO-64 · synthetic · 43 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,354.80000 L 1029.95000,336.74000 L 1045.00000,336.74000 L 1045.00000,354.80000 L 1029.95000,354.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-65" data-height-source="gis" data-height-m="69" data-interior-rings="0">
+        <title>DEMO-65 · synthetic · 69 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,354.80000 L 1060.05000,334.16000 L 1081.12000,334.16000 L 1081.12000,354.80000 L 1060.05000,354.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-66" data-height-source="gis" data-height-m="92" data-interior-rings="0">
+        <title>DEMO-66 · synthetic · 92 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,311.80000 L 673.05000,298.90000 L 691.11000,298.90000 L 691.11000,311.80000 L 673.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-67" data-height-source="gis" data-height-m="16" data-interior-rings="0">
+        <title>DEMO-67 · synthetic · 16 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,311.80000 L 716.05000,296.32000 L 728.09000,296.32000 L 728.09000,311.80000 L 716.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-68" data-height-source="gis" data-height-m="39" data-interior-rings="0">
+        <title>DEMO-68 · synthetic · 39 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,311.80000 L 759.05000,293.74000 L 777.11000,293.74000 L 777.11000,311.80000 L 759.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-69" data-height-source="gis" data-height-m="62" data-interior-rings="0">
+        <title>DEMO-69 · synthetic · 62 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,311.80000 L 802.05000,291.16000 L 814.09000,291.16000 L 814.09000,311.80000 L 802.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-70" data-height-source="gis" data-height-m="85" data-interior-rings="0">
+        <title>DEMO-70 · synthetic · 85 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,311.80000 L 845.05000,298.90000 L 863.11000,298.90000 L 863.11000,311.80000 L 845.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-71" data-height-source="gis" data-height-m="108" data-interior-rings="0">
+        <title>DEMO-71 · synthetic · 108 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,311.80000 L 900.95000,296.32000 L 912.99000,296.32000 L 912.99000,311.80000 L 900.95000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-72" data-height-source="gis" data-height-m="19" data-interior-rings="0">
+        <title>DEMO-72 · synthetic · 19 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,311.80000 L 943.95000,293.74000 L 962.01000,293.74000 L 962.01000,311.80000 L 943.95000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-73" data-height-source="gis" data-height-m="42" data-interior-rings="0">
+        <title>DEMO-73 · synthetic · 42 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,311.80000 L 986.95000,291.16000 L 998.99000,291.16000 L 998.99000,311.80000 L 986.95000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-74" data-height-source="gis" data-height-m="65" data-interior-rings="0">
+        <title>DEMO-74 · synthetic · 65 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,311.80000 L 1029.95000,298.90000 L 1048.01000,298.90000 L 1048.01000,311.80000 L 1029.95000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-75" data-height-source="gis" data-height-m="88" data-interior-rings="0">
+        <title>DEMO-75 · synthetic · 88 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,311.80000 L 1060.05000,296.32000 L 1072.09000,296.32000 L 1072.09000,311.80000 L 1060.05000,311.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-76" data-height-source="gis" data-height-m="111" data-interior-rings="0">
+        <title>DEMO-76 · synthetic · 111 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,268.80000 L 673.05000,250.74000 L 694.12000,250.74000 L 694.12000,268.80000 L 673.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-77" data-height-source="gis" data-height-m="35" data-interior-rings="0">
+        <title>DEMO-77 · synthetic · 35 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,268.80000 L 716.05000,248.16000 L 731.10000,248.16000 L 731.10000,268.80000 L 716.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-78" data-height-source="gis" data-height-m="58" data-interior-rings="0">
+        <title>DEMO-78 · synthetic · 58 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,268.80000 L 759.05000,255.90000 L 780.12000,255.90000 L 780.12000,268.80000 L 759.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-79" data-height-source="gis" data-height-m="81" data-interior-rings="0">
+        <title>DEMO-79 · synthetic · 81 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,268.80000 L 802.05000,253.32000 L 817.10000,253.32000 L 817.10000,268.80000 L 802.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-80" data-height-source="gis" data-height-m="104" data-interior-rings="0">
+        <title>DEMO-80 · synthetic · 104 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,268.80000 L 845.05000,250.74000 L 866.12000,250.74000 L 866.12000,268.80000 L 845.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-81" data-height-source="gis" data-height-m="15" data-interior-rings="0">
+        <title>DEMO-81 · synthetic · 15 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,268.80000 L 900.95000,248.16000 L 916.00000,248.16000 L 916.00000,268.80000 L 900.95000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-82" data-height-source="gis" data-height-m="38" data-interior-rings="0">
+        <title>DEMO-82 · synthetic · 38 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,268.80000 L 943.95000,255.90000 L 965.02000,255.90000 L 965.02000,268.80000 L 943.95000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-83" data-height-source="gis" data-height-m="61" data-interior-rings="0">
+        <title>DEMO-83 · synthetic · 61 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,268.80000 L 986.95000,253.32000 L 1002.00000,253.32000 L 1002.00000,268.80000 L 986.95000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-84" data-height-source="gis" data-height-m="84" data-interior-rings="0">
+        <title>DEMO-84 · synthetic · 84 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,268.80000 L 1029.95000,250.74000 L 1051.02000,250.74000 L 1051.02000,268.80000 L 1029.95000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-85" data-height-source="gis" data-height-m="107" data-interior-rings="0">
+        <title>DEMO-85 · synthetic · 107 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,268.80000 L 1060.05000,248.16000 L 1075.10000,248.16000 L 1075.10000,268.80000 L 1060.05000,268.80000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-86" data-height-source="gis" data-height-m="18" data-interior-rings="0">
+        <title>DEMO-86 · synthetic · 18 m (gis fixture)</title>
+      </path>
+      <path d="M 673.05000,230.10000 L 673.05000,217.20000 L 685.09000,217.20000 L 685.09000,230.10000 L 673.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-87" data-height-source="gis" data-height-m="54" data-interior-rings="0">
+        <title>DEMO-87 · synthetic · 54 m (gis fixture)</title>
+      </path>
+      <path d="M 716.05000,230.10000 L 716.05000,214.62000 L 734.11000,214.62000 L 734.11000,230.10000 L 716.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-88" data-height-source="gis" data-height-m="77" data-interior-rings="0">
+        <title>DEMO-88 · synthetic · 77 m (gis fixture)</title>
+      </path>
+      <path d="M 759.05000,230.10000 L 759.05000,212.04000 L 771.09000,212.04000 L 771.09000,230.10000 L 759.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-89" data-height-source="gis" data-height-m="100" data-interior-rings="0">
+        <title>DEMO-89 · synthetic · 100 m (gis fixture)</title>
+      </path>
+      <path d="M 802.05000,230.10000 L 802.05000,209.46000 L 820.11000,209.46000 L 820.11000,230.10000 L 802.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-90" data-height-source="gis" data-height-m="123" data-interior-rings="0">
+        <title>DEMO-90 · synthetic · 123 m (gis fixture)</title>
+      </path>
+      <path d="M 845.05000,230.10000 L 845.05000,217.20000 L 857.09000,217.20000 L 857.09000,230.10000 L 845.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-91" data-height-source="gis" data-height-m="34" data-interior-rings="0">
+        <title>DEMO-91 · synthetic · 34 m (gis fixture)</title>
+      </path>
+      <path d="M 900.95000,230.10000 L 900.95000,214.62000 L 919.01000,214.62000 L 919.01000,230.10000 L 900.95000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-92" data-height-source="gis" data-height-m="57" data-interior-rings="0">
+        <title>DEMO-92 · synthetic · 57 m (gis fixture)</title>
+      </path>
+      <path d="M 943.95000,230.10000 L 943.95000,212.04000 L 955.99000,212.04000 L 955.99000,230.10000 L 943.95000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-93" data-height-source="gis" data-height-m="80" data-interior-rings="0">
+        <title>DEMO-93 · synthetic · 80 m (gis fixture)</title>
+      </path>
+      <path d="M 986.95000,230.10000 L 986.95000,209.46000 L 1005.01000,209.46000 L 1005.01000,230.10000 L 986.95000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-94" data-height-source="gis" data-height-m="103" data-interior-rings="0">
+        <title>DEMO-94 · synthetic · 103 m (gis fixture)</title>
+      </path>
+      <path d="M 1029.95000,230.10000 L 1029.95000,217.20000 L 1041.99000,217.20000 L 1041.99000,230.10000 L 1029.95000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-95" data-height-source="gis" data-height-m="14" data-interior-rings="0">
+        <title>DEMO-95 · synthetic · 14 m (gis fixture)</title>
+      </path>
+      <path d="M 1060.05000,230.10000 L 1060.05000,214.62000 L 1078.11000,214.62000 L 1078.11000,230.10000 L 1060.05000,230.10000 Z" fill-rule="evenodd" fill="#8398b4" stroke="#566f85" stroke-width="0.7" data-building-id="DEMO-96" data-height-source="gis" data-height-m="37" data-interior-rings="0">
+        <title>DEMO-96 · synthetic · 37 m (gis fixture)</title>
+      </path>
+    </g>
+    <rect id="shared-400m-extent" x="787.0" y="329.0" width="172.0" height="172.0" fill="none" stroke="#213a52" stroke-width="1.6" stroke-dasharray="7 5" data-local-bounds="-200,-200,200,200" />
+    <text x="658.0" y="652" font-size="12" text-anchor="middle" fill="#607184">-500</text>
+    <text x="647" y="634.0" font-size="12" text-anchor="end" fill="#607184">-500</text>
+    <text x="873.0" y="652" font-size="12" text-anchor="middle" fill="#607184">0</text>
+    <text x="647" y="419.0" font-size="12" text-anchor="end" fill="#607184">0</text>
+    <text x="1088.0" y="652" font-size="12" text-anchor="middle" fill="#607184">+500</text>
+    <text x="647" y="204.0" font-size="12" text-anchor="end" fill="#607184">+500</text>
+    <text x="873.0" y="677" font-size="13" text-anchor="middle" fill="#607184">East x (m)</text>
+    <text x="615" y="415.0" font-size="13" text-anchor="middle" fill="#607184" transform="rotate(-90 615 415.0)">North y (m)</text>
+  </g>
+  <rect x="48" y="719" width="14" height="14" rx="2" fill="#8398b4" />
+  <text x="71" y="731" font-size="13">Synthetic GIS height</text>
+  <rect x="312" y="719" width="14" height="14" rx="2" fill="#38877f" />
+  <text x="335" y="731" font-size="13">Synthetic ledger height</text>
+  <rect x="592" y="719" width="14" height="14" rx="2" fill="#ed982e" />
+  <text x="615" y="731" font-size="13">Unknown height</text>
+  <line x1="822" y1="726" x2="855" y2="726" stroke="#213a52" stroke-width="1.6" stroke-dasharray="7 5" />
+  <text x="866" y="731" font-size="13">Shared 400 m extent</text>
+  <text x="48" y="758" font-size="13" fill="#607184">Same building IDs, heights and footprints at both scales. Courtyards and missing-height footprints are preserved.</text>
+  <metadata>{"generator": "make_demo -&gt; prepare_buildings -&gt; localize", "local_coordinates_crs": null, "local_origin_source_crs": "EPSG:5179", "local_origin_xy_m": [958243.2359761745, 1944398.131422904], "north_up": true, "summary": {"1000": {"building_count": 97, "gis": 93, "ledger": 1, "missing": 3}, "400": {"building_count": 20, "gis": 16, "ledger": 1, "missing": 3}}, "synthetic": true}</metadata>
+</svg>

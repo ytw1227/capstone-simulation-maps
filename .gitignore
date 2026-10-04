@@ -1,0 +1,18 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Keep credentials and machine-specific source settings private.
+.env
+.env.*
+!.env.example
+!.env.*.example
+/config/schema.local.json
+
+# Actual source datasets and generated local models are not repository fixtures.
+/data/raw/
+/data/local/
+/outputs/

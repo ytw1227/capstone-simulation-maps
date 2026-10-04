@@ -1,0 +1,30 @@
+{
+  "yeouido": {
+    "name": "여의도",
+    "environment": "고층 도심",
+    "center_lonlat": [126.9254, 37.5252],
+    "candidate": "IFC·여의도 업무지구 부근",
+    "confirmed": false
+  },
+  "hongdae": {
+    "name": "홍대입구",
+    "environment": "밀집 중저층",
+    "center_lonlat": [126.9245, 37.5544],
+    "candidate": "홍대입구역 남쪽 상업가 부근",
+    "confirmed": false
+  },
+  "pangyo": {
+    "name": "판교",
+    "environment": "계획형 중밀도",
+    "center_lonlat": [127.1112, 37.4010],
+    "candidate": "판교테크노밸리 업무블록 부근",
+    "confirmed": false
+  },
+  "bundang": {
+    "name": "분당",
+    "environment": "아파트 주거",
+    "center_lonlat": [127.1170, 37.3650],
+    "candidate": "정자동 아파트 주거블록 부근",
+    "confirmed": false
+  }
+}

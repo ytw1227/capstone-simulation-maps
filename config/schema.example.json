@@ -1,0 +1,13 @@
+{
+  "source_name": "REPLACE_WITH_OFFICIAL_DATASET_NAME",
+  "source_url": "REPLACE_WITH_OFFICIAL_DATASET_URL",
+  "snapshot_date": "REPLACE_WITH_DATA_DATE",
+  "id_field": "REPLACE_WITH_BUILDING_LEVEL_ID_FIELD",
+  "name_field": null,
+  "height_field": "REPLACE_WITH_HEIGHT_FIELD_OR_NULL",
+  "height_unit": "m",
+  "height_semantics": "above_ground",
+  "source_crs": null,
+  "layer": null,
+  "encoding": null
+}

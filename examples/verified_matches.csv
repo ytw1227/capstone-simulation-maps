@@ -1,0 +1,2 @@
+building_id,ledger_id,namespace,verified,identity_method,identity_evidence
+EXAMPLE-GIS-ID,EXAMPLE-HUB-ID,EXAMPLE-HUB-SNAPSHOT,false,manual_building_confirmation,REPLACE_WITH_BUILDING_SPECIFIC_EVIDENCE
