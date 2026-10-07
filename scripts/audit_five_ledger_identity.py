@@ -7,6 +7,7 @@ and it never assigns heights or validates a parcel-only building match.
 from __future__ import annotations
 
 from collections import defaultdict
+import argparse
 import json
 from pathlib import Path
 import re
@@ -23,10 +24,18 @@ import pyogrio
 from scripts.import_official_gangnam import _sources, sha256
 
 
-def main():
-    config = json.loads((ROOT / "config/regions.five.json").read_text(encoding="utf-8"))
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", type=Path, default=ROOT / "config/regions.five.json")
+    parser.add_argument("--regions", nargs="+", help="Region keys to audit; existing context files are never replaced")
+    args = parser.parse_args(argv)
+    config = json.loads(args.config.read_text(encoding="utf-8-sig"))
     archives = defaultdict(dict)
-    for key, region in config["regions"].items():
+    keys = args.regions or list(config["regions"])
+    for key in keys:
+        if key not in config["regions"]:
+            parser.error(f"Unknown region: {key}")
+        region = config["regions"][key]
         frame = gpd.read_file(ROOT / region["data_dir"] / "buildings.gpkg")
         archives[region["source_archive"]][key] = (region, frame)
     for relative_archive, regions in archives.items():

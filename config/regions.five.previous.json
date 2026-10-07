@@ -1,7 +1,7 @@
 {
   "size_m": 400,
   "selection_source": "https://chatgpt.com/share/6ac5cd6e-38d0-83ee-b55d-a67da72d5ac5",
-  "selection_status": "User-confirmed five regions on 2026-10-07. Gangnam, Hongdae and Bundang retain existing centers; Teheran and Sangam DMC use selected official GIS landmark centroids.",
+  "selection_status": "Shared-conversation candidate centers; not independently surveyed or verified landmark centroids.",
   "regions": {
     "gangnam": {
       "name": "강남역",
@@ -12,16 +12,14 @@
       "source_snapshot_date": "2026-09-09",
       "data_dir": "data/regions_400/gangnam"
     },
-    "teheran": {
-      "name": "테헤란로",
-      "environment": "고층 업무 중심 혼합 도심",
-      "center_lonlat": [127.05613098792654, 37.50581494620291],
-      "center_note": "포스코센터 원본 GIS 건물 폴리곤의 EPSG:5179 무게중심. 400m 구역 GIS 높이 확인 124/148개(83.78%).",
-      "center_status": "official_gis_landmark_centroid",
-      "selection_source": "https://www.posco.com/homepage/docs/kor7/jsp/common/posco/s91a1000020c.jsp",
+    "yeouido": {
+      "name": "여의도",
+      "environment": "고층 타워군",
+      "center_lonlat": [126.9266, 37.526],
+      "center_note": "공유 대화의 여의도 고층 타워군 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
       "source_archive": "data/raw/official_vworld/AL_D010_11_20260909.zip",
       "source_snapshot_date": "2026-09-09",
-      "data_dir": "data/regions_400/teheran"
+      "data_dir": "data/regions_400/yeouido"
     },
     "hongdae": {
       "name": "홍대",
@@ -32,6 +30,15 @@
       "source_snapshot_date": "2026-09-09",
       "data_dir": "data/regions_400/hongdae"
     },
+    "pangyo": {
+      "name": "판교",
+      "environment": "계획형 업무지구",
+      "center_lonlat": [127.1077, 37.4017],
+      "center_note": "공유 대화의 판교 계획형 업무지구 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+      "source_archive": "data/raw/official_vworld/AL_D010_41_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/pangyo"
+    },
     "bundang": {
       "name": "분당",
       "environment": "아파트 주거",
@@ -40,17 +47,6 @@
       "source_archive": "data/raw/official_vworld/AL_D010_41_20260909.zip",
       "source_snapshot_date": "2026-09-09",
       "data_dir": "data/regions_400/bundang"
-    },
-    "sangam_dmc": {
-      "name": "상암 DMC",
-      "environment": "건물 개수 밀도가 낮은 대형 블록 지구",
-      "center_lonlat": [126.89041440714469, 37.57938880196154],
-      "center_note": "누리꿈스퀘어 원본 GIS 건물 폴리곤의 EPSG:5179 무게중심. 400m 구역 GIS 높이 확인 26/38개(68.42%). 건물 수가 적고 큰 업무·미디어 블록으로 배치된 지역이며, 건물 높이나 건물 면적 점유율이 낮다는 뜻은 아님.",
-      "center_status": "official_gis_landmark_centroid",
-      "selection_source": "https://news.seoul.go.kr/economy/archives/58833",
-      "source_archive": "data/raw/official_vworld/AL_D010_11_20260909.zip",
-      "source_snapshot_date": "2026-09-09",
-      "data_dir": "data/regions_400/sangam_dmc"
     }
   }
 }

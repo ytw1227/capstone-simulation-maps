@@ -12,7 +12,7 @@ import geopandas as gpd
 from shapely.geometry import LineString, box
 
 from region_model.core import METRIC_CRS, region_geometry, write_json
-from region_model.suite import build_region, file_sha256, region_seed
+from region_model.suite import build_region, build_suite, file_sha256, region_seed
 from run_five_maps import main as run_main
 
 
@@ -87,6 +87,16 @@ class SuiteTests(unittest.TestCase):
         for name in ("model.gpkg", "scene.local.json", "buildings_model_heights.obj"):
             self.assertFalse((self.root / "output" / name).exists())
         self.assertIn("대장 확인 대기", (self.root / "output/preview.html").read_text(encoding="utf-8"))
+
+    def test_explicit_center_method_survives_into_manifest(self):
+        self.make_bundle([60.0, None])
+        self.region["center_status"] = "official_gis_anchor_centroid"
+        self.region["selection_source"] = "https://example.org/landmark-evidence"
+        result = self.build()
+        self.assertEqual(result["center_status"], "official_gis_anchor_centroid")
+        self.assertEqual(result["selection_source"], self.region["selection_source"])
+        self.assertEqual(result["candidate_note"], self.region["center_note"])
+        self.assertEqual(result["status"], "pending_ledger")
 
     def test_checked_equal_missing_and_known_heights_build_balanced_estimates(self):
         self.make_bundle([60.0, 40.0, None, None])
@@ -191,6 +201,49 @@ class SuiteTests(unittest.TestCase):
         self.assertEqual(build.call_args.kwargs["safety_margin_m"], 8.0)
         self.assertEqual(build.call_args.kwargs["seed"], 31)
         browser.assert_not_called()
+
+    def test_runner_explicit_legacy_config_is_forwarded(self):
+        config = self.root / "legacy-regions.json"
+        with patch("run_five_maps.build_suite", return_value={"regions": []}) as build, \
+             patch("run_five_maps.webbrowser.open"), redirect_stdout(StringIO()):
+            self.assertEqual(run_main(["--no-browser", "--config", str(config)]), 0)
+        self.assertEqual(build.call_args.args[0], config.resolve())
+
+
+class SuiteRegionSelectionTests(unittest.TestCase):
+    def test_final_and_legacy_sets_keep_the_requested_gallery_order(self):
+        for keys in (("gangnam", "teheran", "hongdae", "bundang", "sangam_dmc"),
+                     ("gangnam", "yeouido", "hongdae", "pangyo", "bundang")):
+            with self.subTest(keys=keys), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                config_path = root / "regions.json"
+                write_json(config_path, {"size_m": 400, "regions": {key: {} for key in keys}})
+                output = root / "output"
+
+                def fake_build(key, region, folder, **kwargs):
+                    Path(folder).mkdir(parents=True)
+                    return {"region_key": key, "region_name": key, "environment": "fixture",
+                            "center_lonlat": [127.0, 37.5], "status": "pending_ledger",
+                            "counts": {"buildings": 1, "gis_height": 0, "ledger_height": 0,
+                                       "imputed_height": 0, "missing_height": 1},
+                            "height_policy": {"status": "pending_ledger", "reason": "fixture"}}
+
+                with patch("region_model.suite.build_region", side_effect=fake_build):
+                    summary = build_suite(config_path, output, project_root=root)
+                self.assertEqual([row["region_key"] for row in summary["regions"]], list(keys))
+                html = (output / "index.html").read_text(encoding="utf-8")
+                positions = [html.index(f'href="{key}/preview.html"') for key in keys]
+                self.assertEqual(positions, sorted(positions))
+
+    def test_mixed_old_and_new_region_set_is_rejected_before_any_build(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "regions.json"
+            write_json(config_path, {"size_m": 400, "regions": {
+                key: {} for key in ("gangnam", "teheran", "hongdae", "pangyo", "bundang")}})
+            with patch("region_model.suite.build_region") as build, self.assertRaises(ValueError):
+                build_suite(config_path, root / "output", project_root=root)
+            build.assert_not_called()
 
 
 if __name__ == "__main__":

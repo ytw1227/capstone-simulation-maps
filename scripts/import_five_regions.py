@@ -43,6 +43,7 @@ def import_region(key, config, selection_source, *, root=ROOT):
     source = root / config["source_archive"]
     output = root / config["data_dir"]
     center = config["center_lonlat"]
+    selection_source = config.get("selection_source", selection_source)
     snapshot_date = config["source_snapshot_date"]
     snapshot = date.fromisoformat(snapshot_date)
     if not source.is_file():
@@ -83,7 +84,7 @@ def import_region(key, config, selection_source, *, root=ROOT):
         selected_fields = [field for field in SELECTED_FIELDS if field in frame.columns]
         intersects = frame.geometry.map(lambda geometry: bool(
             geometry is not None and not geometry.is_empty
-            and (geometry if geometry.is_valid else make_valid(geometry)).intersects(aoi)))
+            and (geometry if geometry.is_valid else make_valid(geometry)).intersection(aoi).area > 0))
         frame = frame.loc[intersects, selected_fields + ["geometry"]].copy()
         if not frame.empty:
             if frame.A1.map(lambda value: value is not None and not pd.isna(value)
@@ -143,7 +144,7 @@ def import_region(key, config, selection_source, *, root=ROOT):
             "hold_recommendation_scope": "GIS_only_preliminary",
             "ledger_check_status": "not_performed_by_importer",
             "hold_rule": "GIS-only preliminary flag. Final hold decision must use GIS plus verified same-building title-register heights, after the ledger check.",
-            "scope": "Only coordinate-bearing source records intersecting the exact AOI; source rows without coordinates cannot be spatially attributed.",
+            "scope": "Only coordinate-bearing source records with positive-area intersection with the exact AOI; source rows without coordinates cannot be spatially attributed.",
         }
         _write_json(stage / "import_quality.json", quality)
         provenance = {
@@ -165,7 +166,7 @@ def import_region(key, config, selection_source, *, root=ROOT):
             "ledger_check_status": "not_performed_by_importer",
             "district_codes": sorted(str(value) for value in curated.get("A23", pd.Series(dtype=str)).dropna().unique()),
             "declared_origin": "User-obtained official VWorld AL_D010 source file; no independent building survey.",
-            "transformation": "Source-CRS bbox filter, EPSG:5179 reprojection, exact AOI intersection selection. Full intersecting footprints and original A16 values retained; no clipping, imputation, deduplication, or geometry repair in curated source.",
+            "transformation": "Source-CRS bbox filter, EPSG:5179 reprojection, positive-area exact AOI intersection selection. Full intersecting footprints and original A16 values retained; no clipping, imputation, deduplication, or geometry repair in curated source.",
             "license_notices": [
                 {"source": SOURCE_URL, "label": "CC BY", "url": "https://creativecommons.org/licenses/by/2.0/kr/"},
                 {"source": CATALOG_URL, "label": "공공저작물 : 출처표시 (제 1유형)"},
@@ -188,7 +189,10 @@ Preserve attribution and identify modifications when sharing this subset or deri
 
 `buildings.gpkg` retains complete source footprints intersecting the 400 m square centered at longitude {center[0]}, latitude {center[1]}, transformed to EPSG:5179. Building IDs and original A16 height values are unchanged. The subset does not fill missing heights. Downstream experiments may apply explicitly labeled height assumptions separately and record their parameters; these are not official source measurements.
 
-The center comes from a [shared-conversation recommendation]({selection_source}); it is not an independently verified landmark centroid. `buildings.provenance.json` records archive/subset hashes, CRS, selected fields and processing. A source attribute is not an independent survey of present-day conditions. OSM background data has its own notice; software is separate. No source-organization endorsement is implied.
+Center selection: {config['center_note']}
+Selection reference: {selection_source}
+
+`buildings.provenance.json` records the configured center-selection evidence, archive/subset hashes, CRS, selected fields and processing. A source attribute is not an independent survey of present-day conditions. OSM background data has its own notice; software is separate. No source-organization endorsement is implied.
 """
         (stage / "LICENSE-BUILDINGS.md").write_text(license_text, encoding="utf-8")
         for name in OWN_FILES:

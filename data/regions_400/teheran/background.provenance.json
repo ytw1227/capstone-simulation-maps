@@ -1,0 +1,99 @@
+{
+  "source": "OpenStreetMap via OSMnx",
+  "source_url": "https://www.openstreetmap.org/",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "api": "osmnx.features_from_polygon",
+  "tags": {
+    "highway": true,
+    "leisure": [
+      "park",
+      "garden"
+    ],
+    "landuse": true,
+    "natural": [
+      "water"
+    ],
+    "waterway": true
+  },
+  "target_crs": "EPSG:5179",
+  "retrieved_at_utc": "2026-10-07T06:21:55.223777+00:00",
+  "request_timeout_seconds": 90,
+  "timeout_scope": "per_request; server rate-limit waits/retries may take longer",
+  "buildings_used": false,
+  "osmnx_version": "2.1.1",
+  "input_features": 82,
+  "repaired_features": 0,
+  "discarded_features": 24,
+  "status": "ok",
+  "feature_count": 60,
+  "counts_by_kind": {
+    "road": 58,
+    "park": 0,
+    "landuse": 2,
+    "water": 0
+  },
+  "schema_version": 1,
+  "region_key": "teheran",
+  "source_endpoint": "https://overpass-api.de/api",
+  "completed_at_utc": "2026-10-07T06:22:01.436909+00:00",
+  "osm_database_timestamps_utc": [
+    "2026-10-07T06:20:53Z"
+  ],
+  "center_lonlat": [
+    127.05613098792654,
+    37.50581494620291
+  ],
+  "size_m": 400,
+  "aoi_bounds_metric": [
+    960569.3253139801,
+    1945063.968045545,
+    960969.3253139801,
+    1945463.968045545
+  ],
+  "aoi_area_m2": 160000.0,
+  "origin_metric": [
+    960769.3253139801,
+    1945263.968045545
+  ],
+  "synthetic": false,
+  "geometry_types": {
+    "LineString": 58,
+    "Polygon": 2
+  },
+  "file": "background.gpkg",
+  "layer": "background",
+  "sha256": "195d99ce84ca33ac87dc12cc488386d6668f8a25f9ffb798b1f667e89923e8a4",
+  "license_uri": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "license_notice_file": "LICENSE-OSM.md",
+  "source_responses": [
+    {
+      "file": "95552adbd8d936ef59d0b824d93567b869899bc6.json",
+      "sha256": "ce80317fee5a9cd3519549a6ec2dcb22c4f4a37ed67c7c9685c939474d5fbcb2",
+      "osm_database_timestamp_utc": "2026-10-07T06:20:53Z",
+      "element_count": 391
+    }
+  ],
+  "query_signature_sha256": "bea0da4baba4646f9576df99efd34cda82cfd2c0e7b6044eb4c294173dc1fe85",
+  "preserved_osm_tags": [
+    "name",
+    "name:en",
+    "highway",
+    "landuse",
+    "name_en"
+  ],
+  "processing": [
+    "OSMnx features_from_polygon with the recorded union tags and geographic AOI.",
+    "Excluded features tagged building or building:part; no OSM building footprint is used.",
+    "Projected to EPSG:5179 and clipped to the exact 400 metre square.",
+    "Preserved original OSM element type/id, available names, and road/water/tunnel/layer tags.",
+    "Roads retain source line geometry; no road widths or elevations are inferred."
+  ],
+  "interpretation_notes": [
+    "Feature count describes clipped geometry parts, not a count of separately named streets.",
+    "Tunnel features remain in the source data and are hidden by the surface viewer.",
+    "Zero retained park or water features is not an independently verified absence.",
+    "Retrieval time may refer to a cache replay; database timestamps identify the OSM snapshot."
+  ]
+}

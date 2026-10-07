@@ -1,0 +1,97 @@
+{
+  "row_count": 38,
+  "known_height_rows": 26,
+  "missing_height_rows": 12,
+  "flagged_rows": 12,
+  "issues": [
+    {
+      "curated_row": 6,
+      "building_id": "2006190180744528305100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 7,
+      "building_id": "0000190402414528287600000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 9,
+      "building_id": "0000190121414528281900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 10,
+      "building_id": "0000190090574529463600000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 11,
+      "building_id": "2007190162754530207700000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 12,
+      "building_id": "2007190259284530605400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 17,
+      "building_id": "0000190431934528148800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 18,
+      "building_id": "0000190143014528567100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 19,
+      "building_id": "0000190350474528571700000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 20,
+      "building_id": "0000190459374529876800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 21,
+      "building_id": "2013190340524532071300000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 27,
+      "building_id": "0000190354904528430900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    }
+  ],
+  "hold_recommended": false,
+  "hold_recommendation_scope": "GIS_only_preliminary",
+  "ledger_check_status": "not_performed_by_importer",
+  "hold_rule": "GIS-only preliminary flag. Final hold decision must use GIS plus verified same-building title-register heights, after the ledger check.",
+  "scope": "Only coordinate-bearing source records with positive-area intersection with the exact AOI; source rows without coordinates cannot be spatially attributed."
+}

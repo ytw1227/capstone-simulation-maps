@@ -1,0 +1,3018 @@
+{
+  "region_key": "sangam_dmc",
+  "center_lonlat": [
+    126.89041440714469,
+    37.57938880196154
+  ],
+  "size_m": 400,
+  "building_source_sha256": "02a6cd68612388c87b5aa89e4fa5a4acc7529b125f8c0a36c5471e0b9788dc0a",
+  "full_gis_parcel_context_sha256": "ff455f8b23c4164b47ca3c03097d633e7a0a86f1b66f3947d6430dadb16760e3",
+  "audited_at_utc": "2026-10-07T06:30:02.404483+00:00",
+  "source_files": [
+    {
+      "file": "11440_12700_202608.json",
+      "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+      "row_count": 1065,
+      "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+      "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+      "snapshot_month": "2026-08",
+      "legal_dong_code": "1144012700",
+      "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+      "verified_height_field": {
+        "name": "HG",
+        "description": "높이(m)"
+      },
+      "verified_identity_field": {
+        "name": "BDRG_SN",
+        "description": "관리건축물대장PK"
+      },
+      "full_export_evidence": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_month": "2026-08",
+        "sigungu_cd": "11440",
+        "bjdong_cd": "12700",
+        "ui_search_total": 1065,
+        "export_row_count": 1065,
+        "full_export_count_verified": true,
+        "download_original_filename": "03. 표제부_20261007152743.json",
+        "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+        "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+      }
+    }
+  ],
+  "gis_building_count": 38,
+  "gis_missing_height_count": 12,
+  "lookup_complete": true,
+  "counts": {
+    "title_height_missing": 1,
+    "no_title_found": 5,
+    "identity_ambiguous": 6
+  },
+  "buildings": {
+    "2006190180744528305100000000": {
+      "status": "title_height_missing",
+      "lookup_pnu": "1144012700116550000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133676",
+        "1015133725",
+        "1015133729",
+        "1015133722",
+        "1015133727",
+        "1015133720",
+        "1015133672",
+        "1015133663",
+        "1015133662",
+        "1015133674",
+        "1015133728",
+        "1015133661",
+        "1015133730",
+        "1015133653",
+        "1015133654",
+        "1015133675",
+        "1015133655",
+        "1015133677",
+        "1015133726",
+        "1015133652",
+        "1015133673",
+        "1015133671",
+        "1015133721",
+        "1015133678"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": {
+        "accepted": true,
+        "rule": "unique_exact_name_or_dong_with_corroboration",
+        "full_gis_parcel_rows": 23,
+        "title_parcel_rows": 24,
+        "exact_name_matches": [
+          {
+            "field": "building_name",
+            "value": "상암 월드컵파크 4단지",
+            "unique_in_full_gis_parcel": false,
+            "unique_in_title_parcel": false
+          },
+          {
+            "field": "dong_name",
+            "value": "주민공동시설",
+            "unique_in_full_gis_parcel": true,
+            "unique_in_title_parcel": true
+          }
+        ],
+        "attribute_comparisons": {
+          "building_area_m2": {
+            "gis": 205.57,
+            "ledger": 205.57,
+            "matches": true
+          },
+          "gross_floor_area_m2": {
+            "gis": 382.83,
+            "ledger": 382.83,
+            "matches": true
+          },
+          "above_ground_floors": {
+            "gis": 1,
+            "ledger": 1,
+            "matches": true
+          },
+          "approval_date": {
+            "gis": "2006-10-11",
+            "ledger": "2006-10-11",
+            "matches": true
+          }
+        },
+        "conflicting_attributes": [],
+        "corroboration_sufficient": true,
+        "a19_to_hub_pk_mapping_used": false,
+        "ledger_id": "1015133671",
+        "corroborated_gis_owners": [
+          "2006190180744528305100000000"
+        ],
+        "height_m": 0,
+        "source_file": "11440_12700_202608.json",
+        "source_sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "exact_pnu": "1144012700116550000",
+        "gis_building_id": "2006190180744528305100000000"
+      },
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 595.8,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 2236.2,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133676",
+          "corroborated_gis_owners": [
+            "2006190200544528761300000000"
+          ],
+          "height_m": 9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 449.48,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 9589.59,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 26,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133725",
+          "corroborated_gis_owners": [
+            "2006190034614527831000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 516.68,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 7917.74,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 18,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133729",
+          "corroborated_gis_owners": [
+            "2006190115514528597200000000"
+          ],
+          "height_m": 49.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 14.42,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 14.06,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133722",
+          "corroborated_gis_owners": [
+            "2006190088524527304800000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 395.28,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 8721.33,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 26,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133727",
+          "corroborated_gis_owners": [
+            "2006190111824527701500000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 31250.52,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133720",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 72.5,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 72.5,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133672",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 14.42,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 14.06,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133663",
+          "corroborated_gis_owners": [
+            "2006190040284528663900000000"
+          ],
+          "height_m": 3.75
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 14.42,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 14.06,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133662",
+          "corroborated_gis_owners": [
+            "2006190181904528598500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 57.93,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 57.93,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133674",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 395.28,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 8626.71,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 26,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133728",
+          "corroborated_gis_owners": [
+            "2006190151864528239800000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 14.42,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 14.06,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133661",
+          "corroborated_gis_owners": [
+            "2006190138614527939500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 387.33,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 7061.37,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 22,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133730",
+          "corroborated_gis_owners": [
+            "2006190064154528675300000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 395.28,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 7715.58,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 23,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133653",
+          "corroborated_gis_owners": [
+            "2006190118374529400100000000"
+          ],
+          "height_m": 63.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 258.34,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 3517.71,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 16,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133654",
+          "corroborated_gis_owners": [
+            "2006190158404529136300000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 62.57,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 62.57,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133675",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 395.28,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 8191.41,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 25,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133655",
+          "corroborated_gis_owners": [
+            "2006190195514528829600000000"
+          ],
+          "height_m": 69.2
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 449.48,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 9585.77,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 26,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133677",
+          "corroborated_gis_owners": [
+            "2006190054344526887000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 258.34,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 3426.81,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 16,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133726",
+          "corroborated_gis_owners": [
+            "2006190079034527998100000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 258.34,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 4841.19,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 22,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133652",
+          "corroborated_gis_owners": [
+            "2006190093634529082800000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 93.1,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 93.1,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133673",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": true,
+          "rule": "unique_exact_name_or_dong_with_corroboration",
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            },
+            {
+              "field": "dong_name",
+              "value": "주민공동시설",
+              "unique_in_full_gis_parcel": true,
+              "unique_in_title_parcel": true
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 205.57,
+              "matches": true
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 382.83,
+              "matches": true
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": true,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133671",
+          "corroborated_gis_owners": [
+            "2006190180744528305100000000"
+          ],
+          "height_m": 0,
+          "source_file": "11440_12700_202608.json",
+          "source_sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "exact_pnu": "1144012700116550000",
+          "gis_building_id": "2006190180744528305100000000"
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 557.28,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "gross_floor_area_m2"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133721",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "상암 월드컵파크 4단지",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 205.57,
+              "ledger": 449.48,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 382.83,
+              "ledger": 9590.51,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 26,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "2006-10-11",
+              "ledger": "2006-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133678",
+          "corroborated_gis_owners": [
+            "2006190043014527340000000000"
+          ],
+          "height_m": 72
+        }
+      ],
+      "matched_ledger_id": "1015133671",
+      "reason": "Identity is corroborated, but the matched title does not provide a positive finite HG height."
+    },
+    "0000190402414528287600000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1144012700116120000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000190121414528281900000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116550000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133676",
+        "1015133725",
+        "1015133729",
+        "1015133722",
+        "1015133727",
+        "1015133720",
+        "1015133672",
+        "1015133663",
+        "1015133662",
+        "1015133674",
+        "1015133728",
+        "1015133661",
+        "1015133730",
+        "1015133653",
+        "1015133654",
+        "1015133675",
+        "1015133655",
+        "1015133677",
+        "1015133726",
+        "1015133652",
+        "1015133673",
+        "1015133671",
+        "1015133721",
+        "1015133678"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133676",
+          "corroborated_gis_owners": [
+            "2006190200544528761300000000"
+          ],
+          "height_m": 9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133725",
+          "corroborated_gis_owners": [
+            "2006190034614527831000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133729",
+          "corroborated_gis_owners": [
+            "2006190115514528597200000000"
+          ],
+          "height_m": 49.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133722",
+          "corroborated_gis_owners": [
+            "2006190088524527304800000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133727",
+          "corroborated_gis_owners": [
+            "2006190111824527701500000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133720",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133672",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133663",
+          "corroborated_gis_owners": [
+            "2006190040284528663900000000"
+          ],
+          "height_m": 3.75
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133662",
+          "corroborated_gis_owners": [
+            "2006190181904528598500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133674",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133728",
+          "corroborated_gis_owners": [
+            "2006190151864528239800000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133661",
+          "corroborated_gis_owners": [
+            "2006190138614527939500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133730",
+          "corroborated_gis_owners": [
+            "2006190064154528675300000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133653",
+          "corroborated_gis_owners": [
+            "2006190118374529400100000000"
+          ],
+          "height_m": 63.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133654",
+          "corroborated_gis_owners": [
+            "2006190158404529136300000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133675",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133655",
+          "corroborated_gis_owners": [
+            "2006190195514528829600000000"
+          ],
+          "height_m": 69.2
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133677",
+          "corroborated_gis_owners": [
+            "2006190054344526887000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133726",
+          "corroborated_gis_owners": [
+            "2006190079034527998100000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133652",
+          "corroborated_gis_owners": [
+            "2006190093634529082800000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133673",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133671",
+          "corroborated_gis_owners": [
+            "2006190180744528305100000000"
+          ],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133721",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133678",
+          "corroborated_gis_owners": [
+            "2006190043014527340000000000"
+          ],
+          "height_m": 72
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000190090574529463600000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116550000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133676",
+        "1015133725",
+        "1015133729",
+        "1015133722",
+        "1015133727",
+        "1015133720",
+        "1015133672",
+        "1015133663",
+        "1015133662",
+        "1015133674",
+        "1015133728",
+        "1015133661",
+        "1015133730",
+        "1015133653",
+        "1015133654",
+        "1015133675",
+        "1015133655",
+        "1015133677",
+        "1015133726",
+        "1015133652",
+        "1015133673",
+        "1015133671",
+        "1015133721",
+        "1015133678"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133676",
+          "corroborated_gis_owners": [
+            "2006190200544528761300000000"
+          ],
+          "height_m": 9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133725",
+          "corroborated_gis_owners": [
+            "2006190034614527831000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133729",
+          "corroborated_gis_owners": [
+            "2006190115514528597200000000"
+          ],
+          "height_m": 49.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133722",
+          "corroborated_gis_owners": [
+            "2006190088524527304800000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133727",
+          "corroborated_gis_owners": [
+            "2006190111824527701500000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133720",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133672",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133663",
+          "corroborated_gis_owners": [
+            "2006190040284528663900000000"
+          ],
+          "height_m": 3.75
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133662",
+          "corroborated_gis_owners": [
+            "2006190181904528598500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133674",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133728",
+          "corroborated_gis_owners": [
+            "2006190151864528239800000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133661",
+          "corroborated_gis_owners": [
+            "2006190138614527939500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133730",
+          "corroborated_gis_owners": [
+            "2006190064154528675300000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133653",
+          "corroborated_gis_owners": [
+            "2006190118374529400100000000"
+          ],
+          "height_m": 63.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133654",
+          "corroborated_gis_owners": [
+            "2006190158404529136300000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133675",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133655",
+          "corroborated_gis_owners": [
+            "2006190195514528829600000000"
+          ],
+          "height_m": 69.2
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133677",
+          "corroborated_gis_owners": [
+            "2006190054344526887000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133726",
+          "corroborated_gis_owners": [
+            "2006190079034527998100000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133652",
+          "corroborated_gis_owners": [
+            "2006190093634529082800000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133673",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133671",
+          "corroborated_gis_owners": [
+            "2006190180744528305100000000"
+          ],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133721",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133678",
+          "corroborated_gis_owners": [
+            "2006190043014527340000000000"
+          ],
+          "height_m": 72
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "2007190162754530207700000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116050000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133551"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 3,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {
+            "approval_date": {
+              "gis": "2007-11-20",
+              "ledger": "2007-11-20",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133551",
+          "corroborated_gis_owners": [
+            "2007190250444530159100000000"
+          ],
+          "height_m": 99.85
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "2007190259284530605400000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116050000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133551"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 3,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {
+            "approval_date": {
+              "gis": "2007-11-20",
+              "ledger": "2007-11-20",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133551",
+          "corroborated_gis_owners": [
+            "2007190250444530159100000000"
+          ],
+          "height_m": 99.85
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000190431934528148800000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1144012700116120000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000190143014528567100000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116550000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "1015133676",
+        "1015133725",
+        "1015133729",
+        "1015133722",
+        "1015133727",
+        "1015133720",
+        "1015133672",
+        "1015133663",
+        "1015133662",
+        "1015133674",
+        "1015133728",
+        "1015133661",
+        "1015133730",
+        "1015133653",
+        "1015133654",
+        "1015133675",
+        "1015133655",
+        "1015133677",
+        "1015133726",
+        "1015133652",
+        "1015133673",
+        "1015133671",
+        "1015133721",
+        "1015133678"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133676",
+          "corroborated_gis_owners": [
+            "2006190200544528761300000000"
+          ],
+          "height_m": 9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133725",
+          "corroborated_gis_owners": [
+            "2006190034614527831000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133729",
+          "corroborated_gis_owners": [
+            "2006190115514528597200000000"
+          ],
+          "height_m": 49.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133722",
+          "corroborated_gis_owners": [
+            "2006190088524527304800000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133727",
+          "corroborated_gis_owners": [
+            "2006190111824527701500000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133720",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133672",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133663",
+          "corroborated_gis_owners": [
+            "2006190040284528663900000000"
+          ],
+          "height_m": 3.75
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133662",
+          "corroborated_gis_owners": [
+            "2006190181904528598500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133674",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133728",
+          "corroborated_gis_owners": [
+            "2006190151864528239800000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133661",
+          "corroborated_gis_owners": [
+            "2006190138614527939500000000"
+          ],
+          "height_m": 3.47
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133730",
+          "corroborated_gis_owners": [
+            "2006190064154528675300000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133653",
+          "corroborated_gis_owners": [
+            "2006190118374529400100000000"
+          ],
+          "height_m": 63.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133654",
+          "corroborated_gis_owners": [
+            "2006190158404529136300000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133675",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133655",
+          "corroborated_gis_owners": [
+            "2006190195514528829600000000"
+          ],
+          "height_m": 69.2
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133677",
+          "corroborated_gis_owners": [
+            "2006190054344526887000000000"
+          ],
+          "height_m": 72
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133726",
+          "corroborated_gis_owners": [
+            "2006190079034527998100000000"
+          ],
+          "height_m": 44
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133652",
+          "corroborated_gis_owners": [
+            "2006190093634529082800000000"
+          ],
+          "height_m": 60.8
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133673",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133671",
+          "corroborated_gis_owners": [
+            "2006190180744528305100000000"
+          ],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133721",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 23,
+          "title_parcel_rows": 24,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1015133678",
+          "corroborated_gis_owners": [
+            "2006190043014527340000000000"
+          ],
+          "height_m": 72
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000190350474528571700000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1144012700117070000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000190459374529876800000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1144012700117070000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "2013190340524532071300000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1144012700116030000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [
+        "10151100217073"
+      ],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {
+            "approval_date": {
+              "gis": "2013-12-05",
+              "ledger": "2013-12-05",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10151100217073",
+          "corroborated_gis_owners": [
+            "2013190252944532006700000000"
+          ],
+          "height_m": 71.9
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000190354904528430900000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1144012700117150000",
+      "legal_dong_code": "1144012700",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11440_12700_202608.json",
+        "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+        "row_count": 1065,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1144012700",
+        "source_file_modified_at_utc": "2026-10-07T06:29:52.817559+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11440_12700_202608.json",
+          "sha256": "f18f6638e686e18c957c60658d323e6333021ea23361edbeb9e8f128623c6269",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11440",
+          "bjdong_cd": "12700",
+          "ui_search_total": 1065,
+          "export_row_count": 1065,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007152743.json",
+          "registered_at_utc": "2026-10-07T06:29:52.820339+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    }
+  },
+  "matching_policy": {
+    "id": "exact_parcel_corroborated_identity_v1",
+    "rules": [
+      "Exact PNU, then either full-source parcel one-GIS/one-title or a nonempty exact name/dong unique in both full parcel datasets.",
+      "At least one positive building/gross-floor area within 0.05 square metres and an equal positive floor count or equal valid approval date.",
+      "No conflicting available area/floor/date attributes. One unique title candidate and reverse unique GIS owner, including outside-AOI records.",
+      "No A19 conversion, prefix guessing, address similarity, floor-height estimation or GIS height replacement."
+    ],
+    "known_gis_height_priority": true
+  },
+  "ledger_sha256": "72912a8a782db5c86178d23cd1b1525869a2c19999900e0716e1ee82fbed9c3a",
+  "verified_matches_sha256": "f08847daf063c0f97a18ff20e95591ec99be3ca009e9a7ba93c75f0b12120478"
+}

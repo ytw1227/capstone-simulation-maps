@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import geopandas as gpd
 from shapely.geometry import box
@@ -71,6 +72,23 @@ class FiveRegionImportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "덮어쓰지"):
             import_region("test", self.config, "test-fixture", root=self.root)
         self.assertEqual((output / "buildings.gpkg").read_bytes(), original)
+
+    def test_boundary_only_contact_is_excluded_and_region_selection_evidence_is_used(self):
+        # Exact metric fixture isolates the intersection rule from CRS roundoff.
+        x, y = self.origin
+        frame = self.frame.copy()
+        frame.loc[frame.A1 == "000002", "geometry"] = box(x+200, y, x+210, y+10)
+        configured = {**self.config, "selection_source": "https://example.org/official-landmark",
+                      "center_note": "Official GIS landmark polygon centroid."}
+        with patch("scripts.import_five_regions.read_buildings", return_value=(frame, {"bbox_filter_rows": len(frame)})):
+            result = import_region("test", configured, "https://example.org/shared-chat", root=self.root)
+        actual = gpd.read_file(self.root / "output/buildings.gpkg")
+        self.assertEqual(actual.A1.tolist(), ["000001"])
+        self.assertEqual(result["selection_source"], configured["selection_source"])
+        notice = (self.root / "output/LICENSE-BUILDINGS.md").read_text(encoding="utf-8")
+        self.assertIn(configured["center_note"], notice)
+        self.assertIn(configured["selection_source"], notice)
+        self.assertNotIn("shared-conversation recommendation", notice)
 
 
 if __name__ == "__main__":

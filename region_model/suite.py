@@ -22,7 +22,8 @@ from .core import (METRIC_CRS, LedgerResolver, export_model, identifier,
 from .experiment import apply_height_policy, derive_no_fly_zones
 
 ROOT = Path(__file__).resolve().parents[1]
-REGION_KEYS = {"gangnam", "yeouido", "hongdae", "pangyo", "bundang"}
+REGION_KEYS = {"gangnam", "teheran", "hongdae", "bundang", "sangam_dmc"}
+LEGACY_REGION_KEYS = {"gangnam", "yeouido", "hongdae", "pangyo", "bundang"}
 
 
 def file_sha256(path):
@@ -239,8 +240,9 @@ def build_region(key, region, output, *, project_root=ROOT, seed=20261007,
     metadata = {
         "suite": True, "region_name": region["name"], "region_key": key,
         "environment": region["environment"], "center_lonlat": region["center_lonlat"],
-        "center_status": "shared_conversation_candidate", "candidate_note": region.get("center_note", ""),
-        "selection_source": selection_source, "size_m": 400, "is_demo": False,
+        "center_status": region.get("center_status", "shared_conversation_candidate"),
+        "candidate_note": region.get("center_note", ""),
+        "selection_source": region.get("selection_source", selection_source), "size_m": 400, "is_demo": False,
         "dataset_provenance": provenance, "building_source": schema,
         "source_file_info": source_info, "background_source": "osm",
         "background_details": bg_info, "background_snapshot": provenance["background"],
@@ -284,8 +286,9 @@ def write_gallery(output, manifests, *, safety_margin_m):
 def build_suite(config_path, output, *, project_root=ROOT, seed=20261007, safety_margin_m=5.0):
     config = read_json(config_path)
     _verify_portable_provenance(config)
-    if config.get("size_m") != 400 or set(config.get("regions", {})) != REGION_KEYS:
-        raise ValueError("5개 지정 지역과 400 m 크기가 포함된 설정이 필요합니다.")
+    region_keys = set(config.get("regions", {}))
+    if config.get("size_m") != 400 or region_keys not in (REGION_KEYS, LEGACY_REGION_KEYS):
+        raise ValueError("확정 5개 지역 또는 이전 5개 지역의 전체 세트와 400 m 크기가 포함된 설정이 필요합니다.")
     output = Path(output).resolve()
     if output.exists():
         raise ValueError("출력 폴더는 새 경로여야 합니다. 기존 결과를 덮어쓰지 않습니다.")
