@@ -1,3 +1,7 @@
 * text=auto eol=lf
 *.bat text eol=crlf
 *.cmd text eol=crlf
+
+# Curated source bundles contain byte-level provenance hashes. Preserve their
+# exact bytes when cloning on Windows or Linux, including CSV/JSON newlines.
+/data/regions_400/** -text

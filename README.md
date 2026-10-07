@@ -1,37 +1,26 @@
-# Gangnam Urban Block Lab
+# Urban Block Lab · Five 400 m Maps
 
 [![Tests](https://github.com/ytw1227/gangnam-urban-block-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/ytw1227/gangnam-urban-block-lab/actions/workflows/tests.yml)
 
-**강남역 중심 400 m × 400 m · 공식 건물 폴리곤 기반 도시 모델링**
+**강남역 · 여의도 · 홍대 · 판교 · 분당 — 실제 GIS 외곽선으로 만드는 400 m × 400 m 실험 환경**
 
-국토교통부 GIS건물통합정보의 건물 외곽선과 높이, OSM의 실제 도로·토지이용을 같은 좌표계로 맞춰 확인하는 Python 프로젝트입니다. 건물 외곽선을 지면에서 수직으로 세우며 지면은 평면으로 둡니다. 전파 계산과 드론 제어는 포함하지 않습니다.
+국토교통부 건물 폴리곤·GIS 높이와 OpenStreetMap 배경을 결합하는 Python 프로젝트입니다. GIS 결측은 동일 건물의 건축물대장을 검토한 뒤 처리합니다. 평평한 지면 위에 실제 외곽선을 높이만큼 세우고, 고도 50 m에서 피해야 할 건물 영역을 별도 폴리곤으로 생성합니다. 결과는 브라우저에서 회전·확대할 수 있습니다.
 
-> **실제 자료 적용 완료:** 공식 서울 GIS 원본에서 강남역 중심 400 m 영역에 걸치는 **126개 건물**을 추출했습니다. GIS 높이가 있는 **83개는 입체화**, 원본 높이가 0인 **43개는 미확인 외곽선**으로 보존합니다. 실제 건물·OSM 배경·출처 파일을 저장소에 포함하여 설치 후 F5로 실행할 수 있습니다. 이전 합성 예제는 기본 실행에서 제외했습니다.
+높이 미확인은 먼저 대장을 확인합니다. 이후에도 남은 결측은 명시적인 실험 가정으로만 채우며, 확인하지 못한 건물이 더 많으면 그 지역의 모델 생성을 보류합니다. **통신 경로손실·간섭·드론 경로 실행은 별도 구현 대상**입니다.
 
-![실제 강남역 400m 외곽선과 OSM 도로 중심선](docs/assets/gangnam-400m.svg)
+## 실제 생성 결과 · 2026-10-07
 
-*공식 폴리곤을 그대로 투영·절단한 평면도입니다. 주황색은 높이 미확인 건물이며, 도로는 중심선입니다.*
+| 지역 | 전체 건물 | 확인 높이 | 실험용 추정 | 미처리 결측 | 결과 |
+|---|---:|---:|---:|---:|---|
+| 강남역 | 100 | 63 | 37 | 0 | 모델 생성 |
+| 여의도 | 51 | 15 | 0 | 36 | 보류 |
+| 홍대 | 513 | 341 | 172 | 0 | 모델 생성 |
+| 판교 | 66 | 21 | 0 | 45 | 보류 |
+| 분당 | 60 | 45 | 15 | 0 | 모델 생성 |
 
-![공식 폴리곤과 기록된 높이로 생성한 실제 3D 화면](docs/assets/gangnam-400m-preview.png)
+이번 실행의 확인 높이는 모두 GIS 값이며, **대장에서 새로 채택한 높이는 0개**입니다. 추정값은 확인 높이로 합산하지 않습니다. 미처리 결측은 추정도 적용하지 않은 건물 수입니다. 여의도·판교는 대장 대조 후에도 결측이 더 많아 원본과 보류 기록만 유지합니다.
 
-## 범위와 데이터
-
-| 항목 | 설정 및 상태 |
-|---|---|
-| 대상 | 강남역 사거리 부근 중심, 400 m × 400 m 정사각형 |
-| 중심 | 경도 127.027600°, 위도 37.497900°; 특정 건물 중심이 아닌 고정 실험 중심점 |
-| 평면 좌표 | EPSG:5179(m), 로컬 x/y = 중심 좌표에서 ±200 m |
-| 지면 | 모든 위치에서 z = 0 |
-| 건물 | 국토교통부 GIS건물통합정보 AL_D010: 126개, 강남구 78개·서초구 48개 |
-| 배포본 / 속성 기준일 | 배포본 2026-09-09 / 추출 건물 A22 속성 기준일 2026-09-06; 개별 건물 실측일과는 구별 |
-| 배경 | 실제 OSM 자료 126개: 도로·보행로 114, 토지이용 11, 수계 1 |
-| OSM 시점 | 데이터베이스 기준 2026-10-04 09:14:20 UTC |
-| 높이 | GIS 83개(6.9–199.28 m), 미확인 43개(null), 대장 보완 0개 |
-| 경계 처리 | 경계 교차 39개를 모델 범위에서 절단; 원본 추출 파일에는 전체 외곽선 보존 |
-
-배경의 수계 1개는 OSM에서 `tunnel=yes`, `layer=-1`로 표시된 반포천입니다. 터널 태그가 있는 도로·보행로 9개와 이 수계 1개는 지표면에 그리지 않으며 원본 태그와 도형은 데이터에 보존합니다. 화면에는 도로·보행로 **중심선 105개**를 표시하며 폭을 임의로 추정하지 않습니다. OSM 자체의 갱신 차이와 누락 가능성은 남습니다.
-
-1 km 지도와 다른 지역은 현재 실행 대상이 아닙니다. 여의도·홍대입구·판교·분당 후보 설정은 `config/regions.pending.json`에 보관합니다. 기존 로컬 출력 폴더도 자동 삭제하지 않습니다.
+건축HUB의 8개 법정동 표제부 **15,897행**을 확보해 GIS 결측 **305개**를 대조했습니다. 107개는 대조된 개별 대장에 유효한 높이가 없었고, 137개는 연결 후보가 모호했으며, 56개는 조회 자료에서 정확한 PNU의 후보가 없었고, 5개는 동일 건물 근거가 부족했습니다. 따라서 305개 모두를 “대장에도 높이가 없다”고 판단한 결과가 아닙니다. 건축HUB 자료는 2026년 8월, GIS 배포본은 9월로 기준 시점도 다릅니다.
 
 ## 실행
 
@@ -42,126 +31,108 @@ git clone https://github.com/ytw1227/gangnam-urban-block-lab.git
 cd gangnam-urban-block-lab
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe run_preview.py
+.\.venv\Scripts\python.exe run_five_maps.py
 ```
 
-실제 400 m 건물과 배경이 저장소에 포함되어 있으므로 기본 실행에 브이월드 로그인이나 서울 전체 ZIP은 필요하지 않습니다. HTML을 생성한 뒤에는 오프라인으로 볼 수 있습니다.
-
-### 원본에서 다시 추출할 때
-
-1. [브이월드 GIS건물통합정보](https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18)에서 로그인한 뒤 **서울특별시 / 전체데이터** ZIP을 받습니다. 강남역 주변에는 서초구와 강남구가 함께 포함됩니다.
-2. ZIP을 `data/raw/official_vworld/`에 보관합니다. 원본 ZIP은 Git에 올라가지 않습니다.
-3. 새 폴더로 추출하여 저장소의 검증된 입력과 비교할 수 있습니다. 아래는 보관 중인 배포본을 다시 추출하는 예시입니다.
+VS Code에서는 F5의 **5개 지역 400m × 400m (GIS·대장·높이정책)**을 선택합니다. 저장된 지역별 자료를 오프라인으로 검증·처리하고, `outputs/five_actual400_날짜시간/index.html`을 엽니다. 새 결과 폴더를 사용하며 기존 결과를 덮어쓰지 않습니다.
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/import_official_gangnam.py `
-  data/raw/official_vworld/AL_D010_11_20260909.zip `
-  --snapshot-date 2026-09-09 --encoding cp949 --out data/local/gangnam_reimport
+# 브라우저를 열지 않고 새 출력 폴더에 생성
+.\.venv\Scripts\python.exe run_five_maps.py --no-browser --out outputs/five_review
+
+# 수평 안전 여유와 실험용 난수 시드를 명시
+.\.venv\Scripts\python.exe run_five_maps.py --safety-margin 5 --seed 20261007
 ```
 
-이 명령은 건물 재추출용입니다. 별도 출력 폴더에 배경 파일이 없으면 전체 provenance 묶음은 만들지 않으며 F5는 기존 검증된 입력을 계속 사용합니다. 실제 DBF에는 문자 인코딩 정보가 없어 CP949를 명시했습니다.
+지역별 갤러리에는 `ready`(맵 생성 완료), `pending_ledger`(대장 확인 대기), `held`(높이 확보 기준 미충족)가 표시됩니다. 최종 확인·추정·보류 개수는 생성된 `suite.manifest.json`과 각 지역 `manifest.json`에서 확인합니다. 입력 파일이 없거나 출처 기록과 다르면 중단하며 합성 건물로 대체하지 않습니다.
 
-원본 `.prj`, GDAL이 해석한 CRS, 공식 배포 시점의 좌표계를 대조합니다. 실제 원본은 EPSG:5186입니다. 축 순서·단위 이름의 표현이 다르면 지리 기준계·투영법·파라미터·단위가 모두 동등한지 검사하며 좌표계를 추측하거나 강제로 덮어쓰지 않습니다. 400 m 영역과 교차하는 건물의 **전체 원본 외곽선**을 좌표 변환해 보관하고 실제 모델을 만들 때 영역 경계에서 자릅니다.
+## 다섯 실험 구역
 
-공식 배포 컬럼 정의서에 따라 사용하는 주요 열:
+| 지역 | 환경 컨셉 | 중심 경도 | 중심 위도 |
+|---|---|---:|---:|
+| 강남역 | 고층 도심 혼합 | 127.027000 | 37.496800 |
+| 여의도 | 고층 타워군 | 126.926600 | 37.526000 |
+| 홍대 | 밀집 중저층 | 126.921600 | 37.551300 |
+| 판교 | 계획형 업무지구 | 127.107700 | 37.401700 |
+| 분당 | 아파트 주거 | 127.121600 | 37.365400 |
 
-| 열 | 의미 / 용도 |
-|---|---|
-| A1 | GIS건물통합식별번호, 문자열 건물 ID |
-| A16 | 높이(m), 우선 적용할 GIS 높이 |
-| A19 / A22 | 건축물ID / 데이터기준일자 보존 |
-| A24 / A25 | 건물명 / 건물동명 보존; 화면 이름 표시는 하지 않음 |
-| A26 / A27 | 지상 / 지하 층수 보존; 층수로 높이를 만들지 않음 |
+중심은 [지역 컨셉을 논의한 공유 대화](https://chatgpt.com/share/6ac5cd6e-38d0-83ee-b55d-a67da72d5ac5)의 후보점이며, 측량으로 확인한 랜드마크 중심이 아닙니다. 설정 원본은 [config/regions.five.json](config/regions.five.json)입니다.
 
-A2(PNU)는 필지 식별자이므로 건물 ID로 사용하지 않습니다. 원본·추출 파일 SHA256, 기준일, CRS, 처리 과정, 결측·중복 행을 출처 기록에 남깁니다. 기존 준비 파일은 덮어쓰지 않습니다.
+모든 구역은 EPSG:5179의 **정확한 400 m 정사각형(160,000 ㎡)**입니다. 중심을 로컬 원점으로 옮겨 x·y는 ±200 m, 지면은 z=0으로 둡니다. x는 동쪽, y는 북쪽이며 세 축 모두 미터 단위입니다. 경계에 걸친 건물은 모델 생성 시 자르고, 입력에는 전체 외곽선을 보존합니다. 실험 범위 밖 건물과 외부 신호 영향은 제외합니다.
 
-### VS Code에서 400 m 지도 열기
+## 데이터와 높이 결정
 
-F5의 **강남역 400m × 400m (공식 GIS 입력)**을 선택하거나 다음을 실행합니다.
+| 자료 | 사용 방식 | 시점 |
+|---|---|---|
+| 국토교통부 GIS건물통합정보 AL_D010 | 실제 외곽선과 원본 높이 우선 | 서울·경기 배포본 2026-09-09, 선택 건물 A22 기준일 2026-09-06 |
+| 건축HUB 건축물대장 개별 건물 자료 | GIS 결측을 동일 건물로 확인한 대장 높이로 보완 | 2026년 8월 조회 자료; 개별 연결 근거·검토 결과 별도 기록 |
+| OpenStreetMap / OSMnx | 도로·보행로 중심선, 공원·토지이용·수계 | 2026-10-07 수집; 지역별 정확한 DB 시점은 배경 출처 기록 |
 
-```powershell
-.\.venv\Scripts\python.exe run_preview.py
-```
+배포·DB 기준일은 개별 건물의 현장 실측일과 다릅니다. 실제 외곽선의 오목한 부분·중정·다중 폴리곤을 유지하지만, 창문·지붕 설비·층별 돌출부를 재현하지는 않습니다. 도로 폭이나 누락된 배경을 임의로 만들지 않습니다. 원본 `tunnel` 태그가 있는 배경은 지표면 표시에서 제외하고 데이터에는 남깁니다.
 
-`data/gangnam_400/`의 `buildings.gpkg`, `background.gpkg`, `schema.json`, `provenance.json`이 모두 필요합니다. 중심·영역 크기·입력 SHA256을 확인한 뒤 `outputs/gangnam_actual400_날짜시간/`에 지도 하나를 만들고 브라우저로 엽니다. 파일이 없거나 출처 기록과 다르면 오류를 표시하며 합성 건물을 만들지 않습니다.
+**높이 우선순위는 GIS → 동일 건물로 검증한 대장 → 실험용 추정값**입니다.
 
-파일만 생성하려면:
+1. A16의 유한한 양수 높이(m)를 사용합니다. 0·음수·결측은 미확인입니다.
+2. 대장은 개별 건물 기록과 GIS 건물의 1:1 관계 및 근거가 확인될 때만 사용합니다. 비슷한 주소, 같은 필지, 단지 이름만으로 여러 동에 하나의 높이를 복제하지 않습니다.
+3. 대장 조회 오류·미완료가 남으면 `pending_ledger`로 중단합니다. 조회·식별 검토를 마쳤는데도 **미확인 수가 확인 수보다 많거나 확인값이 전혀 없으면 `held`**입니다. GIS 결측 수만으로 최종 보류를 결정하지 않습니다.
+4. 실행 가능한 지역의 남은 결측은 확인된 GIS·대장 높이의 산술평균 `μ`를 기준으로 `μ ± 5 m` 안에서 배정합니다. 반대 부호의 난수 쌍으로 편차 합을 0으로 맞추고, 홀수이면 한 값을 `μ`로 둡니다. 따라서 추정 높이들의 평균도 `μ`입니다.
 
-```powershell
-.\.venv\Scripts\python.exe -m region_model build --size 400 `
-  --buildings data/gangnam_400/buildings.gpkg `
-  --schema data/gangnam_400/schema.json `
-  --background data/gangnam_400/background.gpkg `
-  --provenance data/gangnam_400/provenance.json `
-  --out outputs/gangnam_actual_review
-```
+기본 시드는 `20261007`이며 지역 ID에서 파생한 시드를 기록합니다. 입력·시드가 같으면 재실행 결과도 같습니다. 원본 높이는 수정하지 않습니다. 추정 건물은 `height_source=imputed`, `observed_height_m=null`로 남기고 적용 높이·편차·대장 확인 상태를 별도로 저장합니다. 평균이 매우 낮으면 양수 높이를 유지하도록 편차 범위를 줄입니다.
 
-## 형상과 높이 처리
+이 추정값은 실제 높이를 측정한 결과가 아닙니다. 건물 높이가 50 m 기준의 어느 쪽에 놓이는지 바뀔 수 있으므로, 비행 제한 영역에서도 **확인 높이 기반과 추정 높이 기반을 구분**합니다. 층수를 일정 층고와 곱해 높이로 바꾸지 않습니다.
 
-오목한 외곽선, 내부 중정, 다중 폴리곤을 유지하여 삼각형 메시를 만듭니다. 건물을 사각 상자로 바꾸거나 축척을 과장하지 않습니다. 지붕 형태·창문·외벽 재료를 재현하는 정밀 3D 모델은 아닙니다.
+## 고도 50 m 비행 제한 영역
 
-유효한 GIS 높이를 먼저 사용합니다. 없을 때는 **동일 건물임을 확인한 건축물대장 표제부**만 연결할 수 있습니다. 주소 유사성, 층수×임의 층고, 인근 건물 높이는 사용하지 않습니다. 미확인 건물은 주황색 평면 외곽선과 품질 기록에 남으며 입체 메시에서 제외됩니다. 따라서 OBJ만으로 누락 없는 차폐 장면이라고 판단하면 안 됩니다.
+`height_m >= 50`인 건물의 **전체 원본 외곽선**을 수평으로 기본 5 m 확장하고, 결과만 400 m 구역에 맞춰 자릅니다. 건물 메시의 원래 외곽선과 높이는 유지합니다. 정확히 50 m인 건물도 기준에 포함합니다.
 
-[건축HUB 건축물대장정보](https://www.data.go.kr/data/15134735/openapi.do) 등에서 보완 자료를 확보할 수 있습니다. 현재 코드는 대장 API 자동 호출이나 동일 건물 자동 판정을 하지 않습니다. `examples/ledger.csv`, `examples/verified_matches.csv`는 실제 건물이 아닌 **입력 형식 예시**입니다.
+안전 여유는 `--safety-margin`으로 변경할 수 있으며, 기본 5 m는 이 실험의 설정값입니다. 영역은 실험용 충돌 제약이며 법정 비행 금지구역을 뜻하지 않습니다. 이후 드론 경로 코드가 위치와 이동 구간의 침범을 검사해야 실제 경로 제한으로 작동합니다.
 
-- 대장 CSV: `ledger_id,height_m,record_type,namespace`; `record_type=title`인 개별 건물 표제부만 사용합니다.
-- 연결표 CSV: `building_id,ledger_id,namespace,verified,identity_method,identity_evidence`.
-- `verified=true`, `identity_method=official_crosswalk` 또는 `manual_building_confirmation`, 확인 근거가 필요합니다.
-- 동일 표제부를 여러 동에 복제하지 않습니다. 문자열 ID와 namespace를 유지하고 중복·일대다 관계를 거부합니다.
-- `build` 명령에 `--ledger`와 `--matches`를 추가하면 보완 자료를 사용할 수 있습니다.
+## 생성 결과
 
-확인 근거의 진위는 사람이 검토해야 합니다. 해시 검증도 파일 일치 여부를 확인하며 원본 속성이 현재 현장과 일치함을 보증하지 않습니다.
-
-## 출력과 실험 범위
+완료된 지역의 출력 폴더:
 
 | 파일 | 내용 |
 |---|---|
-| `preview.html` | 오프라인 입체/평면 보기, 높이 출처와 누락 표시 |
-| `model.gpkg` | EPSG:5179 건물·영역·배경; 미확인 높이 외곽선도 보존 |
-| `scene.local.json` | 중심 원점의 m 단위 건물 형상·높이; 지리 GeoJSON과 구별 |
-| `buildings_known_heights.obj` | 높이가 있는 건물만 포함한 닫힌 삼각형 메시 |
-| `quality.csv` | 원본 높이, 채택 출처, 연결·도형 보정·경계 절단·누락 |
-| `manifest.json` | 중심·크기·CRS·원점 변환·출처·품질 집계 |
+| `preview.html` | 실제 폴리곤 3D/평면 보기, 높이 출처와 비행 제한 영역 |
+| `model.gpkg` | EPSG:5179 건물·실험 영역·배경 및 비행 제한 레이어 |
+| `scene.local.json` | 로컬 m 좌표의 건물 형상·적용 높이·확인 높이·출처·제한 영역 |
+| `no_fly.local.json` | 고도·안전 여유·높이 출처를 포함한 로컬 비행 제한 폴리곤 |
+| `buildings_known_heights.obj` | GIS·검증 대장 높이를 가진 건물만 포함한 메시 |
+| `buildings_model_heights.obj` | 확인 높이와 명시적 실험용 추정 높이를 포함한 모델 메시 |
+| `quality.csv` | 건물별 원본 높이·출처·대장 연결·추정 편차·기하 처리 기록 |
+| `manifest.json` | 중심·범위·변환·원본 체크섬·높이 정책·비행 정책·집계 |
 
-로컬 x는 동쪽, y는 북쪽, z는 지면 기준 높이입니다. 세 축은 미터 단위 같은 축척이며 로컬 좌표에 EPSG:5179를 붙이지 않습니다. 경계에 걸친 건물은 400 m 정사각형에서 절단하고 기록합니다. **실험 범위 밖 건물과 외부 신호 영향은 제외**합니다.
+루트의 `index.html`은 5개 지역 갤러리, `suite.manifest.json`은 전체 실행 요약입니다. 대기·보류 지역은 상태 화면과 `manifest.json`, `quality.csv`만 생성하며, 추정 높이·3D 장면·OBJ를 생성하지 않습니다.
 
-`simulation_ready=false`는 RF 계산기가 아직 없다는 뜻입니다. `mesh_complete`는 입력 건물의 높이·도형 처리 상태이며 실제 지역의 모든 건물이 수집됐다는 보증은 아닙니다. 군집 드론의 배치·간섭·차폐 실험에는 별도의 송수신 설정과 계산 방식이 필요합니다.
+로컬 JSON은 **경위도 GeoJSON이 아닙니다**. `simulation_ready=false`는 전파 계산기가 포함되지 않았음을 뜻합니다. `mesh_complete`와 `all_heights_verified`도 구분하며, 추정으로 메시가 채워져도 모든 높이가 확인된 것은 아닙니다.
 
-## 검증과 구조
+## 검증과 데이터 재현
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe scripts/fetch_five_backgrounds.py --offline
 ```
 
-좌표·경계 절단, 높이 우선순위·결측, ID 연결, 오목한 형상·중정·닫힌 메시, 공식 원본 가져오기, 출처 일치, 자료가 없을 때 F5 중단을 검사합니다. 테스트용 합성 도형은 실제 지역의 자료 검증을 대신하지 않습니다.
-
-실제 원본 적용 후 추가로 확인한 결과:
-
-- 원본 126개 건물의 문자열 ID·선택 속성·투영된 전체 외곽선과 저장 입력이 모두 일치합니다.
-- 출력 외곽선은 원본을 400 m 정사각형에서 자른 결과와 면적 차이가 0입니다.
-- 83개 GIS 높이는 원본값을 유지하고, 높이 0인 43개는 null로 남깁니다.
-- OBJ 84개 폴리곤 부분의 닫힘·면 방향·중정·체적을 검사했습니다. 83개 건물 중 하나가 경계 절단 후 두 부분으로 나뉘었습니다.
-- 실제 HTML의 입체/평면 전환과 누락 목록을 확인했습니다.
-
-높이 확보율은 건물 수 기준 65.9%입니다. 높이 미확인 건물은 총 건물 바닥면적의 약 17.5%이므로, 이후 차폐 계산 전에 보완 또는 불확실성 처리가 필요합니다.
+좌표·경계, 공식 파일 CRS와 필드, 대장 1:1 연결, 대기·보류 조건, 평균 보존과 시드 재현, 50 m 경계와 안전 여유, 오목한 형상·중정·메시 및 오프라인 실행을 검증합니다. 상세한 입력 구조와 재수집 절차는 [데이터 파이프라인](docs/data-pipeline.md)에 정리했습니다.
 
 ```text
-region_model/                  좌표·형상·높이·배경·미리보기
-scripts/import_official_gangnam.py  공식 AL_D010의 400m 범위 추출
-scripts/render_overview.py      같은 실제 입력으로 README 평면도 재생성
-data/gangnam_400/               공개 가능한 실제 자료와 출처
-config/                        활성 지역·보관 중인 후보·스키마 예시
-examples/                      대장 연결 형식 예시
-tests/                         처리 규칙 검증
-run_preview.py                 실제 400m 자료만 읽는 VS Code 실행 파일
+config/regions.five.json       5개 구역의 중심·컨셉·자료 위치
+data/regions_400/<region>/     지역별 실제 입력·대장 연결·출처·이용조건
+region_model/core.py           좌표·형상·검증 대장 연결·파일 출력
+region_model/experiment.py     추정 높이 정책·비행 제한 폴리곤
+region_model/suite.py          실제 입력 검증·지역별 실행·갤러리
+region_model/preview.py        입체/평면 시각화와 메시
+scripts/                      공식 자료 추출·배경 수집·대장 식별 검토
+run_five_maps.py               기본 실행 / VS Code F5
+tests/                        처리 규칙·출력 검증
 ```
 
-`region_model/demo.py`와 `docs/assets/scene-comparison.svg`는 이전 **합성 소프트웨어 검증 자료**입니다. 실제 강남역 모델에 사용하지 않습니다. 별도의 `demo` 명령을 명시적으로 실행할 때에만 사용되며 F5 경로에는 연결하지 않습니다.
+기존 `run_preview.py`와 `data/gangnam_400/`는 **이전 중심(127.027600, 37.497900)**의 강남역 400 m 검토용으로 유지합니다. 새 5개 지도 중 강남역과 중심이 다릅니다. 예전 README 이미지도 해당 이전 중심 자료이며, 새 지도의 이미지로 사용하지 않습니다. 합성 테스트 도형은 명시적 `demo` 명령에만 남겨 두며 기본 실행과 연결하지 않습니다.
 
-## 데이터 출처와 이용 조건
+## 출처와 이용 조건
 
-- 건물: [국토교통부 GIS건물통합정보](https://www.data.go.kr/data/15083092/fileData.do), [브이월드 배포](https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18). 브이월드 표시 조건은 [CC BY](https://creativecommons.org/licenses/by/2.0/kr/), 공공데이터포털에는 공공누리 제1유형(출처표시)이 안내되어 있습니다. 출처·기준일·변환 내역은 `buildings.provenance.json`, 이용 조건은 `data/gangnam_400/LICENSE-BUILDINGS.md`에 보존합니다.
-- 배경: © OpenStreetMap contributors, [ODbL 및 출처 안내](https://www.openstreetmap.org/copyright). 상세 출처와 해시는 `data/gangnam_400/background.provenance.json`, 이용 조건은 `data/gangnam_400/LICENSE-OSM.md`에 있습니다.
-- 수집 도구: [OSMnx 공식 문서](https://osmnx.readthedocs.io/en/stable/user-reference.html).
+- 건물: [국토교통부 GIS건물통합정보](https://www.data.go.kr/data/15083092/fileData.do), [브이월드 배포](https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18). 지역별 `LICENSE-BUILDINGS.md`와 `buildings.provenance.json`에 표시된 출처·기준일·변환 내역을 유지합니다.
+- 대장: 건축HUB의 개별 건물 대장 자료. 실제 채택 기록과 동일 건물 판단 근거는 지역별 `ledger.csv`, `verified_matches.csv`, `ledger_audit.json`에 보존합니다. 단순한 자료 조회 성공과 높이 채택 성공을 구분합니다.
+- 배경: © OpenStreetMap contributors, [ODbL 및 출처 안내](https://www.openstreetmap.org/copyright). 지역별 `LICENSE-OSM.md`와 `background.provenance.json`을 함께 제공합니다.
 
-원본 ZIP·개인 설정·인증정보·생성 결과·가상환경은 Git 추적에서 제외합니다. 데이터 이용 조건과 프로그램 코드의 이용 조건은 구별됩니다.
+서울·경기 전체 원본 ZIP, 건축HUB 전체 다운로드, 인증정보, 캐시, 생성 결과, 가상환경은 Git에서 제외합니다. 지역 범위의 추출 자료·필요한 대장 기록·검토 근거만 출처와 함께 관리합니다. 해시는 파일 일치를 검증하며 현장 상태의 최신성이나 모든 건물의 완전 수집을 보증하지 않습니다.

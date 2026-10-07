@@ -1,0 +1,265 @@
+{
+  "row_count": 51,
+  "known_height_rows": 15,
+  "missing_height_rows": 36,
+  "flagged_rows": 36,
+  "issues": [
+    {
+      "curated_row": 5,
+      "building_id": "1992193504664469639400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 7,
+      "building_id": "1995193298274468855800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 8,
+      "building_id": "0000193575884470028900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 10,
+      "building_id": "0000193571764470338900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 11,
+      "building_id": "0000193405304472858900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 12,
+      "building_id": "0000193518844470741100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 13,
+      "building_id": "0000193512964470836900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 14,
+      "building_id": "0000193455644471502200000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 15,
+      "building_id": "0000193452104471678600000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 16,
+      "building_id": "0000193558484470216400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 17,
+      "building_id": "0000193548884470336000000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 18,
+      "building_id": "0000193572324470019100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 19,
+      "building_id": "0000193564204470123900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 20,
+      "building_id": "0000193500724470918800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 21,
+      "building_id": "0000193505404470857300000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 22,
+      "building_id": "0000193504474470946200000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 23,
+      "building_id": "0000193485884471101700000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 24,
+      "building_id": "0000193475214471240900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 25,
+      "building_id": "0000193464364471379300000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 26,
+      "building_id": "0000193556914472071400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 27,
+      "building_id": "0000193581554471144200000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 28,
+      "building_id": "0000193632154470458400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 29,
+      "building_id": "0000193498064471606700000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 30,
+      "building_id": "0000193403234472706100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 31,
+      "building_id": "0000193509114470885300000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 32,
+      "building_id": "0000193509024470809000000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 33,
+      "building_id": "0000193459294471456200000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 35,
+      "building_id": "0000193281684472844900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 36,
+      "building_id": "1995193250494469329400000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 37,
+      "building_id": "0000193638724469427100000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 40,
+      "building_id": "1983193491554469090200000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 41,
+      "building_id": "0000193621384469414900000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 42,
+      "building_id": "0000193609524469514600000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 43,
+      "building_id": "0000193632754469398800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 46,
+      "building_id": "1983193463574469376800000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    },
+    {
+      "curated_row": 48,
+      "building_id": "2012193290344469968600000000",
+      "flags": [
+        "missing_or_invalid_gis_height"
+      ]
+    }
+  ],
+  "hold_recommended": true,
+  "hold_rule": "GIS-only preliminary flag. Final hold decision must use GIS plus verified same-building title-register heights, after the ledger check.",
+  "scope": "Only coordinate-bearing source records intersecting the exact AOI; source rows without coordinates cannot be spatially attributed.",
+  "hold_recommendation_scope": "GIS_only_preliminary",
+  "ledger_check_status": "not_performed_by_importer"
+}

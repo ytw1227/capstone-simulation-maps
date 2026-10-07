@@ -1,0 +1,2488 @@
+{
+  "region_key": "gangnam",
+  "center_lonlat": [
+    127.027,
+    37.4968
+  ],
+  "size_m": 400,
+  "building_source_sha256": "cb99f9e504167a0a381d3085f0a56531b4542cacfacccaa4157279a124ed33cc",
+  "full_gis_parcel_context_sha256": "2f70a19d3f32ced3c92379609f5a09b1f88db72b49ab7cd58def4c68dc67e1cc",
+  "audited_at_utc": "2026-10-07T05:25:28.688046+00:00",
+  "source_files": [
+    {
+      "file": "11650_10800_202608.json",
+      "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+      "row_count": 4126,
+      "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+      "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+      "snapshot_month": "2026-08",
+      "legal_dong_code": "1165010800",
+      "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+      "verified_height_field": {
+        "name": "HG",
+        "description": "높이(m)"
+      },
+      "verified_identity_field": {
+        "name": "BDRG_SN",
+        "description": "관리건축물대장PK"
+      },
+      "full_export_evidence": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_month": "2026-08",
+        "sigungu_cd": "11650",
+        "bjdong_cd": "10800",
+        "ui_search_total": 4126,
+        "export_row_count": 4126,
+        "full_export_count_verified": true,
+        "download_original_filename": "03. 표제부_20261007141703.json",
+        "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+        "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+      }
+    },
+    {
+      "file": "11680_10100_202608.json",
+      "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+      "row_count": 4959,
+      "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+      "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+      "snapshot_month": "2026-08",
+      "legal_dong_code": "1168010100",
+      "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+      "verified_height_field": {
+        "name": "HG",
+        "description": "높이(m)"
+      },
+      "verified_identity_field": {
+        "name": "BDRG_SN",
+        "description": "관리건축물대장PK"
+      },
+      "full_export_evidence": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_month": "2026-08",
+        "sigungu_cd": "11680",
+        "bjdong_cd": "10100",
+        "ui_search_total": 4959,
+        "export_row_count": 4959,
+        "full_export_count_verified": true,
+        "download_original_filename": "03. 표제부_20261007141518.json",
+        "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+        "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+      }
+    }
+  ],
+  "gis_building_count": 100,
+  "gis_missing_height_count": 37,
+  "lookup_complete": true,
+  "counts": {
+    "identity_ambiguous": 17,
+    "no_title_found": 15,
+    "identity_unconfirmed": 3,
+    "title_height_missing": 2
+  },
+  "buildings": {
+    "0000202214064437768100000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113210020",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023114282"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023114282",
+          "corroborated_gis_owners": [
+            "2007202245224437480800000000"
+          ],
+          "height_m": 150
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202205144436806700000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117230",
+        "1023117229",
+        "1023117228"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117230",
+          "corroborated_gis_owners": [],
+          "height_m": 20.4
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117229",
+          "corroborated_gis_owners": [
+            "2000202224194435949400000000"
+          ],
+          "height_m": 84.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117228",
+          "corroborated_gis_owners": [],
+          "height_m": 84.6
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202216754436652100000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117230",
+        "1023117229",
+        "1023117228"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117230",
+          "corroborated_gis_owners": [],
+          "height_m": 20.4
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117229",
+          "corroborated_gis_owners": [
+            "2000202224194435949400000000"
+          ],
+          "height_m": 84.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117228",
+          "corroborated_gis_owners": [],
+          "height_m": 84.6
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202453064437500800000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113740000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202111664436831900000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113220012",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202458444437360500000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113740000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202289144436806500000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260017",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117231",
+        "1023117232",
+        "1023114295"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117231",
+          "corroborated_gis_owners": [
+            "1998202312514435693600000000"
+          ],
+          "height_m": 60.9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117232",
+          "corroborated_gis_owners": [
+            "1998202288444436326600000000"
+          ],
+          "height_m": 63.7
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023114295",
+          "corroborated_gis_owners": [
+            "1998202302104436548800000000"
+          ],
+          "height_m": 0
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202361814438750400000000": {
+      "status": "identity_unconfirmed",
+      "lookup_pnu": "1165010800113190009",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1000000000000006488555"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": "full_parcel_one_gis_one_title_with_corroboration",
+          "full_gis_parcel_rows": 1,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1000000000000006488555",
+          "corroborated_gis_owners": [],
+          "height_m": 77.8
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202193604440214200000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113170031",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023114271"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023114271",
+          "corroborated_gis_owners": [
+            "1992202207814440389600000000"
+          ],
+          "height_m": 34.7
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202319914438970000000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113200010",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "10231100183128"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10231100183128",
+          "corroborated_gis_owners": [
+            "2008202310134438254900000000"
+          ],
+          "height_m": 199.28
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202368044438594700000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113190010",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202261834440157100000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113170015",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202220104436736500000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117230",
+        "1023117229",
+        "1023117228"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117230",
+          "corroborated_gis_owners": [],
+          "height_m": 20.4
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117229",
+          "corroborated_gis_owners": [
+            "2000202224194435949400000000"
+          ],
+          "height_m": 84.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117228",
+          "corroborated_gis_owners": [],
+          "height_m": 84.6
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202227374439634000000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113170025",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202261414436506600000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260017",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117231",
+        "1023117232",
+        "1023114295"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117231",
+          "corroborated_gis_owners": [
+            "1998202312514435693600000000"
+          ],
+          "height_m": 60.9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117232",
+          "corroborated_gis_owners": [
+            "1998202288444436326600000000"
+          ],
+          "height_m": 63.7
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023114295",
+          "corroborated_gis_owners": [
+            "1998202302104436548800000000"
+          ],
+          "height_m": 0
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202235344439781100000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113170026",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202290344439570500000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113170035",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202396904436486200000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113270010",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117234"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117234",
+          "corroborated_gis_owners": [],
+          "height_m": 27
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202447644437639600000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113740000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202137084436538300000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1165010800113250021",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202220024436563500000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113260000",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117230",
+        "1023117229",
+        "1023117228"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117230",
+          "corroborated_gis_owners": [],
+          "height_m": 20.4
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117229",
+          "corroborated_gis_owners": [
+            "2000202224194435949400000000"
+          ],
+          "height_m": 84.6
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 8,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117228",
+          "corroborated_gis_owners": [],
+          "height_m": 84.6
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202390074436673400000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1165010800113270008",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1000000000000005312250"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1000000000000005312250",
+          "corroborated_gis_owners": [],
+          "height_m": 58.77
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "1998202302104436548800000000": {
+      "status": "title_height_missing",
+      "lookup_pnu": "1165010800113260017",
+      "legal_dong_code": "1165010800",
+      "candidate_ids": [
+        "1023117231",
+        "1023117232",
+        "1023114295"
+      ],
+      "checked_source": {
+        "file": "11650_10800_202608.json",
+        "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "row_count": 4126,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1165010800",
+        "source_file_modified_at_utc": "2026-10-07T05:17:41.760343+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11650_10800_202608.json",
+          "sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11650",
+          "bjdong_cd": "10800",
+          "ui_search_total": 4126,
+          "export_row_count": 4126,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141703.json",
+          "registered_at_utc": "2026-10-07T05:17:41.776886+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": {
+        "accepted": true,
+        "rule": "unique_exact_name_or_dong_with_corroboration",
+        "full_gis_parcel_rows": 7,
+        "title_parcel_rows": 3,
+        "exact_name_matches": [
+          {
+            "field": "building_name",
+            "value": "우성아파트",
+            "unique_in_full_gis_parcel": false,
+            "unique_in_title_parcel": false
+          },
+          {
+            "field": "dong_name",
+            "value": "탁아소",
+            "unique_in_full_gis_parcel": true,
+            "unique_in_title_parcel": true
+          }
+        ],
+        "attribute_comparisons": {
+          "building_area_m2": {
+            "gis": 134.06,
+            "ledger": 134.06,
+            "matches": true
+          },
+          "gross_floor_area_m2": {
+            "gis": 152.73,
+            "ledger": 152.73,
+            "matches": true
+          },
+          "above_ground_floors": {
+            "gis": 1,
+            "ledger": 1,
+            "matches": true
+          },
+          "approval_date": {
+            "gis": "1998-05-28",
+            "ledger": "1998-05-28",
+            "matches": true
+          }
+        },
+        "conflicting_attributes": [],
+        "corroboration_sufficient": true,
+        "a19_to_hub_pk_mapping_used": false,
+        "ledger_id": "1023114295",
+        "corroborated_gis_owners": [
+          "1998202302104436548800000000"
+        ],
+        "height_m": 0,
+        "source_file": "11650_10800_202608.json",
+        "source_sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "exact_pnu": "1165010800113260017",
+        "gis_building_id": "1998202302104436548800000000"
+      },
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "우성아파트",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 134.06,
+              "ledger": 559.8,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 152.73,
+              "ledger": 10034.31,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 22,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "1998-05-28",
+              "ledger": "1998-05-28",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117231",
+          "corroborated_gis_owners": [
+            "1998202312514435693600000000"
+          ],
+          "height_m": 60.9
+        },
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "우성아파트",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 134.06,
+              "ledger": 1626.26,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 152.73,
+              "ledger": 31846.01,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 23,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "1998-05-28",
+              "ledger": "1998-05-28",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023117232",
+          "corroborated_gis_owners": [
+            "1998202288444436326600000000"
+          ],
+          "height_m": 63.7
+        },
+        {
+          "accepted": true,
+          "rule": "unique_exact_name_or_dong_with_corroboration",
+          "full_gis_parcel_rows": 7,
+          "title_parcel_rows": 3,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "우성아파트",
+              "unique_in_full_gis_parcel": false,
+              "unique_in_title_parcel": false
+            },
+            {
+              "field": "dong_name",
+              "value": "탁아소",
+              "unique_in_full_gis_parcel": true,
+              "unique_in_title_parcel": true
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 134.06,
+              "ledger": 134.06,
+              "matches": true
+            },
+            "gross_floor_area_m2": {
+              "gis": 152.73,
+              "ledger": 152.73,
+              "matches": true
+            },
+            "above_ground_floors": {
+              "gis": 1,
+              "ledger": 1,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "1998-05-28",
+              "ledger": "1998-05-28",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": true,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1023114295",
+          "corroborated_gis_owners": [
+            "1998202302104436548800000000"
+          ],
+          "height_m": 0,
+          "source_file": "11650_10800_202608.json",
+          "source_sha256": "b7623061cc2d5da7cb7aec3b6f5fe9695a4997607a76f9ee423769e39bd40bc5",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "exact_pnu": "1165010800113260017",
+          "gis_building_id": "1998202302104436548800000000"
+        }
+      ],
+      "matched_ledger_id": "1023114295",
+      "reason": "Identity is corroborated, but the matched title does not provide a positive finite HG height."
+    },
+    "0000202512754437122300000000": {
+      "status": "identity_unconfirmed",
+      "lookup_pnu": "1168010100108260021",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "10241100266376"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": "full_parcel_one_gis_one_title_with_corroboration",
+          "full_gis_parcel_rows": 1,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10241100266376",
+          "corroborated_gis_owners": [],
+          "height_m": 85.5
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202467064438120500000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1168010100108250008",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202499974436538800000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108580000",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "10241100239949"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 20,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10241100239949",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202445784438431600000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108580000",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "10241100239949"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 20,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10241100239949",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202495134437363600000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108260023",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "1024120970"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1024120970",
+          "corroborated_gis_owners": [],
+          "height_m": 24
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202503354438785400000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1168010100108250005",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202473954439256800000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108250001",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "102412709"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "102412709",
+          "corroborated_gis_owners": [],
+          "height_m": 17.4
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "1975202438144440414400000000": {
+      "status": "identity_unconfirmed",
+      "lookup_pnu": "1168010100108220000",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "1000000000000001972920"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": "full_parcel_one_gis_one_title_with_corroboration",
+          "full_gis_parcel_rows": 1,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 442.98,
+              "ledger": 364.16,
+              "matches": false
+            },
+            "gross_floor_area_m2": {
+              "gis": 1758.62,
+              "ledger": 5696.98,
+              "matches": false
+            },
+            "above_ground_floors": {
+              "gis": 3,
+              "ledger": 15,
+              "matches": false
+            },
+            "approval_date": {
+              "gis": "1975-12-09",
+              "ledger": "2023-06-27",
+              "matches": false
+            }
+          },
+          "conflicting_attributes": [
+            "building_area_m2",
+            "gross_floor_area_m2",
+            "above_ground_floors",
+            "approval_date"
+          ],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1000000000000001972920",
+          "corroborated_gis_owners": [],
+          "height_m": 70.15
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202481604439128500000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108250002",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "1024121785"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 2,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "1024121785",
+          "corroborated_gis_owners": [
+            "2005202461744438716400000000"
+          ],
+          "height_m": 143.3
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "0000202416764439398500000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1168010100108040000",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202495964438977100000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1168010100108250004",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202479644438098300000000": {
+      "status": "no_title_found",
+      "lookup_pnu": "1168010100108250008",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "reason": "No title in the full exported legal-neighborhood dataset has this exact PNU."
+    },
+    "0000202432274438792700000000": {
+      "status": "identity_ambiguous",
+      "lookup_pnu": "1168010100108580000",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "10241100239949"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": null,
+      "candidate_evidence": [
+        {
+          "accepted": false,
+          "rule": null,
+          "full_gis_parcel_rows": 20,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [],
+          "attribute_comparisons": {},
+          "conflicting_attributes": [],
+          "corroboration_sufficient": false,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "10241100239949",
+          "corroborated_gis_owners": [],
+          "height_m": 0
+        }
+      ],
+      "reason": "No unique same-building identity satisfies the documented corroboration rule; parcel similarity alone is not used."
+    },
+    "1984202507074439742000000000": {
+      "status": "title_height_missing",
+      "lookup_pnu": "1168010100108250017",
+      "legal_dong_code": "1168010100",
+      "candidate_ids": [
+        "102416269"
+      ],
+      "checked_source": {
+        "file": "11680_10100_202608.json",
+        "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "row_count": 4959,
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "source_name": "건축HUB 건축물대장 표제부 공개조회 JSON 내보내기",
+        "snapshot_month": "2026-08",
+        "legal_dong_code": "1168010100",
+        "source_file_modified_at_utc": "2026-10-07T05:15:23.976672+00:00",
+        "verified_height_field": {
+          "name": "HG",
+          "description": "높이(m)"
+        },
+        "verified_identity_field": {
+          "name": "BDRG_SN",
+          "description": "관리건축물대장PK"
+        },
+        "full_export_evidence": {
+          "file": "11680_10100_202608.json",
+          "sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "source_month": "2026-08",
+          "sigungu_cd": "11680",
+          "bjdong_cd": "10100",
+          "ui_search_total": 4959,
+          "export_row_count": 4959,
+          "full_export_count_verified": true,
+          "download_original_filename": "03. 표제부_20261007141518.json",
+          "registered_at_utc": "2026-10-07T05:17:41.319442+00:00",
+          "method": "Official HUB public title search, legal-dong filter, JSON export, research purpose"
+        }
+      },
+      "identity_evidence": {
+        "accepted": true,
+        "rule": "full_parcel_one_gis_one_title_with_corroboration",
+        "full_gis_parcel_rows": 1,
+        "title_parcel_rows": 1,
+        "exact_name_matches": [
+          {
+            "field": "building_name",
+            "value": "영림빌딩",
+            "unique_in_full_gis_parcel": true,
+            "unique_in_title_parcel": true
+          }
+        ],
+        "attribute_comparisons": {
+          "building_area_m2": {
+            "gis": 450.0,
+            "ledger": 450,
+            "matches": true
+          },
+          "gross_floor_area_m2": {
+            "gis": 6525.0,
+            "ledger": 6525,
+            "matches": true
+          },
+          "above_ground_floors": {
+            "gis": 10,
+            "ledger": 10,
+            "matches": true
+          },
+          "approval_date": {
+            "gis": "1984-10-11",
+            "ledger": "1984-10-11",
+            "matches": true
+          }
+        },
+        "conflicting_attributes": [],
+        "corroboration_sufficient": true,
+        "a19_to_hub_pk_mapping_used": false,
+        "ledger_id": "102416269",
+        "corroborated_gis_owners": [
+          "1984202507074439742000000000"
+        ],
+        "height_m": 0,
+        "source_file": "11680_10100_202608.json",
+        "source_sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+        "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+        "exact_pnu": "1168010100108250017",
+        "gis_building_id": "1984202507074439742000000000"
+      },
+      "candidate_evidence": [
+        {
+          "accepted": true,
+          "rule": "full_parcel_one_gis_one_title_with_corroboration",
+          "full_gis_parcel_rows": 1,
+          "title_parcel_rows": 1,
+          "exact_name_matches": [
+            {
+              "field": "building_name",
+              "value": "영림빌딩",
+              "unique_in_full_gis_parcel": true,
+              "unique_in_title_parcel": true
+            }
+          ],
+          "attribute_comparisons": {
+            "building_area_m2": {
+              "gis": 450.0,
+              "ledger": 450,
+              "matches": true
+            },
+            "gross_floor_area_m2": {
+              "gis": 6525.0,
+              "ledger": 6525,
+              "matches": true
+            },
+            "above_ground_floors": {
+              "gis": 10,
+              "ledger": 10,
+              "matches": true
+            },
+            "approval_date": {
+              "gis": "1984-10-11",
+              "ledger": "1984-10-11",
+              "matches": true
+            }
+          },
+          "conflicting_attributes": [],
+          "corroboration_sufficient": true,
+          "a19_to_hub_pk_mapping_used": false,
+          "ledger_id": "102416269",
+          "corroborated_gis_owners": [
+            "1984202507074439742000000000"
+          ],
+          "height_m": 0,
+          "source_file": "11680_10100_202608.json",
+          "source_sha256": "8ac4c877108641dc8e12c059585c080eeb8289210c18b4be28b3c65031536d26",
+          "source_url": "https://www.hub.go.kr/portal/opn/tyb/idx-bdrg-ttlldr.do",
+          "exact_pnu": "1168010100108250017",
+          "gis_building_id": "1984202507074439742000000000"
+        }
+      ],
+      "matched_ledger_id": "102416269",
+      "reason": "Identity is corroborated, but the matched title does not provide a positive finite HG height."
+    }
+  },
+  "matching_policy": {
+    "id": "exact_parcel_corroborated_identity_v1",
+    "rules": [
+      "Exact PNU, then either full-source parcel one-GIS/one-title or a nonempty exact name/dong unique in both full parcel datasets.",
+      "At least one positive building/gross-floor area within 0.05 square metres and an equal positive floor count or equal valid approval date.",
+      "No conflicting available area/floor/date attributes. One unique title candidate and reverse unique GIS owner, including outside-AOI records.",
+      "No A19 conversion, prefix guessing, address similarity, floor-height estimation or GIS height replacement."
+    ],
+    "known_gis_height_priority": true
+  },
+  "ledger_sha256": "72912a8a782db5c86178d23cd1b1525869a2c19999900e0716e1ee82fbed9c3a",
+  "verified_matches_sha256": "f08847daf063c0f97a18ff20e95591ec99be3ca009e9a7ba93c75f0b12120478"
+}

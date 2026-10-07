@@ -1,0 +1,52 @@
+{
+  "size_m": 400,
+  "selection_source": "https://chatgpt.com/share/6ac5cd6e-38d0-83ee-b55d-a67da72d5ac5",
+  "selection_status": "Shared-conversation candidate centers; not independently surveyed or verified landmark centroids.",
+  "regions": {
+    "gangnam": {
+      "name": "강남역",
+      "environment": "고층 도심 혼합",
+      "center_lonlat": [127.027, 37.4968],
+      "center_note": "공유 대화의 강남역 고층 도심 혼합 후보 중심. 기존 강남역 400m 실험과 중심이 다름.",
+      "source_archive": "data/raw/official_vworld/AL_D010_11_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/gangnam"
+    },
+    "yeouido": {
+      "name": "여의도",
+      "environment": "고층 타워군",
+      "center_lonlat": [126.9266, 37.526],
+      "center_note": "공유 대화의 여의도 고층 타워군 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+      "source_archive": "data/raw/official_vworld/AL_D010_11_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/yeouido"
+    },
+    "hongdae": {
+      "name": "홍대",
+      "environment": "밀집 중저층",
+      "center_lonlat": [126.9216, 37.5513],
+      "center_note": "공유 대화의 홍대 밀집 중저층 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+      "source_archive": "data/raw/official_vworld/AL_D010_11_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/hongdae"
+    },
+    "pangyo": {
+      "name": "판교",
+      "environment": "계획형 업무지구",
+      "center_lonlat": [127.1077, 37.4017],
+      "center_note": "공유 대화의 판교 계획형 업무지구 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+      "source_archive": "data/raw/official_vworld/AL_D010_41_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/pangyo"
+    },
+    "bundang": {
+      "name": "분당",
+      "environment": "아파트 주거",
+      "center_lonlat": [127.1216, 37.3654],
+      "center_note": "공유 대화의 분당 아파트 주거 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+      "source_archive": "data/raw/official_vworld/AL_D010_41_20260909.zip",
+      "source_snapshot_date": "2026-09-09",
+      "data_dir": "data/regions_400/bundang"
+    }
+  }
+}

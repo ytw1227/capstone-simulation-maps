@@ -220,16 +220,18 @@ def localize(frame, origin):
     return result.set_crs(None, allow_override=True)
 
 
-def export_model(output, buildings, background, quality, metadata, origin, aoi):
+def export_model(output, buildings, background, quality, metadata, origin, aoi, *, no_fly_zones=None):
     from .preview import export_obj, write_preview, is_tunnel_background
     output = Path(output)
     if output.exists() and any(output.iterdir()):
         raise ValueError(f"출력 폴더가 비어 있지 않습니다: {output}. 새 출력 경로를 지정하세요.")
     output.mkdir(parents=True, exist_ok=True)
     unknown = buildings.height_source.eq("missing")
+    imputed = buildings.height_source.eq("imputed")
     total_area = float(buildings.area.sum())
     counts = {"buildings": len(buildings), "gis_height": int(buildings.height_source.eq("gis").sum()),
               "ledger_height": int(buildings.height_source.eq("ledger").sum()), "missing_height": int(unknown.sum()),
+              "imputed_height": int(imputed.sum()),
               "named_buildings": int(buildings.building_name.ne("").sum()),
               "missing_name": int(buildings.building_name.eq("").sum()),
               "flagged_buildings": int(buildings.quality_flags.ne("").sum()),
@@ -247,26 +249,62 @@ def export_model(output, buildings, background, quality, metadata, origin, aoi):
                 "background_surface_display": {"tunnel_features_hidden": sum(is_tunnel_background(row) for _, row in background.iterrows()),
                                                "policy": "원본 배경 보존. tunnel 태그가 있는 요소는 지표면 표시에서 제외. 도로 폭과 layer 고도는 추정하지 않음."},
                 "boundary_policy": "AOI와 교차하는 건물을 경계에서 자름. 실험 범위 밖 건물과 외부 신호 영향은 제외하는 설정."}
+    metadata["all_heights_verified"] = not bool(unknown.any() or imputed.any())
+    if imputed.any():
+        metadata["height_interpretation"] = "height_m includes explicitly labelled experimental estimates; observed_height_m preserves confirmed values only."
+        metadata["unknown_height_policy"] = "GIS와 표제부 확인 후에도 미확인인 높이만 지역 확인 높이 평균의 ±5m 범위로 추정. 추정 평균은 확인 평균과 같으며 원본 결측과 출처는 보존. 추정 3D 및 금지영역은 별도 색상."
+    if no_fly_zones is not None:
+        metadata["no_fly_counts"] = {
+            "total": len(no_fly_zones),
+            "confirmed_height": int((~no_fly_zones.is_estimated.astype(bool)).sum()),
+            "estimated_height": int(no_fly_zones.is_estimated.astype(bool).sum()),
+        }
     local_buildings, local_background = localize(buildings, origin), localize(background, origin)
+    local_zones = localize(no_fly_zones, origin) if no_fly_zones is not None else None
     local_buildings.attrs["is_demo"] = metadata["is_demo"]
     if len(buildings):
         buildings.to_file(output/"model.gpkg", layer="buildings", driver="GPKG", index=False)
     gpd.GeoDataFrame({"name": ["AOI"]}, geometry=[aoi], crs=METRIC_CRS).to_file(output/"model.gpkg", layer="aoi", driver="GPKG", index=False)
     if len(background):
         background.to_file(output/"model.gpkg", layer="background", driver="GPKG", index=False)
+    if no_fly_zones is not None and len(no_fly_zones):
+        no_fly_zones.to_file(output/"model.gpkg", layer="no_fly_zones", driver="GPKG", index=False)
     features = []
     for _, row in local_buildings.iterrows():
-        features.append({"building_id": row.building_id, "building_name": row.building_name,
+        feature = {"building_id": row.building_id, "building_name": row.building_name,
                          "name_source": row.name_source, "height_m": valid_height(row.height_m),
                          "height_source": row.height_source, "quality_flags": row.quality_flags,
-                         "geometry_local_m": mapping(row.geometry)})
-    write_json(output/"scene.local.json", {"format": "local-metre-scene-v1 (not geographic GeoJSON)", "metadata": metadata, "buildings": features})
+                         "geometry_local_m": mapping(row.geometry)}
+        if "observed_height_m" in row:
+            feature.update(observed_height_m=valid_height(row.observed_height_m),
+                           height_source_original=row.height_source_original,
+                           imputation_delta_m=None if pd.isna(row.imputation_delta_m) else float(row.imputation_delta_m),
+                           ledger_check_status=row.ledger_check_status)
+        features.append(feature)
+    scene = {"format": "local-metre-scene-v1 (not geographic GeoJSON)", "metadata": metadata, "buildings": features}
+    if local_zones is not None:
+        scene["no_fly_zones"] = [
+            {"building_id": row.building_id, "height_m": float(row.height_m),
+             "height_source": row.height_source, "is_estimated": bool(row.is_estimated),
+             "flight_altitude_m": float(row.flight_altitude_m), "threshold_m": float(row.threshold_m),
+             "safety_margin_m": float(row.safety_margin_m), "geometry_local_m": mapping(row.geometry)}
+            for _, row in local_zones.iterrows()
+        ]
+        write_json(output/"no_fly.local.json", {"format": "local-metre-no-fly-v1 (not geographic GeoJSON)",
+                   "flight_policy": metadata.get("flight_policy", {}), "zones": scene["no_fly_zones"]})
+    write_json(output/"scene.local.json", scene)
     write_json(output/"manifest.json", metadata)
     fieldnames = ["building_id", "source_building_id", "building_name", "name_source", "gis_height_raw", "height_m", "height_source", "match_status", "identity_evidence", "quality_flags", "area_m2", "included"]
+    fieldnames += [name for name in ("observed_height_m", "height_source_original", "imputation_delta_m", "ledger_check_status")
+                   if name in buildings.columns]
     with (output/"quality.csv").open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(quality)
-    export_obj(local_buildings, output/"buildings_known_heights.obj")
-    write_preview(local_buildings, local_background, metadata, output/"preview.html")
+    observed_buildings = local_buildings.loc[~imputed].copy() if imputed.any() else local_buildings
+    observed_buildings.attrs["excluded_imputed_count"] = int(imputed.sum())
+    export_obj(observed_buildings, output/"buildings_known_heights.obj")
+    if "height_policy" in metadata:
+        export_obj(local_buildings, output/"buildings_model_heights.obj")
+    write_preview(local_buildings, local_background, metadata, output/"preview.html", no_fly_zones=local_zones)
     return metadata

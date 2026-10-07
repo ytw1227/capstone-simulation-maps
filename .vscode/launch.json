@@ -2,6 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "5개 지역 400m × 400m (GIS·대장·높이정책)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_five_maps.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "linux": {
+        "python": "${workspaceFolder}/.venv/bin/python"
+      },
+      "osx": {
+        "python": "${workspaceFolder}/.venv/bin/python"
+      },
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "redirectOutput": true,
+      "justMyCode": true
+    },
+    {
       "name": "강남역 400m × 400m (공식 GIS 입력)",
       "type": "debugpy",
       "request": "launch",

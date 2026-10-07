@@ -1,0 +1,149 @@
+{
+  "source_name": "국토교통부 GIS건물통합정보 (브이월드 AL_D010)",
+  "source_url": "https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18",
+  "catalog_url": "https://www.data.go.kr/data/15083092/fileData.do",
+  "source_file": "AL_D010_41_20260909.zip",
+  "original_file_sha256": "f0fd2e8864a6594b999e1f533453a7d5f228c92728b913dd4a090bfd74602c8b",
+  "snapshot_date": "2026-09-09",
+  "record_reference_dates": [
+    "2026-09-06"
+  ],
+  "imported_at_utc": "2026-10-07T05:03:24.241533+00:00",
+  "file": "buildings.gpkg",
+  "sha256": "f5308c9a688776941f3a154dc03ac11f3ce384f110340fbd90f7fdf8e7523cda",
+  "layer": "buildings",
+  "curated_crs": "EPSG:5179",
+  "center_lonlat": [
+    127.1216,
+    37.3654
+  ],
+  "size_m": 400,
+  "region_key": "bundang",
+  "region_name": "분당",
+  "environment": "아파트 주거",
+  "center_note": "공유 대화의 분당 아파트 주거 후보 중심. 측량으로 확인한 랜드마크 중심이 아님.",
+  "selection_source": "https://chatgpt.com/share/6ac5cd6e-38d0-83ee-b55d-a67da72d5ac5",
+  "aoi_bounds_projected_m": [
+    966293.1868240369,
+    1929460.7632496255,
+    966693.1868240369,
+    1929860.7632496255
+  ],
+  "local_origin_projected_m": [
+    966493.1868240369,
+    1929660.7632496255
+  ],
+  "source_parts": [
+    {
+      "archive_member": "AL_D010_41_20260909(2).shp",
+      "prj_sha256": "c9e055f0ba3e7d3844883a41ed9dbfc060fabc1fbf09bef13d7de34c0ef788cc",
+      "original_crs": "EPSG:5186",
+      "original_crs_wkt": "PROJCRS[\"KGD2002 / Central Belt 2010\",BASEGEOGCRS[\"KGD2002\",DATUM[\"Korean Geodetic Datum 2002\",ELLIPSOID[\"GRS 1980\",6378137,298.257222101,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4737]],CONVERSION[\"Korea Central Belt 2010\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",38,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",127,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",1,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",200000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",600000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"northing (X)\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"easting (Y)\",east,ORDER[2],LENGTHUNIT[\"metre\",1]],USAGE[SCOPE[\"Cadastre, topographic mapping.\"],AREA[\"Republic of Korea (South Korea) - onshore between 126°E and 128°E.\"],BBOX[33.14,126,38.33,128]],ID[\"EPSG\",5186]]",
+      "source_total_rows": 1000000,
+      "requested_encoding": "cp949",
+      "driver_reported_encoding": "UTF-8",
+      "bbox_filter_rows": 1,
+      "intersecting_rows": 1,
+      "selected_fields": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A16",
+        "A19",
+        "A22",
+        "A23",
+        "A24",
+        "A25",
+        "A26",
+        "A27",
+        "A28"
+      ]
+    },
+    {
+      "archive_member": "AL_D010_41_20260909(3).shp",
+      "prj_sha256": "c9e055f0ba3e7d3844883a41ed9dbfc060fabc1fbf09bef13d7de34c0ef788cc",
+      "original_crs": "EPSG:5186",
+      "original_crs_wkt": "PROJCRS[\"KGD2002 / Central Belt 2010\",BASEGEOGCRS[\"KGD2002\",DATUM[\"Korean Geodetic Datum 2002\",ELLIPSOID[\"GRS 1980\",6378137,298.257222101,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4737]],CONVERSION[\"Korea Central Belt 2010\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",38,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",127,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",1,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",200000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",600000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"northing (X)\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"easting (Y)\",east,ORDER[2],LENGTHUNIT[\"metre\",1]],USAGE[SCOPE[\"Cadastre, topographic mapping.\"],AREA[\"Republic of Korea (South Korea) - onshore between 126°E and 128°E.\"],BBOX[33.14,126,38.33,128]],ID[\"EPSG\",5186]]",
+      "source_total_rows": 298133,
+      "requested_encoding": "cp949",
+      "driver_reported_encoding": "UTF-8",
+      "bbox_filter_rows": 0,
+      "intersecting_rows": 0,
+      "selected_fields": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A16",
+        "A19",
+        "A22",
+        "A23",
+        "A24",
+        "A25",
+        "A26",
+        "A27",
+        "A28"
+      ]
+    },
+    {
+      "archive_member": "AL_D010_41_20260909.shp",
+      "prj_sha256": "c9e055f0ba3e7d3844883a41ed9dbfc060fabc1fbf09bef13d7de34c0ef788cc",
+      "original_crs": "EPSG:5186",
+      "original_crs_wkt": "PROJCRS[\"KGD2002 / Central Belt 2010\",BASEGEOGCRS[\"KGD2002\",DATUM[\"Korean Geodetic Datum 2002\",ELLIPSOID[\"GRS 1980\",6378137,298.257222101,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4737]],CONVERSION[\"Korea Central Belt 2010\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",38,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",127,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",1,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",200000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",600000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"northing (X)\",north,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"easting (Y)\",east,ORDER[2],LENGTHUNIT[\"metre\",1]],USAGE[SCOPE[\"Cadastre, topographic mapping.\"],AREA[\"Republic of Korea (South Korea) - onshore between 126°E and 128°E.\"],BBOX[33.14,126,38.33,128]],ID[\"EPSG\",5186]]",
+      "source_total_rows": 1000000,
+      "requested_encoding": "cp949",
+      "driver_reported_encoding": "UTF-8",
+      "bbox_filter_rows": 59,
+      "intersecting_rows": 59,
+      "selected_fields": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A16",
+        "A19",
+        "A22",
+        "A23",
+        "A24",
+        "A25",
+        "A26",
+        "A27",
+        "A28"
+      ]
+    }
+  ],
+  "row_count": 60,
+  "flagged_rows": 15,
+  "missing_id_rows": 0,
+  "duplicate_id_rows": 0,
+  "known_height_rows": 45,
+  "missing_or_invalid_height_rows": 15,
+  "hold_recommended": false,
+  "district_codes": [
+    "41130"
+  ],
+  "declared_origin": "User-obtained official VWorld AL_D010 source file; no independent building survey.",
+  "transformation": "Source-CRS bbox filter, EPSG:5179 reprojection, exact AOI intersection selection. Full intersecting footprints and original A16 values retained; no clipping, imputation, deduplication, or geometry repair in curated source.",
+  "license_notices": [
+    {
+      "source": "https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?svcCde=NA&dsId=18",
+      "label": "CC BY",
+      "url": "https://creativecommons.org/licenses/by/2.0/kr/"
+    },
+    {
+      "source": "https://www.data.go.kr/data/15083092/fileData.do",
+      "label": "공공저작물 : 출처표시 (제 1유형)"
+    }
+  ],
+  "attribution": "국토교통부 GIS건물통합정보, 브이월드 제공. 분당 연구용 400m 관심영역 추출 및 좌표 변환.",
+  "is_synthetic": false,
+  "hold_recommendation_scope": "GIS_only_preliminary",
+  "ledger_check_status": "not_performed_by_importer"
+}
