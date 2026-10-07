@@ -4,4 +4,4 @@
 
 # Curated source bundles contain byte-level provenance hashes. Preserve their
 # exact bytes when cloning on Windows or Linux, including CSV/JSON newlines.
-/data/regions_400/** -text
+/data/regions_400/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
