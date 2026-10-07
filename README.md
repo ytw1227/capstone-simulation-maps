@@ -1,12 +1,20 @@
-# Urban Block Lab · Five 400 m Maps
+# 캡스톤디자인 · 시뮬레이션 지도 모델링
 
-[![Tests](https://github.com/ytw1227/gangnam-urban-block-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/ytw1227/gangnam-urban-block-lab/actions/workflows/tests.yml)
+[![Tests](https://github.com/ytw1227/capstone-simulation-maps/actions/workflows/tests.yml/badge.svg)](https://github.com/ytw1227/capstone-simulation-maps/actions/workflows/tests.yml)
 
 **강남역 · 테헤란로 · 홍대 · 분당 · 상암 DMC — 실제 GIS 외곽선으로 만드는 400 m × 400 m 실험 환경**
 
 국토교통부 건물 폴리곤·GIS 높이와 OpenStreetMap 배경을 결합하는 Python 프로젝트입니다. GIS 결측은 동일 건물의 건축물대장을 검토한 뒤 처리합니다. 평평한 지면 위에 실제 외곽선을 높이만큼 세우고, 고도 50 m에서 피해야 할 건물 영역을 별도 폴리곤으로 생성합니다. 결과는 브라우저에서 회전·확대할 수 있습니다.
 
 높이 미확인은 먼저 대장을 확인합니다. 이후에도 남은 결측은 명시적인 실험 가정으로만 채우며, 확인하지 못한 건물이 더 많으면 그 지역의 모델 생성을 보류합니다. **통신 경로손실·간섭·드론 경로 실행은 별도 구현 대상**입니다.
+
+## 시뮬레이션 담당자에게 전달
+
+**맵 입력 자료는 전달 가능한 상태입니다.** 실제 건물 형상·적용 높이·미터 좌표·비행 제한 폴리곤과 확인/추정 높이의 품질 기록을 제공합니다. 담당자는 이 자료를 읽어 드론 이동, LoS/NLoS 판정, 경로손실·간섭·단절 판정 및 복구 프로토콜을 구현합니다. 비행 제한 영역도 경로 코드에서 위치와 이동 구간의 교차를 검사해야 작동합니다.
+
+전달할 때는 각 지역의 `scene.local.json`, `no_fly.local.json`, `manifest.json`, `quality.csv`와 `model.gpkg`를 함께 사용합니다. `preview.html`은 검토 화면이며, OBJ 메시를 사용할 경우에는 추정 건물까지 포함한 `buildings_model_heights.obj`를 선택합니다. 상세 필드, 좌표 변환, 연결 규칙과 담당자가 정할 설정은 [시뮬레이션 전달 안내](docs/simulation-handoff.md)에 정리했습니다.
+
+생성 결과인 `outputs/`는 Git에서 제외됩니다. 저장소에는 필요한 지역별 입력 자료가 포함되어 있으므로 담당자가 아래 실행 절차로 결과를 재생성할 수 있습니다. 별도로 제공한 지도 ZIP을 받았다면 압축을 풀어 같은 출력 파일을 바로 사용합니다.
 
 ## 확정 구역과 원본 GIS 높이 확인율
 
@@ -31,8 +39,8 @@
 Python 3.13에서 검증합니다. Windows PowerShell 기준:
 
 ```powershell
-git clone https://github.com/ytw1227/gangnam-urban-block-lab.git
-cd gangnam-urban-block-lab
+git clone https://github.com/ytw1227/capstone-simulation-maps.git
+cd capstone-simulation-maps
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe run_five_maps.py
